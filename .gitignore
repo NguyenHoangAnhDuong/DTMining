@@ -1,0 +1,23 @@
+# Virtual environment
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Jupyter cache
+.ipynb_checkpoints/
+
+# Secrets
+.env
+.streamlit/secrets.toml
+
+# Operating system
+.DS_Store
+Thumbs.db
+
+# Raw dataset
+data/raw/*
+!data/raw/.gitkeep
