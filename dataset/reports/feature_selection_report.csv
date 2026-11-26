@@ -1,0 +1,84 @@
+﻿Feature,MI_score,Status,Reason
+Gold Price_logret,5.273471,Kept,
+Silver_logret,0.678847,Kept,
+Copper_logret,0.365599,Kept,
+Oil_logret,0.337836,Kept,
+Platinum_logret,0.313067,Kept,
+U.S Treasury_logret,0.3058,Kept,
+Palladium_logret,0.206832,Kept,
+DayOfWeek,0.184211,Kept,
+Oil_logret_lag5,0.158957,Kept,
+Gold Price_logret_lag5,0.15457,Kept,
+U.S dollar index_logret,0.149575,Kept,
+Silver_logret_lag5,0.146778,Kept,
+Gold Price_logret_lag10,0.144828,Kept,
+U.S Treasury_logret_lag5,0.139566,Kept,
+Gold Price_logret_lag20,0.131163,Kept,
+U.S dollar index_logret_lag5,0.093615,Kept,
+U.S Treasury_logret_lag1,0.032579,Kept,
+Gold Price_logret_lag3,0.028621,Kept,
+Oil_logret_lag1,0.022602,Kept,
+Oil_logret_lag3,0.022452,Kept,
+S&P 500_logret_lag3,0.021863,Kept,
+U.S Treasury_logret_lag3,0.020273,Kept,
+Gold_logret_roll_std60,0.020236,Kept,
+Gold Price_logret_lag1,0.019346,Kept,
+Month,0.019072,Kept,
+DJI_logret_lag5,0.018823,Kept,
+DJI_logret,0.015004,Kept,
+Silver_logret_lag3,0.014987,Kept,
+U.S dollar index_logret_lag1,0.014843,Kept,
+U.S Treasury_logret_lag2,0.014717,Kept,
+Gold Price_logret_lag2,0.014349,Kept,
+Oil_logret_lag2,0.01426,Kept,
+Gold_logret_roll_mean5,0.011608,Kept,
+DJI_logret_lag1,0.010363,Kept,
+Gold_logret_roll_std20,0.00957,Kept,
+U.S dollar index_logret_lag3,0.009282,Kept,
+Gold_logret_roll_std10,0.008152,Kept,
+Gold_USD_ratio,0.007342,Kept,
+currency (Euro) ,0.006508,Kept,
+Inflation Rate_diff_lag2,0.005104,Kept,
+CPI Rate_logret,0.004354,Kept,
+Gold_logret_roll_mean60,0.003418,Kept,
+DJI_logret_lag2,0.003132,Kept,
+Fedral Funds Rate_diff_lag2,0.002801,Kept,
+Inflation,0.002739,Kept,
+Bonds,0.002654,Kept,
+logistic,0.001684,Kept,
+unemployment rate,0.001521,Kept,
+Job report,0.001246,Kept,
+Stock (US),0.0009,Kept,
+Iron Price_logret,0.000745,Kept,
+oil,0.00062,Kept,
+Fedral Funds Rate_diff,0.000619,Kept,
+Stock (Global),0.000396,Kept,
+Quarter,0.020719,Removed,Tuong quan cao > 0.95
+S&P 500_logret,0.013586,Removed,Tuong quan cao > 0.95
+DJI_logret_lag3,0.006593,Removed,Tuong quan cao > 0.95
+S&P 500_logret_lag5,0.006086,Removed,Tuong quan cao > 0.95
+Economic Data,0.0,Removed,MI = 0
+Politics,0.0,Removed,MI = 0
+OPEC,0.0,Removed,MI = 0
+currency (Dollar),0.0,Removed,MI = 0
+currency (Russian ruble),0.0,Removed,MI = 0
+currency (Sterling pound),0.0,Removed,MI = 0
+currency (Yen) ,0.0,Removed,MI = 0
+CPI,0.0,Removed,MI = 0
+Interest Rate,0.0,Removed,MI = 0
+Inflation Rate_diff,0.0,Removed,MI = 0
+U.S dollar index_logret_lag2,0.0,Removed,MI = 0
+S&P 500_logret_lag1,0.0,Removed,Tuong quan cao > 0.95
+S&P 500_logret_lag2,0.0,Removed,Tuong quan cao > 0.95
+Silver_logret_lag1,0.0,Removed,MI = 0
+Silver_logret_lag2,0.0,Removed,MI = 0
+Inflation Rate_diff_lag1,0.0,Removed,MI = 0
+Inflation Rate_diff_lag3,0.0,Removed,MI = 0
+Inflation Rate_diff_lag5,0.0,Removed,MI = 0
+Fedral Funds Rate_diff_lag1,0.0,Removed,MI = 0
+Fedral Funds Rate_diff_lag3,0.0,Removed,MI = 0
+Fedral Funds Rate_diff_lag5,0.0,Removed,MI = 0
+Gold_logret_roll_std5,0.0,Removed,MI = 0
+Gold_logret_roll_mean10,0.0,Removed,MI = 0
+Gold_logret_roll_mean20,0.0,Removed,MI = 0
+Gold_Oil_ratio,0.0,Removed,MI = 0

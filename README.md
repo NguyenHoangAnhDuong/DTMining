@@ -9,13 +9,11 @@ Phân tích giai đoạn thị trường và dự đoán giá vàng dựa trên 
 Khai phá và tiền xử lý:
     - Data Cleaning, xử lý dữ liệu thiếu, phát hiện dữ liệu bất thường, Feature Engineering (lag, rolling mean/std, return, biến sự kiện), Feature Selection, chia dữ liệu theo chuỗi thời gian.
 Phân nhóm giai đoạn thị trường:
-    - K-Means / Gaussian Mixture Model để gán nhãn giai đoạn tăng – đi ngang – giảm, đánh giá bằng Silhouette và Davies-Bouldin.
+    - K-Means để gán nhãn giai đoạn tăng – đi ngang – giảm, đánh giá bằng Silhouette và Davies-Bouldin.
 Mô hình chuỗi thời gian thống kê:
     - SARIMAX (dùng thêm biến ngoại sinh USD index, dầu, lãi suất), Exponential Smoothing (Holt-Winters); chọn tham số bằng auto_arima theo AIC/BIC và kiểm tra phần dư bằng Ljung-Box.
 Mô hình học máy:
     - XGBoost, LightGBM, Prophet
-Mô hình cơ sở:
-    - Naive Forecast và Seasonal Naive
 Mô hình Deep learning:
     - Sử dụng Long Short-Term Memory (LSTM) để khai thác sự phụ thuộc theo thời gian và so sánh hiệu quả dự báo với các mô hình thống kê và Machine Learning.
 Tập dữ liệu:
@@ -43,7 +41,7 @@ Link:
 Chức năng:
     1. Nhập dữ liệu
     2. Tiền xử lý
-    3. Chọn mô hình (Naive  / SARIMAX / ML)
+    3. Chọn mô hình (SARIMAX / ML)
     4. Chọn khoảng dự đoán
     5. Dự đoán giá vàng và khoảng tin cậy
     6. Hiển thị giai đoạn thị trường hiện tại
