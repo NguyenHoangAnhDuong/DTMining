@@ -1,6 +1,6 @@
 import streamlit as st
 
-from src.constants import (
+from source.services.constants import (
     MODELS,
     MODEL_NAMES,
     TASKS,
@@ -8,7 +8,7 @@ from src.constants import (
     CLUSTERING_ALGORITHMS,
 )
 
-from src.result_loader import load_all_metrics
+from source.services.result_loader import load_all_metrics
 
 st.title("Gold Intelligence Dashboard")
 
