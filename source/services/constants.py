@@ -48,3 +48,46 @@ METRICS = [
     "MASE",
     "DA",
 ]
+
+# Module chứa `predict_latest(history, branch, horizon)` của từng model (dùng cho trang Dự đoán)
+MODEL_MODULES = {
+    "xgboost": "source.model.xgboost_model.train",
+}
+
+BRANCH_LABELS = {
+    "base": "Không phân lớp",
+    "kmeans": "Có phân lớp K-Means",
+}
+
+SPLIT_LABELS = {
+    "cv": "Walk-forward (2004–2017)",
+    "val": "Validation (2018–2019)",
+    "test": "Test (2020–2022)",
+}
+
+# Giai đoạn thị trường (thứ tự theo REGIMES trong step09_clustering)
+REGIMES = ["Bear", "Bull", "StrongBull", "Volatile"]
+
+REGIME_LABELS = {
+    "Bear": "Giảm",
+    "Bull": "Tăng",
+    "StrongBull": "Tăng mạnh",
+    "Volatile": "Biến động mạnh",
+}
+
+REGIME_COLORS = {
+    "Bear": "#F87171",
+    "Bull": "#4ADE80",
+    "StrongBull": "#22D3EE",
+    "Volatile": "#C084FC",
+}
+
+# Màu dùng chung cho biểu đồ
+COLORS = {
+    "gold": "#D4AF37",
+    "actual": "#E2E8F0",
+    "base": "#60A5FA",
+    "kmeans": "#F59E0B",
+    "naive": "#94A3B8",
+    "grid": "rgba(148,163,184,0.15)",
+}

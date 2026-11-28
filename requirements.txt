@@ -1,3 +1,11 @@
-streamlit>=1.36,<2
-pandas
-plotly
+streamlit>=1.50,<2
+pandas>=2.0
+numpy
+plotly>=5.20
+xgboost>=2.0
+scikit-learn
+joblib
+scipy
+statsmodels
+optuna
+matplotlib
