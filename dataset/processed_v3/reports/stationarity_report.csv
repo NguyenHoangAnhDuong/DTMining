@@ -1,0 +1,29 @@
+series,transform,n,adf_stat,adf_p,kpss_stat,kpss_p,conclusion
+Gold Price,level,5729,-0.9635,0.7663,10.3397,0.01,nonstationary
+Silver,level,5729,-1.7828,0.389,5.5509,0.01,nonstationary
+Copper,level,5729,-1.8687,0.3469,5.5235,0.01,nonstationary
+Palladium,level,5729,-0.85,0.804,8.8733,0.01,nonstationary
+Platinum,level,5729,-2.3113,0.1684,2.4364,0.01,nonstationary
+Iron Price,level,5729,-2.739,0.0675,2.7174,0.01,nonstationary
+U.S dollar index,level,5729,-1.2578,0.6483,7.7091,0.01,nonstationary
+DJI,level,5729,0.5535,0.9864,10.67,0.01,nonstationary
+S&P 500,level,5729,0.4837,0.9844,10.1349,0.01,nonstationary
+U.S Treasury,level,5729,-1.7736,0.3936,10.5477,0.01,nonstationary
+CPI Rate,level,5729,1.0282,0.9946,12.1598,0.01,nonstationary
+Oil,level,5729,-2.4971,0.1162,2.2804,0.01,nonstationary
+Inflation Rate,level,5729,-2.9957,0.0353,1.009,0.01,inconclusive
+Fedral Funds Rate,level,5729,-2.1357,0.2304,3.3066,0.01,nonstationary
+Gold Price_logret,transformed,5728,-30.3512,0.0,0.2353,0.1,stationary
+Silver_logret,transformed,5728,-53.0576,0.0,0.1164,0.1,stationary
+Copper_logret,transformed,5728,-79.5917,0.0,0.1716,0.1,stationary
+Palladium_logret,transformed,5728,-52.8554,0.0,0.3156,0.1,stationary
+Platinum_logret,transformed,5728,-16.7936,0.0,0.1136,0.1,stationary
+Iron Price_logret,transformed,5728,-12.1881,0.0,0.1339,0.1,stationary
+U.S dollar index_logret,transformed,5728,-73.2664,0.0,0.1268,0.1,stationary
+DJI_logret,transformed,5728,-17.8256,0.0,0.1409,0.1,stationary
+S&P 500_logret,transformed,5728,-17.8528,0.0,0.1975,0.1,stationary
+U.S Treasury_logret,transformed,5728,-56.296,0.0,0.1385,0.1,stationary
+CPI Rate_logret,transformed,5728,-8.833,0.0,0.2891,0.1,stationary
+Oil_diff,transformed,5728,-16.9279,0.0,0.0664,0.1,stationary
+Inflation Rate_diff,transformed,5728,-9.9864,0.0,0.1849,0.1,stationary
+Fedral Funds Rate_diff,transformed,5728,-7.1767,0.0,1.6193,0.01,inconclusive

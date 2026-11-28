@@ -1,0 +1,1958 @@
+Date,feature,value,severity
+2011-03-02,Silver,34.825,mild
+2011-03-04,Silver,35.317,mild
+2011-03-07,Silver,35.855,mild
+2011-03-08,Silver,35.653,mild
+2011-03-09,Silver,36.043,mild
+2011-03-10,Silver,35.064,mild
+2011-03-11,Silver,35.933,mild
+2011-03-17,Silver,35.06,mild
+2011-03-18,Silver,35.06,mild
+2011-03-21,Silver,36.271,mild
+2011-03-22,Silver,37.202,mild
+2011-03-23,Silver,37.388,mild
+2011-03-24,Silver,37.058,mild
+2011-03-25,Silver,37.058,mild
+2011-03-28,Silver,36.977,mild
+2011-03-29,Silver,37.501,mild
+2011-03-30,Silver,37.872,mild
+2011-03-31,Silver,37.737,mild
+2011-04-01,Silver,37.737,mild
+2011-04-04,Silver,39.175,mild
+2011-04-05,Silver,39.384,mild
+2011-04-06,Silver,39.542,mild
+2011-04-07,Silver,40.6,mild
+2011-04-08,Silver,40.6,mild
+2011-04-11,Silver,40.058,mild
+2011-04-12,Silver,40.235,mild
+2011-04-13,Silver,41.661,mild
+2011-04-14,Silver,42.566,mild
+2011-04-15,Silver,42.566,mild
+2011-04-18,Silver,43.919,mild
+2011-04-19,Silver,44.465,mild
+2011-04-20,Silver,46.062,mild
+2011-04-21,Silver,46.062,mild
+2011-04-22,Silver,46.062,mild
+2011-04-25,Silver,45.058,mild
+2011-04-26,Silver,45.964,mild
+2011-04-27,Silver,47.52,mild
+2011-04-28,Silver,48.584,mild
+2011-04-29,Silver,48.584,mild
+2011-05-02,Silver,42.576,mild
+2011-05-03,Silver,39.383,mild
+2011-05-04,Silver,36.231,mild
+2011-05-05,Silver,35.283,mild
+2011-05-06,Silver,35.283,mild
+2011-05-09,Silver,38.48,mild
+2011-05-10,Silver,35.509,mild
+2011-05-11,Silver,34.793,mild
+2011-05-12,Silver,35.011,mild
+2011-05-13,Silver,35.011,mild
+2011-05-17,Silver,35.094,mild
+2011-05-18,Silver,34.927,mild
+2011-05-19,Silver,35.082,mild
+2011-05-20,Silver,35.082,mild
+2011-05-23,Silver,36.121,mild
+2011-05-24,Silver,37.64,mild
+2011-05-25,Silver,37.326,mild
+2011-05-26,Silver,37.857,mild
+2011-05-27,Silver,37.857,mild
+2011-05-30,Silver,38.303,mild
+2011-05-31,Silver,37.689,mild
+2011-06-01,Silver,36.2,mild
+2011-06-02,Silver,36.187,mild
+2011-06-03,Silver,36.187,mild
+2011-06-06,Silver,37.04,mild
+2011-06-07,Silver,36.619,mild
+2011-06-08,Silver,37.423,mild
+2011-06-09,Silver,36.326,mild
+2011-06-10,Silver,36.326,mild
+2011-06-13,Silver,35.41,mild
+2011-06-14,Silver,35.406,mild
+2011-06-15,Silver,35.553,mild
+2011-06-16,Silver,35.739,mild
+2011-06-17,Silver,35.739,mild
+2011-06-20,Silver,36.373,mild
+2011-06-21,Silver,36.734,mild
+2011-06-22,Silver,35.005,mild
+2011-06-23,Silver,34.641,mild
+2011-06-24,Silver,34.641,mild
+2011-06-28,Silver,34.75,mild
+2011-06-29,Silver,34.812,mild
+2011-07-04,Silver,35.402,mild
+2011-07-05,Silver,35.911,mild
+2011-07-06,Silver,36.528,mild
+2011-07-07,Silver,36.536,mild
+2011-07-08,Silver,36.536,mild
+2011-07-11,Silver,35.629,mild
+2011-07-12,Silver,38.148,mild
+2011-07-13,Silver,38.689,mild
+2011-07-14,Silver,39.063,mild
+2011-07-15,Silver,39.063,mild
+2011-07-18,Silver,40.211,mild
+2011-07-19,Silver,39.546,mild
+2011-07-20,Silver,38.937,mild
+2011-07-21,Silver,40.113,mild
+2011-07-22,Silver,40.113,mild
+2011-07-25,Silver,40.691,mild
+2011-07-26,Silver,40.553,mild
+2011-07-27,Silver,39.779,mild
+2011-07-28,Silver,40.092,mild
+2011-07-29,Silver,40.092,mild
+2011-08-01,Silver,40.081,mild
+2011-08-02,Silver,41.747,mild
+2011-08-03,Silver,39.418,mild
+2011-08-04,Silver,38.197,mild
+2011-08-05,Silver,38.197,mild
+2011-08-08,Silver,37.877,mild
+2011-08-09,Silver,39.325,mild
+2011-08-10,Silver,38.656,mild
+2011-08-11,Silver,39.101,mild
+2011-08-12,Silver,39.101,mild
+2011-08-15,Silver,39.821,mild
+2011-08-16,Silver,40.35,mild
+2011-08-17,Silver,40.687,mild
+2011-08-18,Silver,42.428,mild
+2011-08-19,Silver,42.428,mild
+2011-08-22,Silver,42.281,mild
+2011-08-23,Silver,39.157,mild
+2011-08-24,Silver,40.74,mild
+2011-08-25,Silver,40.947,mild
+2011-08-26,Silver,40.947,mild
+2011-08-29,Silver,41.398,mild
+2011-08-30,Silver,41.699,mild
+2011-08-31,Silver,41.482,mild
+2011-09-01,Silver,43.02,mild
+2011-09-02,Silver,43.02,mild
+2011-09-05,Silver,41.818,mild
+2011-09-06,Silver,41.572,mild
+2011-09-07,Silver,42.479,mild
+2011-09-08,Silver,41.573,mild
+2011-09-09,Silver,41.573,mild
+2011-09-12,Silver,41.123,mild
+2011-09-13,Silver,40.469,mild
+2011-09-14,Silver,39.453,mild
+2011-09-15,Silver,40.781,mild
+2011-09-16,Silver,40.781,mild
+2011-09-19,Silver,40.081,mild
+2011-09-20,Silver,40.42,mild
+2011-09-21,Silver,36.538,mild
+2011-10-26,Silver,35.095,mild
+2011-10-27,Silver,35.095,mild
+2011-10-28,Silver,35.27,mild
+2011-11-07,Silver,34.812,mild
+2011-11-08,Silver,35.137,mild
+2011-11-11,Silver,34.671,mild
+2012-02-23,Silver,35.544,mild
+2012-02-24,Silver,35.332,mild
+2012-02-27,Silver,35.516,mild
+2012-02-28,Silver,37.14,mild
+2012-02-29,Silver,34.583,mild
+2012-03-01,Silver,35.611,mild
+2012-09-12,Silver,34.716,mild
+2012-09-13,Silver,34.603,mild
+2012-09-14,Silver,34.603,mild
+2012-09-17,Silver,34.644,mild
+2012-09-18,Silver,34.519,mild
+2012-09-19,Silver,34.618,mild
+2012-09-20,Silver,34.567,mild
+2012-09-21,Silver,34.567,mild
+2012-09-26,Silver,34.595,mild
+2012-09-27,Silver,34.517,mild
+2012-09-28,Silver,34.517,mild
+2012-10-01,Silver,34.604,mild
+2012-10-02,Silver,34.631,mild
+2012-10-03,Silver,35.041,mild
+2012-10-04,Silver,34.516,mild
+2012-10-05,Silver,34.516,mild
+2019-10-28,Palladium,1756.5,mild
+2019-10-29,Palladium,1794.6,mild
+2019-10-30,Palladium,1758.1,mild
+2019-10-31,Palladium,1786.8,mild
+2019-11-01,Palladium,1786.8,mild
+2019-11-04,Palladium,1755.3,mild
+2019-11-06,Palladium,1763.6,mild
+2019-11-07,Palladium,1780.3,mild
+2019-11-25,Palladium,1773.9,mild
+2019-11-26,Palladium,1784.8,mild
+2019-11-27,Palladium,1784.8,mild
+2019-11-28,Palladium,1784.8,mild
+2019-11-29,Palladium,1815.6,mild
+2019-12-02,Palladium,1830.2,mild
+2019-12-03,Palladium,1828.2,mild
+2019-12-04,Palladium,1848.9,mild
+2019-12-05,Palladium,1849.2,mild
+2019-12-06,Palladium,1844.2,mild
+2019-12-09,Palladium,1858.8,mild
+2019-12-10,Palladium,1871.3,mild
+2019-12-11,Palladium,1887.3,mild
+2019-12-12,Palladium,1914.1,mild
+2019-12-13,Palladium,1890.4,mild
+2019-12-16,Palladium,1963.5,mild
+2019-12-17,Palladium,1918.5,mild
+2019-12-18,Palladium,1896.1,mild
+2019-12-19,Palladium,1900.9,mild
+2019-12-20,Palladium,1808.8,mild
+2019-12-23,Palladium,1848.9,mild
+2019-12-24,Palladium,1851.7,mild
+2019-12-25,Palladium,1851.7,mild
+2019-12-26,Palladium,1868.5,mild
+2019-12-27,Palladium,1881.1,mild
+2019-12-30,Palladium,1880.3,mild
+2019-12-31,Palladium,1909.1,mild
+2020-01-01,Palladium,1909.1,mild
+2020-01-02,Palladium,1927.8,mild
+2020-01-03,Palladium,1955.5,mild
+2020-01-06,Palladium,1989.4,mild
+2020-01-07,Palladium,2014.1,mild
+2020-01-08,Palladium,2061.2,mild
+2020-01-09,Palladium,2060.2,mild
+2020-01-10,Palladium,2072.7,mild
+2020-01-13,Palladium,2078.9,mild
+2020-01-14,Palladium,2123.3,mild
+2020-01-15,Palladium,2176.1,mild
+2020-01-16,Palladium,2188.8,mild
+2020-01-17,Palladium,2237.9,mild
+2020-01-20,Palladium,2237.9,mild
+2020-01-21,Palladium,2245.7,mild
+2020-01-22,Palladium,2348.6,mild
+2020-01-23,Palladium,2342.0,mild
+2020-01-24,Palladium,2329.3,mild
+2020-01-27,Palladium,2208.6,mild
+2020-01-28,Palladium,2230.1,mild
+2020-01-29,Palladium,2247.2,mild
+2020-01-30,Palladium,2237.6,mild
+2020-01-31,Palladium,2246.6,mild
+2020-02-03,Palladium,2255.4,mild
+2020-02-04,Palladium,2357.5,mild
+2020-02-05,Palladium,2348.6,mild
+2020-02-06,Palladium,2259.1,mild
+2020-02-10,Palladium,2271.7,mild
+2020-02-11,Palladium,2287.6,mild
+2020-02-12,Palladium,2344.4,mild
+2020-02-13,Palladium,2372.9,mild
+2020-02-14,Palladium,2338.6,mild
+2020-02-18,Palladium,2519.5,mild
+2020-02-19,Palladium,2593.1,mild
+2020-02-20,Palladium,2595.8,mild
+2020-02-21,Palladium,2627.3,extreme
+2020-02-24,Palladium,2543.2,mild
+2020-02-25,Palladium,2669.7,extreme
+2020-02-26,Palladium,2714.7,extreme
+2020-02-27,Palladium,2744.7,extreme
+2020-02-28,Palladium,2508.8,mild
+2020-03-02,Palladium,2445.4,mild
+2020-03-03,Palladium,2405.2,mild
+2020-03-04,Palladium,2402.7,mild
+2020-03-05,Palladium,2487.1,mild
+2020-03-06,Palladium,2456.9,mild
+2020-03-09,Palladium,2347.5,mild
+2020-03-10,Palladium,2259.4,mild
+2020-03-11,Palladium,1945.0,mild
+2020-03-23,Palladium,1817.0,mild
+2020-03-24,Palladium,2277.7,mild
+2020-03-25,Palladium,2256.2,mild
+2020-03-26,Palladium,2226.8,mild
+2020-03-27,Palladium,2226.8,mild
+2020-03-30,Palladium,2333.3,mild
+2020-03-31,Palladium,2169.3,mild
+2020-04-01,Palladium,2150.2,mild
+2020-04-02,Palladium,2134.5,mild
+2020-04-03,Palladium,2134.5,mild
+2020-04-06,Palladium,2122.8,mild
+2020-04-07,Palladium,2123.7,mild
+2020-04-08,Palladium,2138.5,mild
+2020-04-09,Palladium,2138.5,mild
+2020-04-10,Palladium,2138.5,mild
+2020-04-13,Palladium,2213.9,mild
+2020-04-14,Palladium,2182.1,mild
+2020-04-15,Palladium,2149.2,mild
+2020-04-16,Palladium,2159.4,mild
+2020-04-17,Palladium,2159.4,mild
+2020-04-20,Palladium,1936.1,mild
+2020-04-21,Palladium,1920.7,mild
+2020-04-22,Palladium,2029.5,mild
+2020-04-23,Palladium,2013.8,mild
+2020-04-24,Palladium,2013.8,mild
+2020-04-27,Palladium,1887.0,mild
+2020-04-28,Palladium,1913.5,mild
+2020-04-29,Palladium,1952.1,mild
+2020-04-30,Palladium,1883.5,mild
+2020-05-01,Palladium,1883.5,mild
+2020-05-04,Palladium,1752.2,mild
+2020-05-05,Palladium,1753.6,mild
+2020-05-06,Palladium,1830.4,mild
+2020-05-07,Palladium,1815.8,mild
+2020-05-08,Palladium,1815.8,mild
+2020-05-11,Palladium,1830.1,mild
+2020-05-12,Palladium,1785.4,mild
+2020-05-13,Palladium,1792.9,mild
+2020-05-14,Palladium,1852.6,mild
+2020-05-15,Palladium,1852.6,mild
+2020-05-18,Palladium,2069.4,mild
+2020-05-19,Palladium,2154.1,mild
+2020-05-20,Palladium,2057.0,mild
+2020-05-21,Palladium,1971.8,mild
+2020-05-22,Palladium,1971.8,mild
+2020-05-25,Palladium,1983.8,mild
+2020-05-26,Palladium,1971.3,mild
+2020-05-27,Palladium,1901.6,mild
+2020-05-28,Palladium,1934.5,mild
+2020-05-29,Palladium,1934.5,mild
+2020-06-01,Palladium,1954.0,mild
+2020-06-02,Palladium,1933.4,mild
+2020-06-03,Palladium,1902.5,mild
+2020-06-04,Palladium,1929.9,mild
+2020-06-05,Palladium,1929.9,mild
+2020-06-08,Palladium,1948.2,mild
+2020-06-09,Palladium,1911.9,mild
+2020-06-10,Palladium,1889.9,mild
+2020-06-11,Palladium,1918.3,mild
+2020-06-12,Palladium,1918.3,mild
+2020-06-15,Palladium,1922.5,mild
+2020-06-16,Palladium,1905.3,mild
+2020-06-17,Palladium,1888.4,mild
+2020-06-18,Palladium,1888.2,mild
+2020-06-19,Palladium,1888.2,mild
+2020-06-22,Palladium,1930.9,mild
+2020-06-23,Palladium,1868.3,mild
+2020-06-24,Palladium,1824.9,mild
+2020-06-25,Palladium,1874.2,mild
+2020-06-26,Palladium,1874.2,mild
+2020-06-29,Palladium,1945.4,mild
+2020-06-30,Palladium,1909.2,mild
+2020-07-01,Palladium,1906.1,mild
+2020-07-02,Palladium,1906.1,mild
+2020-07-03,Palladium,1906.1,mild
+2020-07-06,Palladium,1930.1,mild
+2020-07-07,Palladium,1916.8,mild
+2020-07-08,Palladium,1941.7,mild
+2020-07-09,Palladium,1972.9,mild
+2020-07-10,Palladium,1972.9,mild
+2020-07-13,Palladium,1964.1,mild
+2020-07-14,Palladium,1988.5,mild
+2020-07-15,Palladium,2003.6,mild
+2020-07-16,Palladium,2050.2,mild
+2020-07-17,Palladium,2050.2,mild
+2020-07-20,Palladium,2166.7,mild
+2020-07-21,Palladium,2207.5,mild
+2020-07-22,Palladium,2218.3,mild
+2020-07-23,Palladium,2272.6,mild
+2020-07-24,Palladium,2272.6,mild
+2020-07-27,Palladium,2344.0,mild
+2020-07-28,Palladium,2239.7,mild
+2020-07-29,Palladium,2114.9,mild
+2020-07-30,Palladium,2135.3,mild
+2020-07-31,Palladium,2135.3,mild
+2020-08-03,Palladium,2161.0,mild
+2020-08-04,Palladium,2207.6,mild
+2020-08-05,Palladium,2251.8,mild
+2020-08-06,Palladium,2172.6,mild
+2020-08-07,Palladium,2172.6,mild
+2020-08-10,Palladium,2171.6,mild
+2020-08-11,Palladium,2164.8,mild
+2020-08-12,Palladium,2213.4,mild
+2020-08-13,Palladium,2140.4,mild
+2020-08-14,Palladium,2140.4,mild
+2020-08-17,Palladium,2225.2,mild
+2020-08-18,Palladium,2176.0,mild
+2020-08-19,Palladium,2183.8,mild
+2020-08-20,Palladium,2177.2,mild
+2020-08-21,Palladium,2177.2,mild
+2020-08-24,Palladium,2169.3,mild
+2020-08-25,Palladium,2188.2,mild
+2020-08-26,Palladium,2159.2,mild
+2020-08-27,Palladium,2197.8,mild
+2020-08-28,Palladium,2197.8,mild
+2020-08-31,Palladium,2277.2,mild
+2020-09-01,Palladium,2242.9,mild
+2020-09-02,Palladium,2297.0,mild
+2020-09-03,Palladium,2318.6,mild
+2020-09-04,Palladium,2318.6,mild
+2020-09-07,Palladium,2281.2,mild
+2020-09-08,Palladium,2294.0,mild
+2020-09-09,Palladium,2307.4,mild
+2020-09-10,Palladium,2313.1,mild
+2020-09-11,Palladium,2313.1,mild
+2020-09-14,Palladium,2396.3,mild
+2020-09-15,Palladium,2399.9,mild
+2020-09-16,Palladium,2317.6,mild
+2020-09-17,Palladium,2364.0,mild
+2020-09-18,Palladium,2364.0,mild
+2020-09-21,Palladium,2216.0,mild
+2020-09-22,Palladium,2244.7,mild
+2020-09-23,Palladium,2213.0,mild
+2020-09-24,Palladium,2207.7,mild
+2020-09-25,Palladium,2207.7,mild
+2020-09-28,Palladium,2320.1,mild
+2020-09-29,Palladium,2321.3,mild
+2020-09-30,Palladium,2319.0,mild
+2020-10-01,Palladium,2315.8,mild
+2020-10-02,Palladium,2315.8,mild
+2020-10-05,Palladium,2382.0,mild
+2020-10-06,Palladium,2372.9,mild
+2020-10-07,Palladium,2393.8,mild
+2020-10-08,Palladium,2454.0,mild
+2020-10-09,Palladium,2454.0,mild
+2020-10-12,Palladium,2335.1,mild
+2020-10-13,Palladium,2357.1,mild
+2020-10-14,Palladium,2357.9,mild
+2020-10-15,Palladium,2333.1,mild
+2020-10-16,Palladium,2333.1,mild
+2020-10-19,Palladium,2408.5,mild
+2020-10-20,Palladium,2419.8,mild
+2020-10-21,Palladium,2388.6,mild
+2020-10-22,Palladium,2391.4,mild
+2020-10-23,Palladium,2391.4,mild
+2020-10-26,Palladium,2347.3,mild
+2020-10-27,Palladium,2244.3,mild
+2020-10-28,Palladium,2191.4,mild
+2020-10-29,Palladium,2191.4,mild
+2020-10-30,Palladium,2210.3,mild
+2020-11-02,Palladium,2214.3,mild
+2020-11-03,Palladium,2292.4,mild
+2020-11-04,Palladium,2302.3,mild
+2020-11-05,Palladium,2378.3,mild
+2020-11-06,Palladium,2495.2,mild
+2020-11-09,Palladium,2494.6,mild
+2020-11-10,Palladium,2467.2,mild
+2020-11-11,Palladium,2312.9,mild
+2020-11-12,Palladium,2338.4,mild
+2020-11-13,Palladium,2326.3,mild
+2020-11-16,Palladium,2342.2,mild
+2020-11-17,Palladium,2323.6,mild
+2020-11-18,Palladium,2351.3,mild
+2020-11-19,Palladium,2317.4,mild
+2020-11-20,Palladium,2321.2,mild
+2020-11-23,Palladium,2351.8,mild
+2020-11-24,Palladium,2350.1,mild
+2020-11-25,Palladium,2341.6,mild
+2020-11-26,Palladium,2341.6,mild
+2020-11-27,Palladium,2424.4,mild
+2020-11-30,Palladium,2392.8,mild
+2020-12-01,Palladium,2417.3,mild
+2020-12-02,Palladium,2397.4,mild
+2020-12-03,Palladium,2302.1,mild
+2020-12-04,Palladium,2345.8,mild
+2020-12-07,Palladium,2339.9,mild
+2020-12-08,Palladium,2316.7,mild
+2020-12-09,Palladium,2280.3,mild
+2020-12-10,Palladium,2325.0,mild
+2020-12-11,Palladium,2322.1,mild
+2020-12-14,Palladium,2307.9,mild
+2020-12-15,Palladium,2314.2,mild
+2020-12-16,Palladium,2338.7,mild
+2020-12-17,Palladium,2338.0,mild
+2020-12-18,Palladium,2360.9,mild
+2020-12-21,Palladium,2304.4,mild
+2020-12-22,Palladium,2311.1,mild
+2020-12-23,Palladium,2326.3,mild
+2020-12-24,Palladium,2333.1,mild
+2020-12-25,Palladium,2333.1,mild
+2020-12-28,Palladium,2339.0,mild
+2020-12-29,Palladium,2331.5,mild
+2020-12-30,Palladium,2373.1,mild
+2020-12-31,Palladium,2448.5,mild
+2021-01-01,Palladium,2448.5,mild
+2021-01-04,Palladium,2385.9,mild
+2021-01-05,Palladium,2488.1,mild
+2021-01-06,Palladium,2442.8,mild
+2021-01-07,Palladium,2426.3,mild
+2021-01-08,Palladium,2359.7,mild
+2021-01-11,Palladium,2373.5,mild
+2021-01-12,Palladium,2370.9,mild
+2021-01-13,Palladium,2391.8,mild
+2021-01-14,Palladium,2418.0,mild
+2021-01-15,Palladium,2389.8,mild
+2021-01-18,Palladium,2389.8,mild
+2021-01-19,Palladium,2359.7,mild
+2021-01-20,Palladium,2397.9,mild
+2021-01-21,Palladium,2369.8,mild
+2021-01-22,Palladium,2359.9,mild
+2021-01-25,Palladium,2341.6,mild
+2021-01-26,Palladium,2319.7,mild
+2021-01-27,Palladium,2305.2,mild
+2021-01-28,Palladium,2305.2,mild
+2021-01-29,Palladium,2305.2,mild
+2021-02-01,Palladium,2240.4,mild
+2021-02-02,Palladium,2226.4,mild
+2021-02-03,Palladium,2275.3,mild
+2021-02-04,Palladium,2279.4,mild
+2021-02-05,Palladium,2325.0,mild
+2021-02-08,Palladium,2335.4,mild
+2021-02-09,Palladium,2319.3,mild
+2021-02-10,Palladium,2351.2,mild
+2021-02-11,Palladium,2345.7,mild
+2021-02-12,Palladium,2381.3,mild
+2021-02-15,Palladium,2381.3,mild
+2021-02-16,Palladium,2386.9,mild
+2021-02-17,Palladium,2368.4,mild
+2021-02-18,Palladium,2347.5,mild
+2021-02-19,Palladium,2367.9,mild
+2021-02-22,Palladium,2390.8,mild
+2021-02-23,Palladium,2333.8,mild
+2021-02-24,Palladium,2420.8,mild
+2021-02-25,Palladium,2420.8,mild
+2021-02-26,Palladium,2420.8,mild
+2021-03-01,Palladium,2344.6,mild
+2021-03-02,Palladium,2365.2,mild
+2021-03-03,Palladium,2350.9,mild
+2021-03-04,Palladium,2339.1,mild
+2021-03-05,Palladium,2325.7,mild
+2021-03-08,Palladium,2310.5,mild
+2021-03-09,Palladium,2288.8,mild
+2021-03-10,Palladium,2289.0,mild
+2021-03-11,Palladium,2337.5,mild
+2021-03-12,Palladium,2356.6,mild
+2021-03-15,Palladium,2487.8,mild
+2021-03-16,Palladium,2533.8,mild
+2021-03-17,Palladium,2658.3,extreme
+2021-03-18,Palladium,2626.6,extreme
+2021-03-19,Palladium,2626.6,extreme
+2021-03-22,Palladium,2612.6,extreme
+2021-03-23,Palladium,2635.3,extreme
+2021-03-24,Palladium,2610.7,extreme
+2021-03-25,Palladium,2670.4,extreme
+2021-03-26,Palladium,2670.4,extreme
+2021-03-29,Palladium,2525.0,mild
+2021-03-30,Palladium,2525.0,mild
+2021-03-31,Palladium,2653.4,extreme
+2021-04-01,Palladium,2653.4,extreme
+2021-04-02,Palladium,2653.4,extreme
+2021-04-05,Palladium,2687.8,extreme
+2021-04-06,Palladium,2618.7,extreme
+2021-04-07,Palladium,2623.0,extreme
+2021-04-08,Palladium,2630.7,extreme
+2021-04-09,Palladium,2630.7,extreme
+2021-04-12,Palladium,2691.6,extreme
+2021-04-13,Palladium,2674.1,extreme
+2021-04-14,Palladium,2734.1,extreme
+2021-04-15,Palladium,2769.4,extreme
+2021-04-16,Palladium,2769.4,extreme
+2021-04-19,Palladium,2752.1,extreme
+2021-04-20,Palladium,2870.3,extreme
+2021-04-21,Palladium,2837.6,extreme
+2021-04-22,Palladium,2851.7,extreme
+2021-04-23,Palladium,2851.7,extreme
+2021-04-26,Palladium,2947.3,extreme
+2021-04-27,Palladium,2924.9,extreme
+2021-04-28,Palladium,2924.9,extreme
+2021-04-29,Palladium,2924.9,extreme
+2021-04-30,Palladium,2924.9,extreme
+2021-05-03,Palladium,2981.6,extreme
+2021-05-04,Palladium,2976.8,extreme
+2021-05-05,Palladium,2951.4,extreme
+2021-05-06,Palladium,2929.1,extreme
+2021-05-07,Palladium,2929.1,extreme
+2021-05-10,Palladium,2923.2,extreme
+2021-05-11,Palladium,2846.0,extreme
+2021-05-12,Palladium,2861.6,extreme
+2021-05-13,Palladium,2891.6,extreme
+2021-05-14,Palladium,2891.6,extreme
+2021-05-17,Palladium,2903.4,extreme
+2021-05-18,Palladium,2885.1,extreme
+2021-05-19,Palladium,2870.5,extreme
+2021-05-20,Palladium,2775.3,extreme
+2021-05-21,Palladium,2775.3,extreme
+2021-05-24,Palladium,2777.5,extreme
+2021-05-25,Palladium,2748.5,extreme
+2021-05-26,Palladium,2748.5,extreme
+2021-05-27,Palladium,2748.5,extreme
+2021-05-28,Palladium,2748.5,extreme
+2021-05-31,Palladium,2856.7,extreme
+2021-06-01,Palladium,2862.0,extreme
+2021-06-02,Palladium,2822.7,extreme
+2021-06-03,Palladium,2837.9,extreme
+2021-06-04,Palladium,2837.9,extreme
+2021-06-07,Palladium,2802.6,extreme
+2021-06-08,Palladium,2770.0,extreme
+2021-06-09,Palladium,2774.7,extreme
+2021-06-10,Palladium,2777.7,extreme
+2021-06-11,Palladium,2777.7,extreme
+2021-06-14,Palladium,2761.8,extreme
+2021-06-15,Palladium,2834.0,extreme
+2021-06-16,Palladium,2509.6,mild
+2021-06-17,Palladium,2465.7,mild
+2021-06-18,Palladium,2465.7,mild
+2021-06-21,Palladium,2554.7,mild
+2021-06-22,Palladium,2626.3,extreme
+2021-06-23,Palladium,2639.8,extreme
+2021-06-24,Palladium,2633.3,extreme
+2021-06-25,Palladium,2633.3,extreme
+2021-06-28,Palladium,2679.4,extreme
+2021-06-29,Palladium,2777.4,extreme
+2021-06-30,Palladium,2767.1,extreme
+2021-07-01,Palladium,2790.7,extreme
+2021-07-02,Palladium,2790.7,extreme
+2021-07-05,Palladium,2794.3,extreme
+2021-07-06,Palladium,2846.5,extreme
+2021-07-07,Palladium,2808.4,extreme
+2021-07-08,Palladium,2810.2,extreme
+2021-07-09,Palladium,2810.2,extreme
+2021-07-12,Palladium,2830.7,extreme
+2021-07-13,Palladium,2824.5,extreme
+2021-07-14,Palladium,2727.5,extreme
+2021-07-15,Palladium,2635.5,extreme
+2021-07-16,Palladium,2635.5,extreme
+2021-07-19,Palladium,2638.6,extreme
+2021-07-20,Palladium,2653.1,extreme
+2021-07-21,Palladium,2702.8,extreme
+2021-07-22,Palladium,2660.6,extreme
+2021-07-23,Palladium,2660.6,extreme
+2021-07-26,Palladium,2604.9,mild
+2021-07-27,Palladium,2620.8,extreme
+2021-07-28,Palladium,2642.7,extreme
+2021-07-29,Palladium,2655.8,extreme
+2021-07-30,Palladium,2655.8,extreme
+2021-08-02,Palladium,2644.9,extreme
+2021-08-03,Palladium,2651.3,extreme
+2021-08-04,Palladium,2654.7,extreme
+2021-08-05,Palladium,2629.7,extreme
+2021-08-06,Palladium,2629.7,extreme
+2021-08-09,Palladium,2649.6,extreme
+2021-08-10,Palladium,2632.4,extreme
+2021-08-11,Palladium,2623.5,extreme
+2021-08-12,Palladium,2656.1,extreme
+2021-08-13,Palladium,2656.1,extreme
+2021-08-16,Palladium,2493.8,mild
+2021-08-17,Palladium,2421.5,mild
+2021-08-18,Palladium,2296.1,mild
+2021-08-19,Palladium,2274.7,mild
+2021-08-20,Palladium,2274.7,mild
+2021-08-23,Palladium,2440.7,mild
+2021-08-24,Palladium,2428.9,mild
+2021-08-25,Palladium,2386.5,mild
+2021-08-26,Palladium,2402.2,mild
+2021-08-27,Palladium,2402.2,mild
+2021-08-30,Palladium,2468.3,mild
+2021-08-31,Palladium,2438.4,mild
+2021-09-01,Palladium,2397.4,mild
+2021-09-02,Palladium,2414.4,mild
+2021-09-03,Palladium,2414.4,mild
+2021-09-06,Palladium,2351.2,mild
+2021-09-07,Palladium,2235.5,mild
+2021-09-08,Palladium,2139.8,mild
+2021-09-09,Palladium,2123.0,mild
+2021-09-10,Palladium,2123.0,mild
+2021-09-13,Palladium,1972.6,mild
+2021-09-14,Palladium,1990.2,mild
+2021-09-15,Palladium,2018.9,mild
+2021-09-16,Palladium,1981.2,mild
+2021-09-17,Palladium,1981.2,mild
+2021-09-20,Palladium,1894.5,mild
+2021-09-21,Palladium,2036.2,mild
+2021-09-22,Palladium,1971.8,mild
+2021-09-23,Palladium,1951.1,mild
+2021-09-24,Palladium,1951.1,mild
+2021-09-27,Palladium,1854.2,mild
+2021-09-28,Palladium,1833.1,mild
+2021-09-29,Palladium,1902.6,mild
+2021-09-30,Palladium,1906.5,mild
+2021-10-01,Palladium,1906.5,mild
+2021-10-04,Palladium,1902.2,mild
+2021-10-05,Palladium,1870.6,mild
+2021-10-06,Palladium,1957.8,mild
+2021-10-07,Palladium,2075.8,mild
+2021-10-08,Palladium,2075.8,mild
+2021-10-11,Palladium,2050.6,mild
+2021-10-12,Palladium,2108.9,mild
+2021-10-13,Palladium,2153.7,mild
+2021-10-14,Palladium,2079.4,mild
+2021-10-15,Palladium,2079.4,mild
+2021-10-18,Palladium,2103.7,mild
+2021-10-19,Palladium,2085.2,mild
+2021-10-20,Palladium,2020.9,mild
+2021-10-21,Palladium,2038.4,mild
+2021-10-22,Palladium,2038.4,mild
+2021-10-25,Palladium,2007.6,mild
+2021-10-26,Palladium,1977.1,mild
+2021-10-27,Palladium,1995.2,mild
+2021-10-28,Palladium,1995.2,mild
+2021-10-29,Palladium,1986.1,mild
+2021-11-01,Palladium,2013.2,mild
+2021-11-02,Palladium,1984.1,mild
+2021-11-03,Palladium,1993.3,mild
+2021-11-04,Palladium,2024.5,mild
+2021-11-05,Palladium,2024.5,mild
+2021-11-08,Palladium,2074.6,mild
+2021-11-09,Palladium,2019.0,mild
+2021-11-10,Palladium,2035.8,mild
+2021-11-11,Palladium,2059.5,mild
+2021-11-12,Palladium,2114.6,mild
+2021-11-15,Palladium,2153.0,mild
+2021-11-16,Palladium,2164.5,mild
+2021-11-17,Palladium,2181.4,mild
+2021-11-18,Palladium,2134.3,mild
+2021-11-19,Palladium,2070.1,mild
+2021-11-22,Palladium,1947.5,mild
+2021-11-23,Palladium,1847.2,mild
+2021-11-24,Palladium,1844.8,mild
+2021-11-25,Palladium,1844.8,mild
+2021-11-26,Palladium,1786.0,mild
+2021-11-29,Palladium,1784.2,mild
+2021-12-02,Palladium,1769.9,mild
+2021-12-03,Palladium,1811.1,mild
+2021-12-06,Palladium,1844.2,mild
+2021-12-07,Palladium,1845.5,mild
+2021-12-08,Palladium,1851.0,mild
+2021-12-09,Palladium,1811.8,mild
+2021-12-17,Palladium,1782.6,mild
+2021-12-21,Palladium,1790.9,mild
+2021-12-22,Palladium,1887.1,mild
+2021-12-23,Palladium,1954.7,mild
+2021-12-24,Palladium,1954.7,mild
+2021-12-27,Palladium,1944.3,mild
+2021-12-28,Palladium,1998.4,mild
+2021-12-29,Palladium,1984.8,mild
+2021-12-30,Palladium,1979.2,mild
+2021-12-31,Palladium,1908.1,mild
+2022-01-03,Palladium,1822.0,mild
+2022-01-04,Palladium,1855.7,mild
+2022-01-05,Palladium,1898.6,mild
+2022-01-06,Palladium,1869.9,mild
+2022-01-07,Palladium,1917.6,mild
+2022-01-10,Palladium,1905.2,mild
+2022-01-11,Palladium,1918.1,mild
+2022-01-12,Palladium,1911.8,mild
+2022-01-13,Palladium,1886.0,mild
+2022-01-14,Palladium,1874.2,mild
+2022-01-17,Palladium,1874.2,mild
+2022-01-18,Palladium,1900.6,mild
+2022-01-19,Palladium,2004.4,mild
+2022-01-20,Palladium,2069.7,mild
+2022-01-21,Palladium,2100.3,mild
+2022-01-24,Palladium,2137.0,mild
+2022-01-25,Palladium,2184.9,mild
+2022-01-26,Palladium,2346.6,mild
+2022-01-27,Palladium,2362.5,mild
+2022-01-28,Palladium,2368.7,mild
+2022-01-31,Palladium,2349.2,mild
+2022-02-01,Palladium,2343.2,mild
+2022-02-02,Palladium,2366.2,mild
+2022-02-03,Palladium,2314.4,mild
+2022-02-04,Palladium,2287.4,mild
+2022-02-07,Palladium,2256.8,mild
+2022-02-08,Palladium,2260.9,mild
+2022-02-09,Palladium,2281.6,mild
+2022-02-10,Palladium,2261.8,mild
+2022-02-11,Palladium,2190.1,mild
+2022-02-14,Palladium,2342.5,mild
+2022-02-15,Palladium,2248.0,mild
+2022-02-16,Palladium,2268.3,mild
+2022-02-17,Palladium,2356.6,mild
+2022-02-18,Palladium,2335.4,mild
+2022-02-21,Palladium,2335.4,mild
+2022-02-22,Palladium,2369.3,mild
+2022-02-23,Palladium,2438.1,mild
+2022-02-24,Palladium,2498.6,mild
+2022-02-25,Palladium,2360.7,mild
+2022-02-28,Palladium,2500.5,mild
+2022-03-01,Palladium,2532.5,mild
+2022-03-02,Palladium,2662.6,extreme
+2022-03-03,Palladium,2728.8,extreme
+2022-03-04,Palladium,2979.9,extreme
+2022-03-07,Palladium,2899.9,extreme
+2022-03-08,Palladium,2966.5,extreme
+2022-03-09,Palladium,2944.8,extreme
+2022-03-10,Palladium,2917.0,extreme
+2022-03-11,Palladium,2792.9,extreme
+2022-03-14,Palladium,2407.4,mild
+2022-03-15,Palladium,2363.4,mild
+2022-03-16,Palladium,2488.1,mild
+2022-03-17,Palladium,2489.1,mild
+2022-03-18,Palladium,2489.1,mild
+2022-03-21,Palladium,2472.6,mild
+2022-03-22,Palladium,2515.4,mild
+2022-03-23,Palladium,2526.7,mild
+2022-03-24,Palladium,2390.4,mild
+2022-03-25,Palladium,2390.4,mild
+2022-03-28,Palladium,2108.8,mild
+2022-03-29,Palladium,2243.0,mild
+2022-03-30,Palladium,2255.5,mild
+2022-03-31,Palladium,2267.4,mild
+2022-04-01,Palladium,2267.4,mild
+2022-04-04,Palladium,2235.2,mild
+2022-04-05,Palladium,2184.6,mild
+2022-04-06,Palladium,2223.0,mild
+2022-04-07,Palladium,2420.0,mild
+2022-04-08,Palladium,2420.0,mild
+2022-04-11,Palladium,2353.7,mild
+2022-04-12,Palladium,2338.8,mild
+2022-04-13,Palladium,2354.3,mild
+2022-04-14,Palladium,2354.3,mild
+2022-04-15,Palladium,2354.3,mild
+2022-04-18,Palladium,2379.3,mild
+2022-04-19,Palladium,2458.8,mild
+2022-04-20,Palladium,2416.9,mild
+2022-04-21,Palladium,2373.0,mild
+2022-04-22,Palladium,2373.0,mild
+2022-04-25,Palladium,2172.9,mild
+2022-04-26,Palladium,2190.4,mild
+2022-04-27,Palladium,2208.6,mild
+2022-04-28,Palladium,2302.8,mild
+2022-04-29,Palladium,2302.8,mild
+2022-05-02,Palladium,2235.6,mild
+2022-05-03,Palladium,2233.3,mild
+2022-05-04,Palladium,2175.3,mild
+2022-05-05,Palladium,2021.2,mild
+2022-05-06,Palladium,2021.2,mild
+2022-05-09,Palladium,2042.0,mild
+2022-05-10,Palladium,2008.1,mild
+2022-05-11,Palladium,1861.0,mild
+2022-05-12,Palladium,1918.1,mild
+2022-05-13,Palladium,1918.1,mild
+2022-05-16,Palladium,2031.2,mild
+2022-05-17,Palladium,1991.6,mild
+2022-05-18,Palladium,1977.8,mild
+2022-05-19,Palladium,1939.2,mild
+2022-05-20,Palladium,1939.2,mild
+2022-05-23,Palladium,1985.9,mild
+2022-05-24,Palladium,1988.6,mild
+2022-05-25,Palladium,1992.8,mild
+2022-05-26,Palladium,2044.7,mild
+2022-05-27,Palladium,2044.7,mild
+2022-05-30,Palladium,1994.8,mild
+2022-05-31,Palladium,1991.8,mild
+2022-06-03,Palladium,1975.4,mild
+2022-06-06,Palladium,1955.7,mild
+2022-06-07,Palladium,1928.6,mild
+2022-06-08,Palladium,1906.2,mild
+2022-06-09,Palladium,1897.7,mild
+2022-06-10,Palladium,1897.7,mild
+2022-06-13,Palladium,1772.3,mild
+2022-06-14,Palladium,1826.0,mild
+2022-06-15,Palladium,1857.7,mild
+2022-06-16,Palladium,1789.8,mild
+2022-06-17,Palladium,1789.8,mild
+2022-06-20,Palladium,1853.8,mild
+2022-06-21,Palladium,1829.0,mild
+2022-06-22,Palladium,1815.2,mild
+2022-06-23,Palladium,1845.4,mild
+2022-06-24,Palladium,1845.4,mild
+2022-06-27,Palladium,1853.4,mild
+2022-06-28,Palladium,1939.6,mild
+2022-06-29,Palladium,1908.7,mild
+2022-06-30,Palladium,1930.8,mild
+2022-07-04,Palladium,1911.7,mild
+2022-07-05,Palladium,1889.2,mild
+2022-07-06,Palladium,1987.4,mild
+2022-07-07,Palladium,2151.2,mild
+2022-07-08,Palladium,2151.2,mild
+2022-07-11,Palladium,2010.2,mild
+2022-07-12,Palladium,1966.0,mild
+2022-07-13,Palladium,1892.7,mild
+2022-07-14,Palladium,1824.0,mild
+2022-07-15,Palladium,1824.0,mild
+2022-07-18,Palladium,1848.8,mild
+2022-07-19,Palladium,1856.0,mild
+2022-07-20,Palladium,1871.1,mild
+2022-07-21,Palladium,2013.2,mild
+2022-07-22,Palladium,2013.2,mild
+2022-07-25,Palladium,2005.8,mild
+2022-07-26,Palladium,1999.0,mild
+2022-07-27,Palladium,2079.4,mild
+2022-07-28,Palladium,2128.9,mild
+2022-07-29,Palladium,2128.9,mild
+2022-08-01,Palladium,2086.7,mild
+2022-08-02,Palladium,2004.4,mild
+2022-08-03,Palladium,2075.3,mild
+2022-08-04,Palladium,2126.3,mild
+2022-08-05,Palladium,2126.3,mild
+2022-08-08,Palladium,2216.6,mild
+2022-08-09,Palladium,2243.7,mild
+2022-08-10,Palladium,2285.8,mild
+2022-08-11,Palladium,2216.8,mild
+2022-08-12,Palladium,2216.8,mild
+2022-08-15,Palladium,2146.6,mild
+2022-08-16,Palladium,2134.3,mild
+2022-08-17,Palladium,2147.0,mild
+2022-08-18,Palladium,2129.0,mild
+2022-08-19,Palladium,2129.0,mild
+2022-08-22,Palladium,1971.4,mild
+2022-08-23,Palladium,2024.1,mild
+2022-08-24,Palladium,2138.3,mild
+2022-08-25,Palladium,2120.4,mild
+2022-08-26,Palladium,2120.4,mild
+2022-08-29,Palladium,2079.6,mild
+2022-08-30,Palladium,2066.6,mild
+2022-08-31,Palladium,1982.8,mild
+2022-09-01,Palladium,2012.3,mild
+2022-09-02,Palladium,2012.3,mild
+2022-09-05,Palladium,1956.4,mild
+2022-09-06,Palladium,2007.9,mild
+2022-09-07,Palladium,2132.0,mild
+2022-09-08,Palladium,2162.7,mild
+2022-09-09,Palladium,2162.7,mild
+2022-09-12,Palladium,2095.7,mild
+2022-09-13,Palladium,2158.3,mild
+2022-09-14,Palladium,2131.3,mild
+2022-09-15,Palladium,2098.1,mild
+2022-09-16,Palladium,2098.1,mild
+2022-09-19,Palladium,2156.1,mild
+2022-09-20,Palladium,2109.0,mild
+2022-09-21,Palladium,2160.5,mild
+2022-09-22,Palladium,2056.5,mild
+2022-09-23,Palladium,2056.5,mild
+2022-09-26,Palladium,2076.9,mild
+2022-09-27,Palladium,2150.6,mild
+2022-09-28,Palladium,2202.1,mild
+2022-09-29,Palladium,2173.2,mild
+2022-09-30,Palladium,2173.2,mild
+2022-10-03,Palladium,2321.2,mild
+2022-10-04,Palladium,2246.9,mild
+2022-10-05,Palladium,2266.5,mild
+2022-10-06,Palladium,2182.3,mild
+2022-10-07,Palladium,2182.3,mild
+2022-10-10,Palladium,2140.6,mild
+2022-10-11,Palladium,2126.6,mild
+2022-10-12,Palladium,2107.4,mild
+2022-10-13,Palladium,1987.5,mild
+2022-10-14,Palladium,1987.5,mild
+2022-10-17,Palladium,2004.1,mild
+2022-10-18,Palladium,1985.7,mild
+2022-10-19,Palladium,2069.8,mild
+2022-10-20,Palladium,1995.7,mild
+2022-10-21,Palladium,1995.7,mild
+2022-10-24,Palladium,1909.0,mild
+2022-10-25,Palladium,1950.7,mild
+2022-10-26,Palladium,1928.4,mild
+2022-10-27,Palladium,1894.6,mild
+2022-10-28,Palladium,1894.6,mild
+2022-10-31,Palladium,1874.4,mild
+2022-11-01,Palladium,1847.5,mild
+2022-11-02,Palladium,1795.5,mild
+2022-11-03,Palladium,1836.9,mild
+2022-11-04,Palladium,1836.9,mild
+2022-11-07,Palladium,1894.9,mild
+2022-11-08,Palladium,1930.0,mild
+2022-11-09,Palladium,1856.6,mild
+2022-11-10,Palladium,1951.6,mild
+2022-11-11,Palladium,2023.9,mild
+2022-11-14,Palladium,2036.9,mild
+2022-11-15,Palladium,2075.7,mild
+2022-11-16,Palladium,2078.7,mild
+2022-11-17,Palladium,2007.4,mild
+2022-11-18,Palladium,1936.3,mild
+2022-11-21,Palladium,1850.4,mild
+2022-11-22,Palladium,1854.9,mild
+2022-11-23,Palladium,1873.3,mild
+2022-11-24,Palladium,1873.3,mild
+2022-11-25,Palladium,1818.9,mild
+2022-11-28,Palladium,1834.5,mild
+2022-11-29,Palladium,1816.5,mild
+2022-11-30,Palladium,1845.0,mild
+2022-12-01,Palladium,1924.6,mild
+2022-12-02,Palladium,1879.4,mild
+2022-12-05,Palladium,1839.6,mild
+2022-12-06,Palladium,1829.1,mild
+2022-12-07,Palladium,1831.9,mild
+2022-12-08,Palladium,1908.4,mild
+2022-12-09,Palladium,1946.4,mild
+2022-12-12,Palladium,1861.7,mild
+2022-12-13,Palladium,1914.3,mild
+2022-12-14,Palladium,1899.7,mild
+2022-12-15,Palladium,1791.2,mild
+2022-12-27,Palladium,1804.5,mild
+2022-12-28,Palladium,1763.2,mild
+2022-12-29,Palladium,1807.9,mild
+2022-12-30,Palladium,1789.3,mild
+2008-03-03,Platinum,2216.6,mild
+2008-03-04,Platinum,2242.0,mild
+2008-03-05,Platinum,2251.1,mild
+2021-07-01,S&P 500,4319.94,mild
+2021-07-02,S&P 500,4352.34,mild
+2021-07-05,S&P 500,4352.34,mild
+2021-07-06,S&P 500,4343.54,mild
+2021-07-07,S&P 500,4358.13,mild
+2021-07-08,S&P 500,4320.82,mild
+2021-07-09,S&P 500,4369.55,mild
+2021-07-12,S&P 500,4384.63,mild
+2021-07-13,S&P 500,4369.21,mild
+2021-07-14,S&P 500,4374.3,mild
+2021-07-15,S&P 500,4360.03,mild
+2021-07-16,S&P 500,4327.16,mild
+2021-07-20,S&P 500,4323.06,mild
+2021-07-21,S&P 500,4358.69,mild
+2021-07-22,S&P 500,4367.48,mild
+2021-07-23,S&P 500,4411.79,mild
+2021-07-26,S&P 500,4422.3,mild
+2021-07-27,S&P 500,4401.46,mild
+2021-07-28,S&P 500,4400.64,mild
+2021-07-29,S&P 500,4419.15,mild
+2021-07-30,S&P 500,4395.26,mild
+2021-08-02,S&P 500,4387.16,mild
+2021-08-03,S&P 500,4423.15,mild
+2021-08-04,S&P 500,4402.66,mild
+2021-08-05,S&P 500,4429.1,mild
+2021-08-06,S&P 500,4436.52,mild
+2021-08-09,S&P 500,4432.35,mild
+2021-08-10,S&P 500,4436.75,mild
+2021-08-11,S&P 500,4442.41,mild
+2021-08-12,S&P 500,4460.83,mild
+2021-08-13,S&P 500,4468.0,mild
+2021-08-16,S&P 500,4479.71,mild
+2021-08-17,S&P 500,4448.08,mild
+2021-08-18,S&P 500,4400.27,mild
+2021-08-19,S&P 500,4405.8,mild
+2021-08-20,S&P 500,4441.67,mild
+2021-08-23,S&P 500,4479.53,mild
+2021-08-24,S&P 500,4486.23,mild
+2021-08-25,S&P 500,4496.19,mild
+2021-08-26,S&P 500,4470.0,mild
+2021-08-27,S&P 500,4509.37,mild
+2021-08-30,S&P 500,4528.79,mild
+2021-08-31,S&P 500,4522.68,mild
+2021-09-01,S&P 500,4524.09,mild
+2021-09-02,S&P 500,4536.95,mild
+2021-09-03,S&P 500,4535.43,mild
+2021-09-06,S&P 500,4535.43,mild
+2021-09-07,S&P 500,4520.03,mild
+2021-09-08,S&P 500,4514.07,mild
+2021-09-09,S&P 500,4493.28,mild
+2021-09-10,S&P 500,4458.58,mild
+2021-09-13,S&P 500,4468.73,mild
+2021-09-14,S&P 500,4443.05,mild
+2021-09-15,S&P 500,4480.7,mild
+2021-09-16,S&P 500,4473.75,mild
+2021-09-17,S&P 500,4432.99,mild
+2021-09-20,S&P 500,4357.73,mild
+2021-09-21,S&P 500,4354.19,mild
+2021-09-22,S&P 500,4395.64,mild
+2021-09-23,S&P 500,4448.98,mild
+2021-09-24,S&P 500,4455.48,mild
+2021-09-27,S&P 500,4443.11,mild
+2021-09-28,S&P 500,4352.63,mild
+2021-09-29,S&P 500,4359.46,mild
+2021-10-01,S&P 500,4357.04,mild
+2021-10-05,S&P 500,4345.72,mild
+2021-10-06,S&P 500,4363.55,mild
+2021-10-07,S&P 500,4399.76,mild
+2021-10-08,S&P 500,4391.34,mild
+2021-10-11,S&P 500,4361.19,mild
+2021-10-12,S&P 500,4350.65,mild
+2021-10-13,S&P 500,4363.8,mild
+2021-10-14,S&P 500,4438.26,mild
+2021-10-15,S&P 500,4471.37,mild
+2021-10-18,S&P 500,4486.46,mild
+2021-10-19,S&P 500,4519.63,mild
+2021-10-20,S&P 500,4536.19,mild
+2021-10-21,S&P 500,4549.78,mild
+2021-10-22,S&P 500,4544.9,mild
+2021-10-25,S&P 500,4566.48,mild
+2021-10-26,S&P 500,4574.79,mild
+2021-10-27,S&P 500,4551.68,mild
+2021-10-28,S&P 500,4596.42,mild
+2021-10-29,S&P 500,4605.38,mild
+2021-11-01,S&P 500,4613.67,mild
+2021-11-02,S&P 500,4630.65,mild
+2021-11-03,S&P 500,4660.57,mild
+2021-11-04,S&P 500,4680.06,mild
+2021-11-05,S&P 500,4697.53,mild
+2021-11-08,S&P 500,4701.7,mild
+2021-11-09,S&P 500,4685.25,mild
+2021-11-10,S&P 500,4646.71,mild
+2021-11-11,S&P 500,4649.27,mild
+2021-11-12,S&P 500,4682.85,mild
+2021-11-15,S&P 500,4682.8,mild
+2021-11-16,S&P 500,4700.9,mild
+2021-11-17,S&P 500,4688.67,mild
+2021-11-18,S&P 500,4704.54,mild
+2021-11-19,S&P 500,4697.96,mild
+2021-11-22,S&P 500,4682.94,mild
+2021-11-23,S&P 500,4690.7,mild
+2021-11-24,S&P 500,4701.46,mild
+2021-11-25,S&P 500,4701.46,mild
+2021-11-26,S&P 500,4594.62,mild
+2021-11-29,S&P 500,4655.27,mild
+2021-11-30,S&P 500,4567.0,mild
+2021-12-01,S&P 500,4513.04,mild
+2021-12-02,S&P 500,4577.1,mild
+2021-12-03,S&P 500,4538.43,mild
+2021-12-06,S&P 500,4591.67,mild
+2021-12-07,S&P 500,4686.75,mild
+2021-12-08,S&P 500,4701.21,mild
+2021-12-09,S&P 500,4667.45,mild
+2021-12-10,S&P 500,4712.02,mild
+2021-12-13,S&P 500,4668.97,mild
+2021-12-14,S&P 500,4634.09,mild
+2021-12-15,S&P 500,4709.85,mild
+2021-12-16,S&P 500,4668.67,mild
+2021-12-17,S&P 500,4620.64,mild
+2021-12-20,S&P 500,4568.02,mild
+2021-12-21,S&P 500,4649.23,mild
+2021-12-22,S&P 500,4696.56,mild
+2021-12-23,S&P 500,4725.79,mild
+2021-12-24,S&P 500,4725.79,mild
+2021-12-27,S&P 500,4791.19,mild
+2021-12-28,S&P 500,4786.35,mild
+2021-12-29,S&P 500,4793.06,mild
+2021-12-30,S&P 500,4778.73,mild
+2021-12-31,S&P 500,4766.18,mild
+2022-01-03,S&P 500,4796.56,mild
+2022-01-04,S&P 500,4793.54,mild
+2022-01-05,S&P 500,4700.58,mild
+2022-01-06,S&P 500,4696.05,mild
+2022-01-07,S&P 500,4677.03,mild
+2022-01-10,S&P 500,4670.29,mild
+2022-01-11,S&P 500,4713.07,mild
+2022-01-12,S&P 500,4726.35,mild
+2022-01-13,S&P 500,4659.03,mild
+2022-01-14,S&P 500,4662.85,mild
+2022-01-17,S&P 500,4662.85,mild
+2022-01-18,S&P 500,4577.11,mild
+2022-01-19,S&P 500,4532.76,mild
+2022-01-20,S&P 500,4482.73,mild
+2022-01-21,S&P 500,4397.94,mild
+2022-01-24,S&P 500,4410.13,mild
+2022-01-25,S&P 500,4356.45,mild
+2022-01-26,S&P 500,4349.93,mild
+2022-01-27,S&P 500,4326.51,mild
+2022-01-28,S&P 500,4431.85,mild
+2022-01-31,S&P 500,4515.55,mild
+2022-02-01,S&P 500,4546.54,mild
+2022-02-02,S&P 500,4589.38,mild
+2022-02-03,S&P 500,4477.44,mild
+2022-02-04,S&P 500,4500.53,mild
+2022-02-07,S&P 500,4483.87,mild
+2022-02-08,S&P 500,4521.54,mild
+2022-02-09,S&P 500,4587.18,mild
+2022-02-10,S&P 500,4504.08,mild
+2022-02-11,S&P 500,4418.64,mild
+2022-02-14,S&P 500,4401.67,mild
+2022-02-15,S&P 500,4471.07,mild
+2022-02-16,S&P 500,4475.01,mild
+2022-02-17,S&P 500,4380.26,mild
+2022-02-18,S&P 500,4348.87,mild
+2022-02-21,S&P 500,4348.87,mild
+2022-02-25,S&P 500,4384.65,mild
+2022-02-28,S&P 500,4373.94,mild
+2022-03-02,S&P 500,4386.54,mild
+2022-03-03,S&P 500,4363.49,mild
+2022-03-04,S&P 500,4328.87,mild
+2022-03-16,S&P 500,4357.86,mild
+2022-03-17,S&P 500,4411.67,mild
+2022-03-18,S&P 500,4463.12,mild
+2022-03-21,S&P 500,4461.18,mild
+2022-03-22,S&P 500,4511.61,mild
+2022-03-23,S&P 500,4456.24,mild
+2022-03-24,S&P 500,4520.16,mild
+2022-03-25,S&P 500,4543.06,mild
+2022-03-28,S&P 500,4575.52,mild
+2022-03-29,S&P 500,4631.6,mild
+2022-03-30,S&P 500,4602.45,mild
+2022-03-31,S&P 500,4530.41,mild
+2022-04-01,S&P 500,4545.86,mild
+2022-04-04,S&P 500,4582.64,mild
+2022-04-05,S&P 500,4525.12,mild
+2022-04-06,S&P 500,4481.15,mild
+2022-04-07,S&P 500,4500.21,mild
+2022-04-08,S&P 500,4488.28,mild
+2022-04-11,S&P 500,4412.53,mild
+2022-04-12,S&P 500,4397.45,mild
+2022-04-13,S&P 500,4446.59,mild
+2022-04-14,S&P 500,4392.59,mild
+2022-04-15,S&P 500,4392.59,mild
+2022-04-18,S&P 500,4391.69,mild
+2022-04-19,S&P 500,4462.21,mild
+2022-04-20,S&P 500,4459.45,mild
+2022-04-21,S&P 500,4393.66,mild
+2008-07-01,Inflation Rate,5.6,mild
+2008-07-02,Inflation Rate,5.6,mild
+2008-07-03,Inflation Rate,5.6,mild
+2008-07-04,Inflation Rate,5.6,mild
+2008-07-07,Inflation Rate,5.6,mild
+2008-07-08,Inflation Rate,5.6,mild
+2008-07-09,Inflation Rate,5.6,mild
+2008-07-10,Inflation Rate,5.6,mild
+2008-07-11,Inflation Rate,5.6,mild
+2008-07-14,Inflation Rate,5.6,mild
+2008-07-15,Inflation Rate,5.6,mild
+2008-07-16,Inflation Rate,5.6,mild
+2008-07-17,Inflation Rate,5.6,mild
+2008-07-18,Inflation Rate,5.6,mild
+2008-07-21,Inflation Rate,5.6,mild
+2008-07-22,Inflation Rate,5.6,mild
+2008-07-23,Inflation Rate,5.6,mild
+2008-07-24,Inflation Rate,5.6,mild
+2008-07-25,Inflation Rate,5.6,mild
+2008-07-28,Inflation Rate,5.6,mild
+2008-07-29,Inflation Rate,5.6,mild
+2008-07-30,Inflation Rate,5.6,mild
+2008-07-31,Inflation Rate,5.6,mild
+2008-08-01,Inflation Rate,5.6,mild
+2009-05-04,Inflation Rate,-1.3,mild
+2009-05-05,Inflation Rate,-1.3,mild
+2009-05-06,Inflation Rate,-1.3,mild
+2009-05-07,Inflation Rate,-1.3,mild
+2009-05-08,Inflation Rate,-1.3,mild
+2009-05-11,Inflation Rate,-1.3,mild
+2009-05-12,Inflation Rate,-1.3,mild
+2009-05-13,Inflation Rate,-1.3,mild
+2009-05-14,Inflation Rate,-1.3,mild
+2009-05-15,Inflation Rate,-1.3,mild
+2009-05-18,Inflation Rate,-1.3,mild
+2009-05-19,Inflation Rate,-1.3,mild
+2009-05-20,Inflation Rate,-1.3,mild
+2009-05-21,Inflation Rate,-1.3,mild
+2009-05-22,Inflation Rate,-1.3,mild
+2009-05-25,Inflation Rate,-1.3,mild
+2009-05-26,Inflation Rate,-1.3,mild
+2009-05-27,Inflation Rate,-1.3,mild
+2009-05-28,Inflation Rate,-1.3,mild
+2009-05-29,Inflation Rate,-1.3,mild
+2009-06-01,Inflation Rate,-1.4,mild
+2009-06-02,Inflation Rate,-1.4,mild
+2009-06-03,Inflation Rate,-1.4,mild
+2009-06-04,Inflation Rate,-1.4,mild
+2009-06-05,Inflation Rate,-1.4,mild
+2009-06-08,Inflation Rate,-1.4,mild
+2009-06-09,Inflation Rate,-1.4,mild
+2009-06-10,Inflation Rate,-1.4,mild
+2009-06-11,Inflation Rate,-1.4,mild
+2009-06-12,Inflation Rate,-1.4,mild
+2009-06-15,Inflation Rate,-1.4,mild
+2009-06-16,Inflation Rate,-1.4,mild
+2009-06-17,Inflation Rate,-1.4,mild
+2009-06-18,Inflation Rate,-1.4,mild
+2009-06-19,Inflation Rate,-1.4,mild
+2009-06-22,Inflation Rate,-1.4,mild
+2009-06-23,Inflation Rate,-1.4,mild
+2009-06-24,Inflation Rate,-1.4,mild
+2009-06-25,Inflation Rate,-1.4,mild
+2009-06-26,Inflation Rate,-1.4,mild
+2009-06-29,Inflation Rate,-1.4,mild
+2009-06-30,Inflation Rate,-1.4,mild
+2009-07-01,Inflation Rate,-2.1,mild
+2009-07-02,Inflation Rate,-2.1,mild
+2009-07-03,Inflation Rate,-2.1,mild
+2009-07-06,Inflation Rate,-2.1,mild
+2009-07-07,Inflation Rate,-2.1,mild
+2009-07-08,Inflation Rate,-2.1,mild
+2009-07-09,Inflation Rate,-2.1,mild
+2009-07-10,Inflation Rate,-2.1,mild
+2009-07-13,Inflation Rate,-2.1,mild
+2009-07-14,Inflation Rate,-2.1,mild
+2009-07-15,Inflation Rate,-2.1,mild
+2009-07-16,Inflation Rate,-2.1,mild
+2009-07-17,Inflation Rate,-2.1,mild
+2009-07-20,Inflation Rate,-2.1,mild
+2009-07-21,Inflation Rate,-2.1,mild
+2009-07-22,Inflation Rate,-2.1,mild
+2009-07-23,Inflation Rate,-2.1,mild
+2009-07-24,Inflation Rate,-2.1,mild
+2009-07-27,Inflation Rate,-2.1,mild
+2009-07-28,Inflation Rate,-2.1,mild
+2009-07-29,Inflation Rate,-2.1,mild
+2009-07-30,Inflation Rate,-2.1,mild
+2009-07-31,Inflation Rate,-2.1,mild
+2009-08-03,Inflation Rate,-1.5,mild
+2009-08-04,Inflation Rate,-1.5,mild
+2009-08-05,Inflation Rate,-1.5,mild
+2009-08-06,Inflation Rate,-1.5,mild
+2009-08-07,Inflation Rate,-1.5,mild
+2009-08-10,Inflation Rate,-1.5,mild
+2009-08-11,Inflation Rate,-1.5,mild
+2009-08-12,Inflation Rate,-1.5,mild
+2009-08-13,Inflation Rate,-1.5,mild
+2009-08-14,Inflation Rate,-1.5,mild
+2009-08-17,Inflation Rate,-1.5,mild
+2009-08-18,Inflation Rate,-1.5,mild
+2009-08-19,Inflation Rate,-1.5,mild
+2009-08-20,Inflation Rate,-1.5,mild
+2009-08-21,Inflation Rate,-1.5,mild
+2009-08-24,Inflation Rate,-1.5,mild
+2009-08-25,Inflation Rate,-1.5,mild
+2009-08-26,Inflation Rate,-1.5,mild
+2009-08-27,Inflation Rate,-1.5,mild
+2009-08-28,Inflation Rate,-1.5,mild
+2009-08-31,Inflation Rate,-1.5,mild
+2009-09-01,Inflation Rate,-1.3,mild
+2009-09-02,Inflation Rate,-1.3,mild
+2009-09-03,Inflation Rate,-1.3,mild
+2009-09-04,Inflation Rate,-1.3,mild
+2009-09-07,Inflation Rate,-1.3,mild
+2009-09-08,Inflation Rate,-1.3,mild
+2009-09-09,Inflation Rate,-1.3,mild
+2009-09-10,Inflation Rate,-1.3,mild
+2009-09-11,Inflation Rate,-1.3,mild
+2009-09-14,Inflation Rate,-1.3,mild
+2009-09-15,Inflation Rate,-1.3,mild
+2009-09-16,Inflation Rate,-1.3,mild
+2009-09-17,Inflation Rate,-1.3,mild
+2009-09-18,Inflation Rate,-1.3,mild
+2009-09-21,Inflation Rate,-1.3,mild
+2009-09-22,Inflation Rate,-1.3,mild
+2009-09-23,Inflation Rate,-1.3,mild
+2009-09-24,Inflation Rate,-1.3,mild
+2009-09-25,Inflation Rate,-1.3,mild
+2009-09-28,Inflation Rate,-1.3,mild
+2009-09-29,Inflation Rate,-1.3,mild
+2009-09-30,Inflation Rate,-1.3,mild
+2021-10-04,Inflation Rate,6.2,mild
+2021-10-05,Inflation Rate,6.2,mild
+2021-10-06,Inflation Rate,6.2,mild
+2021-10-07,Inflation Rate,6.2,mild
+2021-10-08,Inflation Rate,6.2,mild
+2021-10-11,Inflation Rate,6.2,mild
+2021-10-12,Inflation Rate,6.2,mild
+2021-10-13,Inflation Rate,6.2,mild
+2021-10-14,Inflation Rate,6.2,mild
+2021-10-15,Inflation Rate,6.2,mild
+2021-10-18,Inflation Rate,6.2,mild
+2021-10-19,Inflation Rate,6.2,mild
+2021-10-20,Inflation Rate,6.2,mild
+2021-10-21,Inflation Rate,6.2,mild
+2021-10-22,Inflation Rate,6.2,mild
+2021-10-25,Inflation Rate,6.2,mild
+2021-10-26,Inflation Rate,6.2,mild
+2021-10-27,Inflation Rate,6.2,mild
+2021-10-28,Inflation Rate,6.2,mild
+2021-10-29,Inflation Rate,6.2,mild
+2021-11-01,Inflation Rate,6.8,mild
+2021-11-02,Inflation Rate,6.8,mild
+2021-11-03,Inflation Rate,6.8,mild
+2021-11-04,Inflation Rate,6.8,mild
+2021-11-05,Inflation Rate,6.8,mild
+2021-11-08,Inflation Rate,6.8,mild
+2021-11-09,Inflation Rate,6.8,mild
+2021-11-10,Inflation Rate,6.8,mild
+2021-11-11,Inflation Rate,6.8,mild
+2021-11-12,Inflation Rate,6.8,mild
+2021-11-15,Inflation Rate,6.8,mild
+2021-11-16,Inflation Rate,6.8,mild
+2021-11-17,Inflation Rate,6.8,mild
+2021-11-18,Inflation Rate,6.8,mild
+2021-11-19,Inflation Rate,6.8,mild
+2021-11-22,Inflation Rate,6.8,mild
+2021-11-23,Inflation Rate,6.8,mild
+2021-11-24,Inflation Rate,6.8,mild
+2021-11-25,Inflation Rate,6.8,mild
+2021-11-26,Inflation Rate,6.8,mild
+2021-11-29,Inflation Rate,6.8,mild
+2021-11-30,Inflation Rate,6.8,mild
+2021-12-01,Inflation Rate,7.0,mild
+2021-12-02,Inflation Rate,7.0,mild
+2021-12-03,Inflation Rate,7.0,mild
+2021-12-06,Inflation Rate,7.0,mild
+2021-12-07,Inflation Rate,7.0,mild
+2021-12-08,Inflation Rate,7.0,mild
+2021-12-09,Inflation Rate,7.0,mild
+2021-12-10,Inflation Rate,7.0,mild
+2021-12-13,Inflation Rate,7.0,mild
+2021-12-14,Inflation Rate,7.0,mild
+2021-12-15,Inflation Rate,7.0,mild
+2021-12-16,Inflation Rate,7.0,mild
+2021-12-17,Inflation Rate,7.0,mild
+2021-12-20,Inflation Rate,7.0,mild
+2021-12-21,Inflation Rate,7.0,mild
+2021-12-22,Inflation Rate,7.0,mild
+2021-12-23,Inflation Rate,7.0,mild
+2021-12-24,Inflation Rate,7.0,mild
+2021-12-27,Inflation Rate,7.0,mild
+2021-12-28,Inflation Rate,7.0,mild
+2021-12-29,Inflation Rate,7.0,mild
+2021-12-30,Inflation Rate,7.0,mild
+2021-12-31,Inflation Rate,7.0,mild
+2022-01-03,Inflation Rate,7.5,mild
+2022-01-04,Inflation Rate,7.5,mild
+2022-01-05,Inflation Rate,7.5,mild
+2022-01-06,Inflation Rate,7.5,mild
+2022-01-07,Inflation Rate,7.5,mild
+2022-01-10,Inflation Rate,7.5,mild
+2022-01-11,Inflation Rate,7.5,mild
+2022-01-12,Inflation Rate,7.5,mild
+2022-01-13,Inflation Rate,7.5,mild
+2022-01-14,Inflation Rate,7.5,mild
+2022-01-17,Inflation Rate,7.5,mild
+2022-01-18,Inflation Rate,7.5,mild
+2022-01-19,Inflation Rate,7.5,mild
+2022-01-20,Inflation Rate,7.5,mild
+2022-01-21,Inflation Rate,7.5,mild
+2022-01-24,Inflation Rate,7.5,mild
+2022-01-25,Inflation Rate,7.5,mild
+2022-01-26,Inflation Rate,7.5,mild
+2022-01-27,Inflation Rate,7.5,mild
+2022-01-28,Inflation Rate,7.5,mild
+2022-01-31,Inflation Rate,7.5,mild
+2022-02-01,Inflation Rate,7.9,mild
+2022-02-02,Inflation Rate,7.9,mild
+2022-02-03,Inflation Rate,7.9,mild
+2022-02-04,Inflation Rate,7.9,mild
+2022-02-07,Inflation Rate,7.9,mild
+2022-02-08,Inflation Rate,7.9,mild
+2022-02-09,Inflation Rate,7.9,mild
+2022-02-10,Inflation Rate,7.9,mild
+2022-02-11,Inflation Rate,7.9,mild
+2022-02-14,Inflation Rate,7.9,mild
+2022-02-15,Inflation Rate,7.9,mild
+2022-02-16,Inflation Rate,7.9,mild
+2022-02-17,Inflation Rate,7.9,mild
+2022-02-18,Inflation Rate,7.9,mild
+2022-02-21,Inflation Rate,7.9,mild
+2022-02-22,Inflation Rate,7.9,mild
+2022-02-23,Inflation Rate,7.9,mild
+2022-02-24,Inflation Rate,7.9,mild
+2022-02-25,Inflation Rate,7.9,mild
+2022-02-28,Inflation Rate,7.9,mild
+2022-03-01,Inflation Rate,8.5,extreme
+2022-03-02,Inflation Rate,8.5,extreme
+2022-03-03,Inflation Rate,8.5,extreme
+2022-03-04,Inflation Rate,8.5,extreme
+2022-03-07,Inflation Rate,8.5,extreme
+2022-03-08,Inflation Rate,8.5,extreme
+2022-03-09,Inflation Rate,8.5,extreme
+2022-03-10,Inflation Rate,8.5,extreme
+2022-03-11,Inflation Rate,8.5,extreme
+2022-03-14,Inflation Rate,8.5,extreme
+2022-03-15,Inflation Rate,8.5,extreme
+2022-03-16,Inflation Rate,8.5,extreme
+2022-03-17,Inflation Rate,8.5,extreme
+2022-03-18,Inflation Rate,8.5,extreme
+2022-03-21,Inflation Rate,8.5,extreme
+2022-03-22,Inflation Rate,8.5,extreme
+2022-03-23,Inflation Rate,8.5,extreme
+2022-03-24,Inflation Rate,8.5,extreme
+2022-03-25,Inflation Rate,8.5,extreme
+2022-03-28,Inflation Rate,8.5,extreme
+2022-03-29,Inflation Rate,8.5,extreme
+2022-03-30,Inflation Rate,8.5,extreme
+2022-03-31,Inflation Rate,8.5,extreme
+2022-04-01,Inflation Rate,8.5,extreme
+2022-04-04,Inflation Rate,8.3,extreme
+2022-04-05,Inflation Rate,8.3,extreme
+2022-04-06,Inflation Rate,8.3,extreme
+2022-04-07,Inflation Rate,8.3,extreme
+2022-04-08,Inflation Rate,8.3,extreme
+2022-04-11,Inflation Rate,8.3,extreme
+2022-04-12,Inflation Rate,8.3,extreme
+2022-04-13,Inflation Rate,8.3,extreme
+2022-04-14,Inflation Rate,8.3,extreme
+2022-04-15,Inflation Rate,8.3,extreme
+2022-04-18,Inflation Rate,8.3,extreme
+2022-04-19,Inflation Rate,8.3,extreme
+2022-04-20,Inflation Rate,8.3,extreme
+2022-04-21,Inflation Rate,8.3,extreme
+2022-04-22,Inflation Rate,8.3,extreme
+2022-04-25,Inflation Rate,8.3,extreme
+2022-04-26,Inflation Rate,8.3,extreme
+2022-04-27,Inflation Rate,8.3,extreme
+2022-04-28,Inflation Rate,8.3,extreme
+2022-04-29,Inflation Rate,8.3,extreme
+2022-05-02,Inflation Rate,8.6,extreme
+2022-05-03,Inflation Rate,8.6,extreme
+2022-05-04,Inflation Rate,8.6,extreme
+2022-05-05,Inflation Rate,8.6,extreme
+2022-05-06,Inflation Rate,8.6,extreme
+2022-05-09,Inflation Rate,8.6,extreme
+2022-05-10,Inflation Rate,8.6,extreme
+2022-05-11,Inflation Rate,8.6,extreme
+2022-05-12,Inflation Rate,8.6,extreme
+2022-05-13,Inflation Rate,8.6,extreme
+2022-05-16,Inflation Rate,8.6,extreme
+2022-05-17,Inflation Rate,8.6,extreme
+2022-05-18,Inflation Rate,8.6,extreme
+2022-05-19,Inflation Rate,8.6,extreme
+2022-05-20,Inflation Rate,8.6,extreme
+2022-05-23,Inflation Rate,8.6,extreme
+2022-05-24,Inflation Rate,8.6,extreme
+2022-05-25,Inflation Rate,8.6,extreme
+2022-05-26,Inflation Rate,8.6,extreme
+2022-05-27,Inflation Rate,8.6,extreme
+2022-05-30,Inflation Rate,8.6,extreme
+2022-05-31,Inflation Rate,8.6,extreme
+2022-06-03,Inflation Rate,9.1,extreme
+2022-06-06,Inflation Rate,9.1,extreme
+2022-06-07,Inflation Rate,9.1,extreme
+2022-06-08,Inflation Rate,9.1,extreme
+2022-06-09,Inflation Rate,9.1,extreme
+2022-06-10,Inflation Rate,9.1,extreme
+2022-06-13,Inflation Rate,9.1,extreme
+2022-06-14,Inflation Rate,9.1,extreme
+2022-06-15,Inflation Rate,9.1,extreme
+2022-06-16,Inflation Rate,9.1,extreme
+2022-06-17,Inflation Rate,9.1,extreme
+2022-06-20,Inflation Rate,9.1,extreme
+2022-06-21,Inflation Rate,9.1,extreme
+2022-06-22,Inflation Rate,9.1,extreme
+2022-06-23,Inflation Rate,9.1,extreme
+2022-06-24,Inflation Rate,9.1,extreme
+2022-06-27,Inflation Rate,9.1,extreme
+2022-06-28,Inflation Rate,9.1,extreme
+2022-06-29,Inflation Rate,9.1,extreme
+2022-06-30,Inflation Rate,9.1,extreme
+2022-07-04,Inflation Rate,8.5,extreme
+2022-07-05,Inflation Rate,8.5,extreme
+2022-07-06,Inflation Rate,8.5,extreme
+2022-07-07,Inflation Rate,8.5,extreme
+2022-07-08,Inflation Rate,8.5,extreme
+2022-07-11,Inflation Rate,8.5,extreme
+2022-07-12,Inflation Rate,8.5,extreme
+2022-07-13,Inflation Rate,8.5,extreme
+2022-07-14,Inflation Rate,8.5,extreme
+2022-07-15,Inflation Rate,8.5,extreme
+2022-07-18,Inflation Rate,8.5,extreme
+2022-07-19,Inflation Rate,8.5,extreme
+2022-07-20,Inflation Rate,8.5,extreme
+2022-07-21,Inflation Rate,8.5,extreme
+2022-07-22,Inflation Rate,8.5,extreme
+2022-07-25,Inflation Rate,8.5,extreme
+2022-07-26,Inflation Rate,8.5,extreme
+2022-07-27,Inflation Rate,8.5,extreme
+2022-07-28,Inflation Rate,8.5,extreme
+2022-07-29,Inflation Rate,8.5,extreme
+2022-08-01,Inflation Rate,8.3,extreme
+2022-08-02,Inflation Rate,8.3,extreme
+2022-08-03,Inflation Rate,8.3,extreme
+2022-08-04,Inflation Rate,8.3,extreme
+2022-08-05,Inflation Rate,8.3,extreme
+2022-08-08,Inflation Rate,8.3,extreme
+2022-08-09,Inflation Rate,8.3,extreme
+2022-08-10,Inflation Rate,8.3,extreme
+2022-08-11,Inflation Rate,8.3,extreme
+2022-08-12,Inflation Rate,8.3,extreme
+2022-08-15,Inflation Rate,8.3,extreme
+2022-08-16,Inflation Rate,8.3,extreme
+2022-08-17,Inflation Rate,8.3,extreme
+2022-08-18,Inflation Rate,8.3,extreme
+2022-08-19,Inflation Rate,8.3,extreme
+2022-08-22,Inflation Rate,8.3,extreme
+2022-08-23,Inflation Rate,8.3,extreme
+2022-08-24,Inflation Rate,8.3,extreme
+2022-08-25,Inflation Rate,8.3,extreme
+2022-08-26,Inflation Rate,8.3,extreme
+2022-08-29,Inflation Rate,8.3,extreme
+2022-08-30,Inflation Rate,8.3,extreme
+2022-08-31,Inflation Rate,8.3,extreme
+2022-09-01,Inflation Rate,8.2,extreme
+2022-09-02,Inflation Rate,8.2,extreme
+2022-09-05,Inflation Rate,8.2,extreme
+2022-09-06,Inflation Rate,8.2,extreme
+2022-09-07,Inflation Rate,8.2,extreme
+2022-09-08,Inflation Rate,8.2,extreme
+2022-09-09,Inflation Rate,8.2,extreme
+2022-09-12,Inflation Rate,8.2,extreme
+2022-09-13,Inflation Rate,8.2,extreme
+2022-09-14,Inflation Rate,8.2,extreme
+2022-09-15,Inflation Rate,8.2,extreme
+2022-09-16,Inflation Rate,8.2,extreme
+2022-09-19,Inflation Rate,8.2,extreme
+2022-09-20,Inflation Rate,8.2,extreme
+2022-09-21,Inflation Rate,8.2,extreme
+2022-09-22,Inflation Rate,8.2,extreme
+2022-09-23,Inflation Rate,8.2,extreme
+2022-09-26,Inflation Rate,8.2,extreme
+2022-09-27,Inflation Rate,8.2,extreme
+2022-09-28,Inflation Rate,8.2,extreme
+2022-09-29,Inflation Rate,8.2,extreme
+2022-09-30,Inflation Rate,8.2,extreme
+2022-10-03,Inflation Rate,7.7,mild
+2022-10-04,Inflation Rate,7.7,mild
+2022-10-05,Inflation Rate,7.7,mild
+2022-10-06,Inflation Rate,7.7,mild
+2022-10-07,Inflation Rate,7.7,mild
+2022-10-10,Inflation Rate,7.7,mild
+2022-10-11,Inflation Rate,7.7,mild
+2022-10-12,Inflation Rate,7.7,mild
+2022-10-13,Inflation Rate,7.7,mild
+2022-10-14,Inflation Rate,7.7,mild
+2022-10-17,Inflation Rate,7.7,mild
+2022-10-18,Inflation Rate,7.7,mild
+2022-10-19,Inflation Rate,7.7,mild
+2022-10-20,Inflation Rate,7.7,mild
+2022-10-21,Inflation Rate,7.7,mild
+2022-10-24,Inflation Rate,7.7,mild
+2022-10-25,Inflation Rate,7.7,mild
+2022-10-26,Inflation Rate,7.7,mild
+2022-10-27,Inflation Rate,7.7,mild
+2022-10-28,Inflation Rate,7.7,mild
+2022-10-31,Inflation Rate,7.7,mild
+2022-11-01,Inflation Rate,7.1,mild
+2022-11-02,Inflation Rate,7.1,mild
+2022-11-03,Inflation Rate,7.1,mild
+2022-11-04,Inflation Rate,7.1,mild
+2022-11-07,Inflation Rate,7.1,mild
+2022-11-08,Inflation Rate,7.1,mild
+2022-11-09,Inflation Rate,7.1,mild
+2022-11-10,Inflation Rate,7.1,mild
+2022-11-11,Inflation Rate,7.1,mild
+2022-11-14,Inflation Rate,7.1,mild
+2022-11-15,Inflation Rate,7.1,mild
+2022-11-16,Inflation Rate,7.1,mild
+2022-11-17,Inflation Rate,7.1,mild
+2022-11-18,Inflation Rate,7.1,mild
+2022-11-21,Inflation Rate,7.1,mild
+2022-11-22,Inflation Rate,7.1,mild
+2022-11-23,Inflation Rate,7.1,mild
+2022-11-24,Inflation Rate,7.1,mild
+2022-11-25,Inflation Rate,7.1,mild
+2022-11-28,Inflation Rate,7.1,mild
+2022-11-29,Inflation Rate,7.1,mild
+2022-11-30,Inflation Rate,7.1,mild
+2022-12-01,Inflation Rate,6.5,mild
+2022-12-02,Inflation Rate,6.5,mild
+2022-12-05,Inflation Rate,6.5,mild
+2022-12-06,Inflation Rate,6.5,mild
+2022-12-07,Inflation Rate,6.5,mild
+2022-12-08,Inflation Rate,6.5,mild
+2022-12-09,Inflation Rate,6.5,mild
+2022-12-12,Inflation Rate,6.5,mild
+2022-12-13,Inflation Rate,6.5,mild
+2022-12-14,Inflation Rate,6.5,mild
+2022-12-15,Inflation Rate,6.5,mild
+2022-12-16,Inflation Rate,6.5,mild
+2022-12-19,Inflation Rate,6.5,mild
+2022-12-20,Inflation Rate,6.5,mild
+2022-12-21,Inflation Rate,6.5,mild
+2022-12-22,Inflation Rate,6.5,mild
+2022-12-23,Inflation Rate,6.5,mild
+2022-12-26,Inflation Rate,6.5,mild
+2022-12-27,Inflation Rate,6.5,mild
+2022-12-28,Inflation Rate,6.5,mild
+2022-12-29,Inflation Rate,6.5,mild
+2022-12-30,Inflation Rate,6.5,mild
+2001-01-01,Fedral Funds Rate,5.98,mild
+2001-01-02,Fedral Funds Rate,5.98,mild
+2001-01-03,Fedral Funds Rate,5.98,mild
+2001-01-04,Fedral Funds Rate,5.98,mild
+2001-01-05,Fedral Funds Rate,5.98,mild
+2001-01-08,Fedral Funds Rate,5.98,mild
+2001-01-09,Fedral Funds Rate,5.98,mild
+2001-01-10,Fedral Funds Rate,5.98,mild
+2001-01-11,Fedral Funds Rate,5.98,mild
+2001-01-12,Fedral Funds Rate,5.98,mild
+2001-01-15,Fedral Funds Rate,5.98,mild
+2001-01-16,Fedral Funds Rate,5.98,mild
+2001-01-17,Fedral Funds Rate,5.98,mild
+2001-01-18,Fedral Funds Rate,5.98,mild
+2001-01-19,Fedral Funds Rate,5.98,mild
+2001-01-22,Fedral Funds Rate,5.98,mild
+2001-01-23,Fedral Funds Rate,5.98,mild
+2001-01-24,Fedral Funds Rate,5.98,mild
+2001-01-25,Fedral Funds Rate,5.98,mild
+2001-01-26,Fedral Funds Rate,5.98,mild
+2001-01-29,Fedral Funds Rate,5.98,mild
+2001-01-30,Fedral Funds Rate,5.98,mild
+2001-01-31,Fedral Funds Rate,5.98,mild
+2001-02-01,Fedral Funds Rate,5.49,mild
+2001-02-02,Fedral Funds Rate,5.49,mild
+2001-02-05,Fedral Funds Rate,5.49,mild
+2001-02-06,Fedral Funds Rate,5.49,mild
+2001-02-07,Fedral Funds Rate,5.49,mild
+2001-02-08,Fedral Funds Rate,5.49,mild
+2001-02-09,Fedral Funds Rate,5.49,mild
+2001-02-12,Fedral Funds Rate,5.49,mild
+2001-02-13,Fedral Funds Rate,5.49,mild
+2001-02-14,Fedral Funds Rate,5.49,mild
+2001-02-15,Fedral Funds Rate,5.49,mild
+2001-02-16,Fedral Funds Rate,5.49,mild
+2001-02-19,Fedral Funds Rate,5.49,mild
+2001-02-20,Fedral Funds Rate,5.49,mild
+2001-02-21,Fedral Funds Rate,5.49,mild
+2001-02-22,Fedral Funds Rate,5.49,mild
+2001-02-23,Fedral Funds Rate,5.49,mild
+2001-02-26,Fedral Funds Rate,5.49,mild
+2001-02-27,Fedral Funds Rate,5.49,mild
+2001-02-28,Fedral Funds Rate,5.49,mild
+2001-03-01,Fedral Funds Rate,5.31,mild
+2001-03-02,Fedral Funds Rate,5.31,mild
+2001-03-05,Fedral Funds Rate,5.31,mild
+2001-03-06,Fedral Funds Rate,5.31,mild
+2001-03-07,Fedral Funds Rate,5.31,mild
+2001-03-08,Fedral Funds Rate,5.31,mild
+2001-03-09,Fedral Funds Rate,5.31,mild
+2001-03-12,Fedral Funds Rate,5.31,mild
+2001-03-13,Fedral Funds Rate,5.31,mild
+2001-03-14,Fedral Funds Rate,5.31,mild
+2001-03-15,Fedral Funds Rate,5.31,mild
+2001-03-16,Fedral Funds Rate,5.31,mild
+2001-03-19,Fedral Funds Rate,5.31,mild
+2001-03-20,Fedral Funds Rate,5.31,mild
+2001-03-21,Fedral Funds Rate,5.31,mild
+2001-03-22,Fedral Funds Rate,5.31,mild
+2001-03-23,Fedral Funds Rate,5.31,mild
+2001-03-26,Fedral Funds Rate,5.31,mild
+2001-03-27,Fedral Funds Rate,5.31,mild
+2001-03-28,Fedral Funds Rate,5.31,mild
+2001-03-29,Fedral Funds Rate,5.31,mild
+2001-03-30,Fedral Funds Rate,5.31,mild
+2006-07-04,Fedral Funds Rate,5.24,mild
+2006-07-05,Fedral Funds Rate,5.24,mild
+2006-07-06,Fedral Funds Rate,5.24,mild
+2006-07-07,Fedral Funds Rate,5.24,mild
+2006-07-10,Fedral Funds Rate,5.24,mild
+2006-07-11,Fedral Funds Rate,5.24,mild
+2006-07-12,Fedral Funds Rate,5.24,mild
+2006-07-13,Fedral Funds Rate,5.24,mild
+2006-07-14,Fedral Funds Rate,5.24,mild
+2006-07-17,Fedral Funds Rate,5.24,mild
+2006-07-18,Fedral Funds Rate,5.24,mild
+2006-07-19,Fedral Funds Rate,5.24,mild
+2006-07-20,Fedral Funds Rate,5.24,mild
+2006-07-21,Fedral Funds Rate,5.24,mild
+2006-07-24,Fedral Funds Rate,5.24,mild
+2006-07-25,Fedral Funds Rate,5.24,mild
+2006-07-26,Fedral Funds Rate,5.24,mild
+2006-07-27,Fedral Funds Rate,5.24,mild
+2006-07-28,Fedral Funds Rate,5.24,mild
+2006-07-31,Fedral Funds Rate,5.24,mild
+2006-08-01,Fedral Funds Rate,5.25,mild
+2006-08-02,Fedral Funds Rate,5.25,mild
+2006-08-03,Fedral Funds Rate,5.25,mild
+2006-08-04,Fedral Funds Rate,5.25,mild
+2006-08-07,Fedral Funds Rate,5.25,mild
+2006-08-08,Fedral Funds Rate,5.25,mild
+2006-08-09,Fedral Funds Rate,5.25,mild
+2006-08-10,Fedral Funds Rate,5.25,mild
+2006-08-11,Fedral Funds Rate,5.25,mild
+2006-08-14,Fedral Funds Rate,5.25,mild
+2006-08-15,Fedral Funds Rate,5.25,mild
+2006-08-16,Fedral Funds Rate,5.25,mild
+2006-08-17,Fedral Funds Rate,5.25,mild
+2006-08-18,Fedral Funds Rate,5.25,mild
+2006-08-21,Fedral Funds Rate,5.25,mild
+2006-08-22,Fedral Funds Rate,5.25,mild
+2006-08-23,Fedral Funds Rate,5.25,mild
+2006-08-24,Fedral Funds Rate,5.25,mild
+2006-08-25,Fedral Funds Rate,5.25,mild
+2006-08-28,Fedral Funds Rate,5.25,mild
+2006-08-29,Fedral Funds Rate,5.25,mild
+2006-08-30,Fedral Funds Rate,5.25,mild
+2006-08-31,Fedral Funds Rate,5.25,mild
+2006-09-01,Fedral Funds Rate,5.25,mild
+2006-09-04,Fedral Funds Rate,5.25,mild
+2006-09-05,Fedral Funds Rate,5.25,mild
+2006-09-06,Fedral Funds Rate,5.25,mild
+2006-09-07,Fedral Funds Rate,5.25,mild
+2006-09-08,Fedral Funds Rate,5.25,mild
+2006-09-11,Fedral Funds Rate,5.25,mild
+2006-09-12,Fedral Funds Rate,5.25,mild
+2006-09-13,Fedral Funds Rate,5.25,mild
+2006-09-14,Fedral Funds Rate,5.25,mild
+2006-09-15,Fedral Funds Rate,5.25,mild
+2006-09-18,Fedral Funds Rate,5.25,mild
+2006-09-19,Fedral Funds Rate,5.25,mild
+2006-09-20,Fedral Funds Rate,5.25,mild
+2006-09-21,Fedral Funds Rate,5.25,mild
+2006-09-22,Fedral Funds Rate,5.25,mild
+2006-09-25,Fedral Funds Rate,5.25,mild
+2006-09-26,Fedral Funds Rate,5.25,mild
+2006-09-27,Fedral Funds Rate,5.25,mild
+2006-09-28,Fedral Funds Rate,5.25,mild
+2006-09-29,Fedral Funds Rate,5.25,mild
+2006-10-02,Fedral Funds Rate,5.25,mild
+2006-10-03,Fedral Funds Rate,5.25,mild
+2006-10-04,Fedral Funds Rate,5.25,mild
+2006-10-05,Fedral Funds Rate,5.25,mild
+2006-10-06,Fedral Funds Rate,5.25,mild
+2006-10-09,Fedral Funds Rate,5.25,mild
+2006-10-10,Fedral Funds Rate,5.25,mild
+2006-10-11,Fedral Funds Rate,5.25,mild
+2006-10-12,Fedral Funds Rate,5.25,mild
+2006-10-13,Fedral Funds Rate,5.25,mild
+2006-10-16,Fedral Funds Rate,5.25,mild
+2006-10-17,Fedral Funds Rate,5.25,mild
+2006-10-18,Fedral Funds Rate,5.25,mild
+2006-10-19,Fedral Funds Rate,5.25,mild
+2006-10-20,Fedral Funds Rate,5.25,mild
+2006-10-23,Fedral Funds Rate,5.25,mild
+2006-10-24,Fedral Funds Rate,5.25,mild
+2006-10-25,Fedral Funds Rate,5.25,mild
+2006-10-26,Fedral Funds Rate,5.25,mild
+2006-10-27,Fedral Funds Rate,5.25,mild
+2006-10-30,Fedral Funds Rate,5.25,mild
+2006-10-31,Fedral Funds Rate,5.25,mild
+2006-11-01,Fedral Funds Rate,5.25,mild
+2006-11-02,Fedral Funds Rate,5.25,mild
+2006-11-03,Fedral Funds Rate,5.25,mild
+2006-11-06,Fedral Funds Rate,5.25,mild
+2006-11-07,Fedral Funds Rate,5.25,mild
+2006-11-08,Fedral Funds Rate,5.25,mild
+2006-11-09,Fedral Funds Rate,5.25,mild
+2006-11-10,Fedral Funds Rate,5.25,mild
+2006-11-13,Fedral Funds Rate,5.25,mild
+2006-11-14,Fedral Funds Rate,5.25,mild
+2006-11-15,Fedral Funds Rate,5.25,mild
+2006-11-16,Fedral Funds Rate,5.25,mild
+2006-11-17,Fedral Funds Rate,5.25,mild
+2006-11-20,Fedral Funds Rate,5.25,mild
+2006-11-21,Fedral Funds Rate,5.25,mild
+2006-11-22,Fedral Funds Rate,5.25,mild
+2006-11-23,Fedral Funds Rate,5.25,mild
+2006-11-24,Fedral Funds Rate,5.25,mild
+2006-11-27,Fedral Funds Rate,5.25,mild
+2006-11-28,Fedral Funds Rate,5.25,mild
+2006-11-29,Fedral Funds Rate,5.25,mild
+2006-11-30,Fedral Funds Rate,5.25,mild
+2006-12-01,Fedral Funds Rate,5.24,mild
+2006-12-04,Fedral Funds Rate,5.24,mild
+2006-12-05,Fedral Funds Rate,5.24,mild
+2006-12-06,Fedral Funds Rate,5.24,mild
+2006-12-07,Fedral Funds Rate,5.24,mild
+2006-12-08,Fedral Funds Rate,5.24,mild
+2006-12-11,Fedral Funds Rate,5.24,mild
+2006-12-12,Fedral Funds Rate,5.24,mild
+2006-12-13,Fedral Funds Rate,5.24,mild
+2006-12-14,Fedral Funds Rate,5.24,mild
+2006-12-15,Fedral Funds Rate,5.24,mild
+2006-12-18,Fedral Funds Rate,5.24,mild
+2006-12-19,Fedral Funds Rate,5.24,mild
+2006-12-20,Fedral Funds Rate,5.24,mild
+2006-12-21,Fedral Funds Rate,5.24,mild
+2006-12-22,Fedral Funds Rate,5.24,mild
+2006-12-25,Fedral Funds Rate,5.24,mild
+2006-12-26,Fedral Funds Rate,5.24,mild
+2006-12-27,Fedral Funds Rate,5.24,mild
+2006-12-28,Fedral Funds Rate,5.24,mild
+2006-12-29,Fedral Funds Rate,5.24,mild
+2007-01-01,Fedral Funds Rate,5.25,mild
+2007-01-02,Fedral Funds Rate,5.25,mild
+2007-01-03,Fedral Funds Rate,5.25,mild
+2007-01-04,Fedral Funds Rate,5.25,mild
+2007-01-05,Fedral Funds Rate,5.25,mild
+2007-01-08,Fedral Funds Rate,5.25,mild
+2007-01-09,Fedral Funds Rate,5.25,mild
+2007-01-10,Fedral Funds Rate,5.25,mild
+2007-01-11,Fedral Funds Rate,5.25,mild
+2007-01-12,Fedral Funds Rate,5.25,mild
+2007-01-15,Fedral Funds Rate,5.25,mild
+2007-01-16,Fedral Funds Rate,5.25,mild
+2007-01-17,Fedral Funds Rate,5.25,mild
+2007-01-18,Fedral Funds Rate,5.25,mild
+2007-01-19,Fedral Funds Rate,5.25,mild
+2007-01-22,Fedral Funds Rate,5.25,mild
+2007-01-23,Fedral Funds Rate,5.25,mild
+2007-01-24,Fedral Funds Rate,5.25,mild
+2007-01-25,Fedral Funds Rate,5.25,mild
+2007-01-26,Fedral Funds Rate,5.25,mild
+2007-01-29,Fedral Funds Rate,5.25,mild
+2007-01-30,Fedral Funds Rate,5.25,mild
+2007-01-31,Fedral Funds Rate,5.25,mild
+2007-02-01,Fedral Funds Rate,5.26,mild
+2007-02-02,Fedral Funds Rate,5.26,mild
+2007-02-05,Fedral Funds Rate,5.26,mild
+2007-02-06,Fedral Funds Rate,5.26,mild
+2007-02-07,Fedral Funds Rate,5.26,mild
+2007-02-08,Fedral Funds Rate,5.26,mild
+2007-02-09,Fedral Funds Rate,5.26,mild
+2007-02-12,Fedral Funds Rate,5.26,mild
+2007-02-13,Fedral Funds Rate,5.26,mild
+2007-02-14,Fedral Funds Rate,5.26,mild
+2007-02-15,Fedral Funds Rate,5.26,mild
+2007-02-16,Fedral Funds Rate,5.26,mild
+2007-02-19,Fedral Funds Rate,5.26,mild
+2007-02-20,Fedral Funds Rate,5.26,mild
+2007-02-21,Fedral Funds Rate,5.26,mild
+2007-02-22,Fedral Funds Rate,5.26,mild
+2007-02-23,Fedral Funds Rate,5.26,mild
+2007-02-26,Fedral Funds Rate,5.26,mild
+2007-02-27,Fedral Funds Rate,5.26,mild
+2007-02-28,Fedral Funds Rate,5.26,mild
+2007-03-01,Fedral Funds Rate,5.26,mild
+2007-03-02,Fedral Funds Rate,5.26,mild
+2007-03-05,Fedral Funds Rate,5.26,mild
+2007-03-06,Fedral Funds Rate,5.26,mild
+2007-03-07,Fedral Funds Rate,5.26,mild
+2007-03-08,Fedral Funds Rate,5.26,mild
+2007-03-09,Fedral Funds Rate,5.26,mild
+2007-03-12,Fedral Funds Rate,5.26,mild
+2007-03-13,Fedral Funds Rate,5.26,mild
+2007-03-14,Fedral Funds Rate,5.26,mild
+2007-03-15,Fedral Funds Rate,5.26,mild
+2007-03-16,Fedral Funds Rate,5.26,mild
+2007-03-19,Fedral Funds Rate,5.26,mild
+2007-03-20,Fedral Funds Rate,5.26,mild
+2007-03-21,Fedral Funds Rate,5.26,mild
+2007-03-22,Fedral Funds Rate,5.26,mild
+2007-03-23,Fedral Funds Rate,5.26,mild
+2007-03-26,Fedral Funds Rate,5.26,mild
+2007-03-27,Fedral Funds Rate,5.26,mild
+2007-03-28,Fedral Funds Rate,5.26,mild
+2007-03-29,Fedral Funds Rate,5.26,mild
+2007-03-30,Fedral Funds Rate,5.26,mild
+2007-04-02,Fedral Funds Rate,5.25,mild
+2007-04-03,Fedral Funds Rate,5.25,mild
+2007-04-04,Fedral Funds Rate,5.25,mild
+2007-04-05,Fedral Funds Rate,5.25,mild
+2007-04-06,Fedral Funds Rate,5.25,mild
+2007-04-09,Fedral Funds Rate,5.25,mild
+2007-04-10,Fedral Funds Rate,5.25,mild
+2007-04-11,Fedral Funds Rate,5.25,mild
+2007-04-12,Fedral Funds Rate,5.25,mild
+2007-04-13,Fedral Funds Rate,5.25,mild
+2007-04-16,Fedral Funds Rate,5.25,mild
+2007-04-17,Fedral Funds Rate,5.25,mild
+2007-04-18,Fedral Funds Rate,5.25,mild
+2007-04-19,Fedral Funds Rate,5.25,mild
+2007-04-20,Fedral Funds Rate,5.25,mild
+2007-04-23,Fedral Funds Rate,5.25,mild
+2007-04-24,Fedral Funds Rate,5.25,mild
+2007-04-25,Fedral Funds Rate,5.25,mild
+2007-04-26,Fedral Funds Rate,5.25,mild
+2007-04-27,Fedral Funds Rate,5.25,mild
+2007-04-30,Fedral Funds Rate,5.25,mild
+2007-05-01,Fedral Funds Rate,5.25,mild
+2007-05-02,Fedral Funds Rate,5.25,mild
+2007-05-03,Fedral Funds Rate,5.25,mild
+2007-05-04,Fedral Funds Rate,5.25,mild
+2007-05-07,Fedral Funds Rate,5.25,mild
+2007-05-08,Fedral Funds Rate,5.25,mild
+2007-05-09,Fedral Funds Rate,5.25,mild
+2007-05-10,Fedral Funds Rate,5.25,mild
+2007-05-11,Fedral Funds Rate,5.25,mild
+2007-05-14,Fedral Funds Rate,5.25,mild
+2007-05-15,Fedral Funds Rate,5.25,mild
+2007-05-16,Fedral Funds Rate,5.25,mild
+2007-05-17,Fedral Funds Rate,5.25,mild
+2007-05-18,Fedral Funds Rate,5.25,mild
+2007-05-21,Fedral Funds Rate,5.25,mild
+2007-05-22,Fedral Funds Rate,5.25,mild
+2007-05-23,Fedral Funds Rate,5.25,mild
+2007-05-24,Fedral Funds Rate,5.25,mild
+2007-05-25,Fedral Funds Rate,5.25,mild
+2007-05-28,Fedral Funds Rate,5.25,mild
+2007-05-29,Fedral Funds Rate,5.25,mild
+2007-05-30,Fedral Funds Rate,5.25,mild
+2007-05-31,Fedral Funds Rate,5.25,mild
+2007-06-01,Fedral Funds Rate,5.25,mild
+2007-06-04,Fedral Funds Rate,5.25,mild
+2007-06-05,Fedral Funds Rate,5.25,mild
+2007-06-06,Fedral Funds Rate,5.25,mild
+2007-06-07,Fedral Funds Rate,5.25,mild
+2007-06-08,Fedral Funds Rate,5.25,mild
+2007-06-11,Fedral Funds Rate,5.25,mild
+2007-06-12,Fedral Funds Rate,5.25,mild
+2007-06-13,Fedral Funds Rate,5.25,mild
+2007-06-14,Fedral Funds Rate,5.25,mild
+2007-06-15,Fedral Funds Rate,5.25,mild
+2007-06-18,Fedral Funds Rate,5.25,mild
+2007-06-19,Fedral Funds Rate,5.25,mild
+2007-06-20,Fedral Funds Rate,5.25,mild
+2007-06-21,Fedral Funds Rate,5.25,mild
+2007-06-22,Fedral Funds Rate,5.25,mild
+2007-06-25,Fedral Funds Rate,5.25,mild
+2007-06-26,Fedral Funds Rate,5.25,mild
+2007-06-27,Fedral Funds Rate,5.25,mild
+2007-06-28,Fedral Funds Rate,5.25,mild
+2007-06-29,Fedral Funds Rate,5.25,mild
+2007-07-02,Fedral Funds Rate,5.26,mild
+2007-07-03,Fedral Funds Rate,5.26,mild
+2007-07-04,Fedral Funds Rate,5.26,mild
+2007-07-05,Fedral Funds Rate,5.26,mild
+2007-07-06,Fedral Funds Rate,5.26,mild
+2007-07-09,Fedral Funds Rate,5.26,mild
+2007-07-10,Fedral Funds Rate,5.26,mild
+2007-07-11,Fedral Funds Rate,5.26,mild
+2007-07-12,Fedral Funds Rate,5.26,mild
+2007-07-13,Fedral Funds Rate,5.26,mild
+2007-07-16,Fedral Funds Rate,5.26,mild
+2007-07-17,Fedral Funds Rate,5.26,mild
+2007-07-18,Fedral Funds Rate,5.26,mild
+2007-07-19,Fedral Funds Rate,5.26,mild
+2007-07-20,Fedral Funds Rate,5.26,mild
+2007-07-23,Fedral Funds Rate,5.26,mild
+2007-07-24,Fedral Funds Rate,5.26,mild
+2007-07-25,Fedral Funds Rate,5.26,mild
+2007-07-26,Fedral Funds Rate,5.26,mild
+2007-07-27,Fedral Funds Rate,5.26,mild
+2007-07-30,Fedral Funds Rate,5.26,mild
+2007-07-31,Fedral Funds Rate,5.26,mild
