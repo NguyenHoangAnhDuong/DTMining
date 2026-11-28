@@ -5,9 +5,9 @@ from components.metric_cards import callout, kpi_row, page_header, regime_badge
 from source.services.constants import COLORS, MODEL_NAMES
 
 page_header(
-    "Gold Intelligence Dashboard",
-    "Phân lớp giai đoạn thị trường (K-Means) trước khi dự đoán có giúp dự báo giá vàng tốt hơn không?",
-    "📈",
+    "Phân lớp giai đoạn thị trường trước khi dự báo có giúp ích không?",
+    "So sánh hai nhánh của cùng một mô hình: có và không gắn nhãn giai đoạn K-Means trước khi dự đoán giá vàng.",
+    "Tổng quan",
 )
 
 data = loaders.base_dataset()
@@ -23,7 +23,7 @@ cmp = loaders.forecast_summary("comparison")
 ints = loaders.forecast_summary("intervals")
 
 kpi_row([
-    ("Giá vàng gần nhất", f"{last['Gold Price']:,.1f} $",
+    ("Giá vàng gần nhất (USD/oz)", f"{last['Gold Price']:,.1f}",
      f"{(last['Gold Price'] / prev_month['Gold Price'] - 1) * 100:+.2f}% / 1 tháng", f"Phiên {last['Date']:%d/%m/%Y}"),
     ("Số phiên giao dịch", f"{len(data):,}", None, f"{data['Date'].min():%Y} – {data['Date'].max():%Y}"),
     ("Mô hình", len(loaders.available_models()), None, ", ".join(MODEL_NAMES.get(m, m) for m in loaders.available_models())),
@@ -47,7 +47,7 @@ with right:
         st.markdown("##### Phân bố giai đoạn (toàn bộ lịch sử)")
         charts.show(charts.regime_share(regimes), key="dash_share")
 
-st.markdown("### Trả lời câu hỏi nghiên cứu")
+st.markdown("### Kết quả chính")
 if cmp.empty:
     st.info("Chưa có báo cáo so sánh. Chạy `python -m source.model.report_forecast`.")
 else:
@@ -80,23 +80,24 @@ else:
                                                   "MAE_kmeans": ("Có phân lớp", COLORS["kmeans"])},
                                         yaxis_title="USD"), key="dash_mae")
     with c2, st.container(border=True):
-        st.markdown("##### MASE — < 1 là tốt hơn naive")
+        st.markdown("##### MASE (dưới 1 là tốt hơn naive)")
         fig = charts.grouped_bars(d, "h", {"MASE_base": ("Không phân lớp", COLORS["base"]),
                                            "MASE_kmeans": ("Có phân lớp", COLORS["kmeans"])})
-        fig.add_hline(y=1, line=dict(color="#F87171", dash="dash"), annotation_text="naive")
+        fig.add_hline(y=1, line=dict(color=COLORS["rule"], dash="dot", width=1), annotation_text="naive", annotation_position="top left",
+                      annotation_font=dict(size=11, color=COLORS["muted"]))
         fig.update_yaxes(range=[min(0.9, d[["MASE_base", "MASE_kmeans"]].min().min() - 0.02),
                                 max(1.1, d[["MASE_base", "MASE_kmeans"]].max().max() + 0.02)])
         charts.show(fig, key="dash_mase")
 
-st.markdown("### Đi tiếp")
+st.divider()
 cols = st.columns(4)
 links = [
-    ("pages/06_forecast.py", "🔮 Dự đoán giá vàng", "Chọn nhánh, mô hình, h và dự đoán ngay."),
-    ("pages/05_market_regime.py", "🫧 Giai đoạn thị trường", "Kết quả K-Means: chất lượng cụm, thống kê."),
-    ("pages/08_model_comparison.py", "⚖️ So sánh có / không phân lớp", "DM test, khoảng dự đoán, theo giai đoạn."),
-    ("pages/09_reports.py", "📄 Báo cáo", "Xem & tải báo cáo đầy đủ."),
+    ("pages/06_forecast.py", "Dự đoán giá vàng", "Chọn nhánh, mô hình, h rồi chạy dự đoán."),
+    ("pages/05_market_regime.py", "Giai đoạn thị trường", "Chất lượng cụm K-Means và thống kê từng giai đoạn."),
+    ("pages/08_model_comparison.py", "So sánh có / không phân lớp", "Kiểm định DM, khoảng dự đoán, theo giai đoạn."),
+    ("pages/09_reports.py", "Báo cáo", "Đọc và tải báo cáo sinh từ pipeline."),
 ]
 for col, (page, label, desc) in zip(cols, links):
-    with col, st.container(border=True):
-        st.page_link(page, label=f"**{label}**")
+    with col:
+        st.page_link(page, label=label, icon=":material/arrow_forward:")
         st.caption(desc)

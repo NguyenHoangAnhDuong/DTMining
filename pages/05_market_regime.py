@@ -5,7 +5,7 @@ from components.metric_cards import callout, kpi_row, page_header, regime_badge
 from source.services.constants import CLUSTERING_RESULTS_DIR, REGIME_COLORS, REGIME_LABELS
 
 page_header("Giai đoạn thị trường",
-            "K-Means (k = 4) trên xu hướng 60 phiên và biến động 20 phiên — fit chỉ trên Train.", "🫧")
+            "K-Means (k = 4) trên xu hướng 60 phiên và biến động 20 phiên, chỉ fit trên tập Train.", "Phân cụm")
 
 regimes = loaders.regime_history()
 km = loaders.kmeans_summary("metrics")

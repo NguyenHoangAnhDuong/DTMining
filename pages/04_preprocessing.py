@@ -3,9 +3,9 @@ import streamlit as st
 
 from components import charts, loaders
 from components.metric_cards import page_header
-from source.services.constants import FIGURES_DIR
+from source.services.constants import COLORS, FIGURES_DIR
 
-page_header("Tiền xử lý", "Chỉ làm sạch và chống nhiễu — không tạo feature, không chuẩn hoá ở bước này.", "🧹")
+page_header("Tiền xử lý", "Chỉ làm sạch và chống nhiễu. Không tạo feature, không chuẩn hoá ở bước này.", "Dữ liệu")
 
 STEPS = pd.DataFrame([
     ("01", "step01_cleaning.py", "Cách ly ngày không hợp lệ, xử lý bản ghi trùng / xung đột, chuyển kiểu số"),
@@ -25,9 +25,9 @@ tab_st, tab_out, tab_fig = st.tabs(["Tính dừng (ADF / KPSS)", "Outlier", "Hì
 
 def _color_conclusion(v):
     if v == "stationary":
-        return "color:#4ADE80"
+        return f"color:{COLORS['good']}"
     if isinstance(v, str) and "non" in v:
-        return "color:#F87171"
+        return f"color:{COLORS['bad']}"
     return ""
 
 
@@ -40,7 +40,7 @@ with tab_st:
         transform = c1.radio("Dạng chuỗi", sorted(rep["transform"].unique()), key="st_tf")
         view = rep[rep["transform"] == transform]
         n_ok = int((view["conclusion"] == "stationary").sum())
-        c1.metric("Chuỗi dừng", f"{n_ok}/{len(view)}", border=True)
+        c1.metric("Chuỗi dừng", f"{n_ok}/{len(view)}")
         c2.dataframe(
             view.style.map(_color_conclusion, subset=["conclusion"])
                 .format({"adf_stat": "{:.3f}", "adf_p": "{:.4f}", "kpss_stat": "{:.3f}", "kpss_p": "{:.3f}"}),
@@ -54,7 +54,7 @@ with tab_out:
         c1, c2 = st.columns([1.3, 1])
         with c1:
             d = summ.sort_values("n_outliers", ascending=False)
-            charts.show(charts.grouped_bars(d, "feature", {"n_outliers": ("Số outlier (IQR)", "#F59E0B")},
+            charts.show(charts.grouped_bars(d, "feature", {"n_outliers": ("Số outlier (IQR)", COLORS["gold"])},
                                             height=360), key="out_bar")
         c2.dataframe(summ.style.format(precision=2), hide_index=True, height=360)
         det = loaders.preprocessing_report("outlier_details")

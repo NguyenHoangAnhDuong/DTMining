@@ -6,7 +6,7 @@ from components.metric_cards import callout, page_header
 from source.services.constants import COLORS, REGIME_LABELS
 
 page_header("So sánh có / không phân lớp",
-            "Cùng model, cùng feature gốc, cùng target — khác biệt chỉ đến từ thông tin giai đoạn K-Means.", "⚖️")
+            "Cùng model, cùng feature gốc, cùng target. Khác biệt duy nhất là thông tin giai đoạn K-Means.", "Kết quả")
 
 cmp = loaders.forecast_summary("comparison")
 ints = loaders.forecast_summary("intervals")
@@ -23,14 +23,14 @@ def _sig_style(v):
     if not isinstance(v, str):
         return ""
     if "tốt hơn" in v.lower():
-        return "color:#4ADE80;font-weight:600"
+        return f"color:{COLORS['good']};font-weight:600"
     if "kém" in v.lower():
-        return "color:#F87171;font-weight:600"
-    return "color:#94A3B8"
+        return f"color:{COLORS['bad']};font-weight:600"
+    return f"color:{COLORS['muted']}"
 
 
 def _p_style(v):
-    return "color:#4ADE80;font-weight:600" if isinstance(v, float) and v < 0.05 else ""
+    return f"color:{COLORS['good']};font-weight:600" if isinstance(v, float) and v < 0.05 else ""
 
 
 model = model_select(models, key="cmp_model")
@@ -44,7 +44,7 @@ with tab_point:
             "K-Means sai số nhỏ hơn; khác biệt <b>có ý nghĩa</b> khi p &lt; 0.05.")
     l, r = st.columns(2)
     with l, st.container(border=True):
-        st.markdown("##### ΔMAE (%) — âm: K-Means tốt hơn")
+        st.markdown("##### ΔMAE (%), âm là K-Means tốt hơn")
         charts.show(charts.delta_bars(c.assign(h="h = " + c["horizon"].astype(str)), "h", "ΔMAE_%"), key="cmp_dmae")
     with r, st.container(border=True):
         st.markdown("##### Directional Accuracy (%)")
@@ -62,7 +62,7 @@ with tab_int:
     i["cấu hình"] = "h=" + i["horizon"].astype(str) + " · " + i["level_%"].astype(str) + "%"
     l, r = st.columns(2)
     with l, st.container(border=True):
-        st.markdown("##### ΔWinkler (%) — âm: K-Means tốt hơn")
+        st.markdown("##### ΔWinkler (%), âm là K-Means tốt hơn")
         charts.show(charts.delta_bars(i, "cấu hình", "Δwinkler_%"), key="cmp_dw")
     with r, st.container(border=True):
         st.markdown("##### Coverage thực tế vs danh nghĩa")
@@ -70,7 +70,8 @@ with tab_int:
                                                   "coverage_%_kmeans": ("Có phân lớp", COLORS["kmeans"])},
                                   height=300, yaxis_title="%")
         for lv in (80, 95):
-            fig.add_hline(y=lv, line=dict(color="#475569", dash="dot"), annotation_text=f"{lv}%")
+            fig.add_hline(y=lv, line=dict(color=COLORS["rule"], dash="dot", width=1), annotation_text=f"{lv}%",
+                          annotation_font=dict(size=11, color=COLORS["muted"]))
         fig.update_yaxes(range=[60, 100])
         charts.show(fig, key="cmp_cov")
     st.dataframe(i.drop(columns="cấu hình").style.map(_sig_style, subset=["kết_luận"])
@@ -93,7 +94,7 @@ with tab_reg:
         fig = charts.grouped_bars(ir, "nhãn", {"coverage_%_base": ("Không phân lớp", COLORS["base"]),
                                                "coverage_%_kmeans": ("Có phân lớp", COLORS["kmeans"])},
                                   height=280, yaxis_title="%")
-        fig.add_hline(y=lvl, line=dict(color="#475569", dash="dot"))
+        fig.add_hline(y=lvl, line=dict(color=COLORS["rule"], dash="dot", width=1))
         charts.show(fig, key="cmp_reg_cov")
         st.dataframe(ir.drop(columns="nhãn").style.format(precision=2), hide_index=True)
 
@@ -110,7 +111,7 @@ with tab_fi:
             h = horizon_select(key="fi_h")
         top = c3.slider("Top", 10, 40, 20, key="fi_top")
         d = fi[(fi["branch"] == branch) & (fi["horizon"] == h)]
-        st.caption("🟧 cột cam: feature giai đoạn K-Means.")
+        st.caption("Cột màu cam là feature giai đoạn K-Means, cột xanh là feature gốc.")
         charts.show(charts.feature_importance_chart(d, top), key="cmp_fi")
         reg = d[d["feature"].str.contains("kmeans_|regime_id")]
         if not reg.empty:

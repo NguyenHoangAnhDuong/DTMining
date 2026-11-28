@@ -76,18 +76,25 @@ REGIME_LABELS = {
 }
 
 REGIME_COLORS = {
-    "Bear": "#F87171",
-    "Bull": "#4ADE80",
-    "StrongBull": "#22D3EE",
-    "Volatile": "#C084FC",
+    "Bear": "#B23A3A",
+    "Bull": "#4A7C3A",
+    "StrongBull": "#1F6F78",
+    "Volatile": "#7A4E9A",
 }
 
-# Màu dùng chung cho biểu đồ
+# Màu dùng chung cho biểu đồ (nền sáng, màu trầm)
 COLORS = {
-    "gold": "#D4AF37",
-    "actual": "#E2E8F0",
-    "base": "#60A5FA",
-    "kmeans": "#F59E0B",
-    "naive": "#94A3B8",
-    "grid": "rgba(148,163,184,0.15)",
+    "gold": "#9A6B12",
+    "actual": "#1C1B19",
+    "base": "#2F5D8C",
+    "kmeans": "#C0562B",
+    "naive": "#8A8680",
+    "good": "#3E7B4F",
+    "bad": "#B23A3A",
+    "rule": "#8A8680",
+    "grid": "#E9E6DE",
+    "axis": "#B9B4A8",
+    "text": "#3A3833",
+    "muted": "#6B675F",
+    "bg": "#FFFFFF",
 }

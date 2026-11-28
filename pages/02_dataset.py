@@ -4,7 +4,7 @@ from components import loaders
 from components.metric_cards import kpi_row, page_header
 from source.preprocessing_v3.config import EVENTS, MACRO, MARKET
 
-page_header("Dữ liệu", "EGPBD — Event-based Gold Price Benchmark Dataset (01/2001 – 12/2022).", "🗂️")
+page_header("Dữ liệu", "EGPBD — Event-based Gold Price Benchmark Dataset, 01/2001 – 12/2022.", "Dữ liệu")
 
 base = loaders.base_dataset()
 raw = loaders.raw_dataset()
@@ -42,7 +42,7 @@ with tab_base:
     st.dataframe(view, hide_index=True, height=420,
                  column_config={"Date": st.column_config.DateColumn("Ngày", format="DD/MM/YYYY")})
     st.caption(f"{len(view):,} dòng × {len(cols)} cột")
-    st.download_button("⬇ Tải base_dataset.csv", loaders.to_csv(base), "base_dataset.csv", "text/csv",
+    st.download_button("Tải base_dataset.csv", loaders.to_csv(base), "base_dataset.csv", "text/csv",
                        on_click="ignore")
 
     with st.expander("Mô tả các nhóm biến"):
@@ -66,13 +66,13 @@ with tab_quality:
     inv = loaders.preprocessing_report("quarantine_invalid_dates")
     conf = loaders.preprocessing_report("quarantine_conflicts")
     q1, q2 = st.columns(2)
-    q1.metric("Ngày không hợp lệ (cách ly)", len(inv), border=True)
-    q2.metric("Bản ghi trùng ngày / xung đột", len(conf), border=True)
+    q1.metric("Ngày không hợp lệ (cách ly)", len(inv))
+    q2.metric("Bản ghi trùng ngày / xung đột", len(conf))
     with st.expander("Bản ghi ngày không hợp lệ"):
         st.dataframe(inv, hide_index=True)
     with st.expander("Bản ghi xung đột"):
         st.dataframe(conf, hide_index=True)
     missing = base[groups["Thị trường"] + groups["Vĩ mô"]].isna().sum()
     st.markdown("**Giá trị thiếu sau tiền xử lý:** " + (
-        "không còn ✅" if missing.sum() == 0
+        "không còn" if missing.sum() == 0
         else ", ".join(f"{k}: {v}" for k, v in missing[missing > 0].items())))

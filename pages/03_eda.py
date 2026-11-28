@@ -3,8 +3,9 @@ import streamlit as st
 from components import charts, loaders
 from components.metric_cards import kpi_row, page_header
 from source.preprocessing_v3.config import EVENTS, LOGRET_COLS, MACRO, MARKET
+from source.services.constants import COLORS
 
-page_header("Khám phá dữ liệu", "Diễn biến giá, tương quan và phân phối lợi suất.", "🔎")
+page_header("Khám phá dữ liệu", "Diễn biến giá, tương quan và phân phối lợi suất.", "Dữ liệu")
 
 data = loaders.base_dataset()
 if data.empty:
@@ -57,5 +58,5 @@ with right:
         charts.show(charts.histogram(lr * 100, "log-return %"), key="eda_hist")
     with st.container(border=True):
         st.markdown("##### Số sự kiện toàn cầu theo năm")
-        charts.show(charts.grouped_bars(_events_per_year(), "Date", {"events": ("Sự kiện", "#D4AF37")},
+        charts.show(charts.grouped_bars(_events_per_year(), "Date", {"events": ("Sự kiện", COLORS["gold"])},
                                         height=200), key="eda_events")

@@ -5,7 +5,7 @@ from components.filters import horizon_select, model_select, split_select
 from components.metric_cards import page_header
 from source.services.constants import BRANCH_LABELS, COLORS, REGIME_LABELS, REGIMES
 
-page_header("Kết quả dự đoán", "Backtest trên walk-forward / Validation / Test — giá thực tế vs dự đoán của 2 nhánh.", "📉")
+page_header("Kết quả dự đoán", "Backtest trên walk-forward, Validation và Test: giá thực tế so với dự đoán của hai nhánh.", "Kết quả")
 
 models = loaders.available_models()
 if not models:
@@ -42,13 +42,13 @@ def results_panel():
     if not m.empty:
         cols = st.columns(4)
         for col, metric, fmt, better_low in [
-            (cols[0], "MAE", "{:,.2f} $", True), (cols[1], "RMSE", "{:,.2f} $", True),
+            (cols[0], "MAE", "{:,.2f}", True), (cols[1], "RMSE", "{:,.2f}", True),
             (cols[2], "MASE", "{:.4f}", True), (cols[3], "DA", "{:.1f}%", False),
         ]:
             if {"base", "kmeans"} <= set(m.index):
                 kv, bv = m.loc["kmeans", metric], m.loc["base", metric]
                 col.metric(f"{metric} · có phân lớp", fmt.format(kv), f"{kv - bv:+.3f} so với không phân lớp",
-                           delta_color="inverse" if better_low else "normal", border=True)
+                           delta_color="inverse" if better_low else "normal")
 
     with st.container(border=True):
         st.markdown("##### Giá thực tế vs dự đoán")
@@ -59,8 +59,8 @@ def results_panel():
 
     c1, c2 = st.columns(2)
     with c1, st.container(border=True):
-        st.markdown("##### Lợi thế tích lũy của K-Means")
-        st.caption("Σ(|sai số base| − |sai số kmeans|) — đường đi lên: nhánh có phân lớp sai số nhỏ hơn.")
+        st.markdown("##### Lợi thế tích lũy của nhánh K-Means")
+        st.caption("Σ(|sai số base| − |sai số kmeans|). Đường đi lên nghĩa là nhánh có phân lớp sai số nhỏ hơn.")
         charts.show(charts.cumulative_advantage(d), key="res_cum")
     with c2, st.container(border=True):
         st.markdown("##### MAE theo giai đoạn thị trường")
@@ -74,7 +74,7 @@ def results_panel():
         st.dataframe(m.reset_index().style.format(precision=4), hide_index=True)
     with st.expander("Dữ liệu dự đoán"):
         st.dataframe(d.drop(columns="abs_err"), hide_index=True, height=360)
-        st.download_button("⬇ Tải CSV", loaders.to_csv(d), f"predictions_{model}_h{horizon}_{split}.csv",
+        st.download_button("Tải CSV", loaders.to_csv(d), f"predictions_{model}_h{horizon}_{split}.csv",
                            "text/csv", on_click="ignore")
 
 

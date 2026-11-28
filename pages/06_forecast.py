@@ -11,11 +11,13 @@ import streamlit as st
 
 from components import charts, loaders
 from components.filters import bind, branch_select, horizon_select, model_select
-from components.metric_cards import callout, fmt_usd, page_header, regime_badge
+from components.metric_cards import callout, page_header, regime_badge
 from source.services.constants import BRANCH_LABELS, MODEL_MODULES, MODEL_NAMES, REGIME_LABELS
 from source.services.forecast_service import min_anchor_index, result_to_frame
 
-page_header("Dự đoán giá vàng", "Chọn cấu hình → mô hình dự đoán ngay trên dữ liệu đến ngày bạn chọn.", "🔮")
+page_header("Dự đoán giá vàng",
+            "Mô hình chỉ dùng dữ liệu đến ngày được chọn. Chọn một ngày trong quá khứ để đối chiếu với giá thực tế.",
+            "Dự đoán")
 
 data = loaders.base_dataset()
 models = [m for m in loaders.available_models() if m in MODEL_MODULES]
@@ -34,42 +36,35 @@ def _steps(branch: str, model: str):
                  f"{name} · nhánh kmeans", "Khoảng tin cậy theo giai đoạn"]
     else:
         steps = ["Lịch sử ≤ ngày chọn", "Tạo feature", f"{name} · nhánh base", "Khoảng tin cậy chung"]
-    st.caption("  →  ".join(f"**{i}.** {s}" for i, s in enumerate(steps, 1)))
+    st.markdown("<div class='gi-steps'>Quy trình: " + " → ".join(steps) + "</div>", unsafe_allow_html=True)
 
 
 def _result_card(r: dict):
     pct = (r["pred_price"] / r["price_t"] - 1) * 100
-    arrow, color = ("▲", "#4ADE80") if pct >= 0 else ("▼", "#F87171")
+    cls = "gi-up" if pct >= 0 else "gi-down"
+    rows = [f"<tr><td class='lbl'>Giá ngày {r['date']:%d/%m/%Y}</td><td class='num'>{r['price_t']:,.1f}</td></tr>"]
+    for lv, (lo, hi) in sorted(r["intervals"].items(), key=lambda x: -float(x[0])):
+        rows.append(f"<tr><td class='lbl'>Khoảng {int(float(lv) * 100)}%</td>"
+                    f"<td class='num'>{lo:,.1f} – {hi:,.1f}</td></tr>")
+    if r.get("actual") is not None:
+        err = r["error"]
+        hits = ", ".join(f"{int(float(lv) * 100)}%: {'trong' if ok else 'ngoài'}"
+                         for lv, ok in sorted(r["inside"].items()))
+        rows += [
+            f"<tr><td class='lbl'>Giá thực tế</td><td class='num'>{r['actual']:,.1f}</td></tr>",
+            f"<tr><td class='lbl'>Sai số</td><td class='num'>{err:+,.1f} ({err / r['actual'] * 100:+.2f}%)</td></tr>",
+            f"<tr><td class='lbl'>Nằm trong khoảng</td><td class='num'>{hits}</td></tr>",
+        ]
     with st.container(border=True):
         st.markdown(
-            f"<div class='gi-forecast-sub'>{BRANCH_LABELS[r['branch']]} · dự đoán cho "
-            f"<b>{r['target_date']:%d/%m/%Y}</b> (h = {r['horizon']})</div>"
-            f"<div class='gi-forecast'>{r['pred_price']:,.1f} $</div>"
-            f"<div style='color:{color};font-weight:600'>{arrow} {pct:+.2f}% so với "
-            f"{r['price_t']:,.1f} $ ngày {r['date']:%d/%m/%Y}</div>",
+            f"<div class='gi-forecast-sub'>{BRANCH_LABELS[r['branch']]} · ngày {r['target_date']:%d/%m/%Y} "
+            f"(h = {r['horizon']}) · USD/oz</div>"
+            f"<div class='gi-forecast'>{r['pred_price']:,.1f}</div>"
+            f"<div class='{cls}' style='font-size:.9rem'>{pct:+.2f}% so với giá hiện tại</div>"
+            f"<table class='gi-table'>{''.join(rows)}</table>"
+            f"<div style='font-size:.88rem'>Giai đoạn: {regime_badge(r['regime'])}</div>",
             unsafe_allow_html=True,
         )
-        st.markdown("")
-        for lv, (lo, hi) in sorted(r["intervals"].items(), key=lambda x: -float(x[0])):
-            st.markdown(
-                f"<div class='gi-interval'>Khoảng {int(float(lv) * 100)}%: "
-                f"<b>{lo:,.1f}</b> – <b>{hi:,.1f}</b> $ "
-                f"<span class='gi-forecast-sub'>(± {(hi - lo) / 2:,.0f})</span></div>",
-                unsafe_allow_html=True,
-            )
-        st.markdown("")
-        st.markdown("Giai đoạn thị trường: " + regime_badge(r["regime"]), unsafe_allow_html=True)
-
-        if r.get("actual") is not None:
-            st.divider()
-            err = r["error"]
-            inside = " · ".join(
-                f"{int(float(lv) * 100)}% {'✅' if ok else '❌'}" for lv, ok in sorted(r["inside"].items())
-            )
-            st.markdown(
-                f"Giá thực tế: **{r['actual']:,.1f} $** · sai số **{err:+,.1f} $** "
-                f"({err / r['actual'] * 100:+.2f}%)  \nNằm trong khoảng: {inside}"
-            )
 
 
 def _history_quality(model: str, branch: str, horizon: int):
@@ -80,14 +75,14 @@ def _history_quality(model: str, branch: str, horizon: int):
         return
     own = own.iloc[0]
     cols = st.columns(4)
-    cols[0].metric("MAE Test", fmt_usd(own["MAE"]),
+    cols[0].metric("MAE Test (USD)", f"{own['MAE']:,.2f}",
                    f"{own['MAE'] - naive['MAE'].iloc[0]:+.2f} so với naive" if not naive.empty else None,
-                   delta_color="inverse", border=True)
-    cols[1].metric("MAPE Test", f"{own['MAPE']:.2f}%", border=True)
+                   delta_color="inverse")
+    cols[1].metric("MAPE Test", f"{own['MAPE']:.2f}%")
     cols[2].metric("MASE", f"{own['MASE']:.3f}", "tốt hơn naive" if own["MASE"] < 1 else "kém naive",
-                   delta_color="normal" if own["MASE"] < 1 else "inverse", delta_arrow="off", border=True,
+                   delta_color="normal" if own["MASE"] < 1 else "inverse", delta_arrow="off",
                    help="< 1: tốt hơn dự đoán ngây thơ (giá t+h = giá t)")
-    cols[3].metric("Đúng hướng (DA)", f"{own['DA']:.1f}%", border=True)
+    cols[3].metric("Đúng hướng (DA)", f"{own['DA']:.1f}%")
 
 
 @st.fragment
@@ -134,9 +129,9 @@ def forecast_panel():
         b, k = sorted(results, key=lambda r: r["branch"])
         diff = k["pred_price"] - b["pred_price"]
         w80 = lambda r: r["intervals"]["0.8"][1] - r["intervals"]["0.8"][0]
-        msg = (f"Nhánh <b>có phân lớp</b> dự đoán {k['pred_price']:,.1f} $, nhánh <b>không phân lớp</b> "
-               f"{b['pred_price']:,.1f} $ (chênh {diff:+,.1f} $). Độ rộng khoảng 80%: "
-               f"{w80(k):,.0f} $ vs {w80(b):,.0f} $")
+        msg = (f"Nhánh có phân lớp dự đoán <b>{k['pred_price']:,.1f}</b>, nhánh không phân lớp "
+               f"<b>{b['pred_price']:,.1f}</b> USD (chênh {diff:+,.1f}). Độ rộng khoảng 80%: "
+               f"{w80(k):,.0f} so với {w80(b):,.0f} USD")
         if k["regime"]:
             msg += f" — khoảng của nhánh K-Means được hiệu chỉnh riêng cho giai đoạn <b>{REGIME_LABELS[k['regime']]}</b>."
         if k.get("actual") is not None:
@@ -153,9 +148,9 @@ def forecast_panel():
         st.dataframe(table, hide_index=True)
         d1, d2 = st.columns(2)
         stem = f"forecast_{model}_h{horizon}_{main['date']:%Y%m%d}"
-        d1.download_button("⬇ Tải CSV", loaders.to_csv(table), f"{stem}.csv", "text/csv",
+        d1.download_button("Tải CSV", loaders.to_csv(table), f"{stem}.csv", "text/csv",
                            width="stretch", on_click="ignore")
-        d2.download_button("⬇ Tải JSON", json.dumps(json.loads(table.to_json(orient="records", date_format="iso")),
+        d2.download_button("Tải JSON", json.dumps(json.loads(table.to_json(orient="records", date_format="iso")),
                                                    ensure_ascii=False, indent=2),
                            f"{stem}.json", "application/json", width="stretch", on_click="ignore")
 

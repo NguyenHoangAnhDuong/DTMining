@@ -1,68 +1,88 @@
-/* Gold Intelligence — dark + gold */
+/* Gold Intelligence — giao diện sáng, kiểu trang dữ liệu / báo cáo nghiên cứu */
 :root {
-  --gi-gold: #D4AF37;
-  --gi-gold-soft: rgba(212, 175, 55, 0.12);
-  --gi-card: #1E293B;
-  --gi-border: #334155;
-  --gi-muted: #94A3B8;
+  --ink: #1C1B19;
+  --muted: #6B675F;
+  --rule: #DAD6CC;
+  --rule-soft: #E9E6DE;
+  --accent: #9A6B12;
+  --good: #3E7B4F;
+  --bad: #B23A3A;
+  --note: #2F5D8C;
 }
 
-.block-container { padding-top: 2.2rem; padding-bottom: 3rem; max-width: 1400px; }
+.block-container { padding-top: 4.2rem !important; padding-bottom: 4rem; max-width: 1280px; }
 
-/* Header */
-.gi-header h1 {
-  font-size: 1.9rem; font-weight: 700; margin: 0 0 .2rem 0; padding: 0;
-  background: linear-gradient(90deg, #F8FAFC 0%, var(--gi-gold) 120%);
-  -webkit-background-clip: text; background-clip: text; color: transparent;
+/* Tiêu đề trang: kicker nhỏ + tiêu đề serif + đường kẻ */
+.gi-header { border-bottom: 1px solid var(--rule); padding-bottom: .8rem; margin-bottom: 1.4rem; }
+.gi-header .gi-kicker {
+  font-size: .78rem; color: var(--accent); font-weight: 600; margin-bottom: .15rem;
 }
-.gi-header p { color: var(--gi-muted); margin: 0 0 1.1rem 0; font-size: .98rem; }
+.gi-header h1 { font-size: 1.85rem; margin: 0; padding: 0; line-height: 1.25; }
+.gi-header p { color: var(--muted); margin: .35rem 0 0 0; font-size: .95rem; max-width: 62rem; }
 
-/* Sidebar brand */
-.gi-brand { font-weight: 800; letter-spacing: .08em; color: var(--gi-gold); font-size: 1.05rem; }
-.gi-brand span { margin-right: .35rem; }
-.gi-brand-sub { color: var(--gi-muted); font-size: .8rem; margin-bottom: .6rem; }
+/* Tiêu đề khối */
+h5 { font-size: 1rem !important; margin-bottom: .25rem !important; }
 
-/* Metric cards */
+/* Sidebar */
+.gi-brand { font-family: "Source Serif", Georgia, serif; font-size: 1.15rem; font-weight: 600; color: var(--ink); }
+.gi-brand-sub { color: var(--muted); font-size: .8rem; margin: .1rem 0 .4rem 0; line-height: 1.4; }
+
+/* Chỉ số: không nền, chỉ kẻ trên — giống bảng thống kê */
 [data-testid="stMetric"] {
-  background: var(--gi-card); border-color: var(--gi-border) !important;
-  border-radius: 12px; padding: .85rem 1rem;
-  transition: border-color .15s ease, transform .15s ease;
+  background: transparent; border: none !important; border-top: 2px solid var(--ink) !important;
+  border-radius: 0 !important; padding: .3rem .1rem .2rem .1rem !important;
 }
-[data-testid="stMetric"]:hover { border-color: var(--gi-gold) !important; transform: translateY(-1px); }
-[data-testid="stMetricLabel"] p { color: var(--gi-muted); font-size: .82rem; text-transform: uppercase; letter-spacing: .04em; }
-[data-testid="stMetricValue"] { font-size: 1.55rem; font-variant-numeric: tabular-nums; }
-
-/* Bordered containers */
-[data-testid="stVerticalBlockBorderWrapper"] { border-radius: 12px; }
-
-/* Badges */
-.gi-badge {
-  display: inline-block; padding: .28rem .75rem; border: 1px solid; border-radius: 999px;
-  font-weight: 600; font-size: .95rem;
+[data-testid="stMetricLabel"] p { color: var(--muted); font-size: .82rem; }
+[data-testid="stMetricValue"] {
+  font-family: "Source Code Pro", ui-monospace, monospace; font-size: 1.45rem;
+  font-variant-numeric: tabular-nums; letter-spacing: -.01em;
 }
-.gi-badge small { opacity: .7; font-weight: 400; }
-.gi-muted { color: var(--gi-muted); border-color: var(--gi-border); }
+[data-testid="stMetricDelta"] { font-size: .8rem; }
 
-/* Callouts */
+/* Khung có viền: phẳng, không bóng */
+[data-testid="stVerticalBlockBorderWrapper"] { border-radius: 3px; background: #FFFFFF; }
+
+/* Nhãn giai đoạn: chấm màu + chữ, không viên thuốc */
+.gi-badge { font-weight: 600; font-size: .95rem; white-space: nowrap; }
+.gi-badge::before {
+  content: ""; display: inline-block; width: .6rem; height: .6rem; border-radius: 50%;
+  background: currentColor; margin-right: .4rem; vertical-align: .05rem;
+}
+.gi-badge small { color: var(--muted); font-weight: 400; font-family: "Source Code Pro", monospace; font-size: .75rem; }
+.gi-muted { color: var(--muted); }
+
+/* Ghi chú: kẻ trái mảnh, không nền màu */
 .gi-callout {
-  border-left: 3px solid var(--gi-gold); background: var(--gi-gold-soft);
-  padding: .8rem 1rem; border-radius: 0 10px 10px 0; margin: .3rem 0 1rem 0; line-height: 1.55;
+  border-left: 2px solid var(--note); padding: .15rem 0 .15rem .9rem;
+  margin: .4rem 0 1.2rem 0; line-height: 1.6; color: #34322E; max-width: 70rem;
 }
-.gi-callout.gi-good { border-color: #4ADE80; background: rgba(74, 222, 128, .08); }
-.gi-callout.gi-bad  { border-color: #F87171; background: rgba(248, 113, 113, .08); }
-.gi-callout.gi-info { border-color: #60A5FA; background: rgba(96, 165, 250, .08); }
+.gi-callout.gi-good { border-color: var(--good); }
+.gi-callout.gi-bad  { border-color: var(--bad); }
 
-/* Big forecast number */
-.gi-forecast { font-size: 2.6rem; font-weight: 800; color: var(--gi-gold); line-height: 1.1; font-variant-numeric: tabular-nums; }
-.gi-forecast-sub { color: var(--gi-muted); font-size: .9rem; }
-.gi-interval { font-variant-numeric: tabular-nums; font-size: 1.05rem; }
-.gi-interval b { color: #F8FAFC; }
+/* Con số dự đoán */
+.gi-forecast {
+  font-family: "Source Code Pro", ui-monospace, monospace; font-size: 2.3rem; font-weight: 500;
+  color: var(--ink); line-height: 1.15; font-variant-numeric: tabular-nums; letter-spacing: -.02em;
+}
+.gi-forecast-sub { color: var(--muted); font-size: .85rem; }
+.gi-up { color: var(--good); } .gi-down { color: var(--bad); }
 
-/* Tabs */
-.stTabs [data-baseweb="tab-list"] { gap: .25rem; }
-.stTabs [data-baseweb="tab"] { padding: .4rem .9rem; border-radius: 8px 8px 0 0; }
-.stTabs [aria-selected="true"] { color: var(--gi-gold) !important; }
+/* Bảng khoảng dự đoán */
+table.gi-table { width: 100%; border-collapse: collapse; font-size: .88rem; margin: .6rem 0; }
+table.gi-table td { padding: .3rem 0; border-bottom: 1px solid var(--rule-soft); }
+table.gi-table td.num { text-align: right; font-family: "Source Code Pro", monospace; font-variant-numeric: tabular-nums; }
+table.gi-table td.lbl { color: var(--muted); }
 
-/* Report markdown tables */
+/* Các bước pipeline */
+.gi-steps { font-size: .82rem; color: var(--muted); margin-top: .3rem; }
+.gi-steps code { background: none; padding: 0; color: var(--ink); font-size: .8rem; }
+
+/* Tabs: gạch chân thay vì tô màu */
+.stTabs [data-baseweb="tab-list"] { gap: 1.2rem; border-bottom: 1px solid var(--rule); }
+.stTabs [data-baseweb="tab"] { padding: .4rem 0; }
+
+/* Danh sách liên kết cuối trang */
+.gi-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0 2rem; }
+
 .stMarkdown table { font-size: .85rem; }
-.stMarkdown img { border-radius: 8px; }
+.stMarkdown img { border: 1px solid var(--rule-soft); }

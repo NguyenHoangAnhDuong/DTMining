@@ -1,9 +1,31 @@
 [theme]
-primaryColor = "#D4AF37"
-backgroundColor = "#0F172A"
-secondaryBackgroundColor = "#1E293B"
-textColor = "#F8FAFC"
-font = "sans serif"
+base = "light"
+primaryColor = "#9A6B12"
+backgroundColor = "#FBFAF7"
+secondaryBackgroundColor = "#F1EFE9"
+textColor = "#1C1B19"
+linkColor = "#2F5D8C"
+linkUnderline = false
+borderColor = "#DAD6CC"
+dataframeBorderColor = "#E4E0D6"
+dataframeHeaderBackgroundColor = "#F1EFE9"
+showWidgetBorder = true
+showSidebarBorder = true
+baseRadius = "3px"
+buttonRadius = "3px"
+font = "sans-serif"
+headingFont = "serif"
+codeFont = "monospace"
+baseFontSize = 15
+headingFontWeights = [600, 600, 600, 600, 600, 600]
+metricValueFontWeight = 500
+codeBackgroundColor = "#F1EFE9"
+greenColor = "#3E7B4F"
+redColor = "#B23A3A"
+
+[theme.sidebar]
+backgroundColor = "#F4F2EC"
+secondaryBackgroundColor = "#EAE7DF"
 
 [server]
 headless = true
