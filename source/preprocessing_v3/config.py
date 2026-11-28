@@ -16,6 +16,22 @@ FIGURES_DIR  = ROOT_DIR / "figures" / "v3"
 SPLIT_DIR  = OUT_DIR / "split"
 MODELS_DIR = OUT_DIR / "models"
 
+# Nhánh KHÔNG phân lớp: split/train_base.csv, val_base.csv, test_base.csv (step07)
+# Nhánh CÓ phân lớp   : split/train_kmeans.csv, val_kmeans.csv, test_kmeans.csv
+KMEANS_SPLIT_SUFFIX = "kmeans"
+KMEANS_MODEL        = MODELS_DIR / "kmeans.joblib"
+
+# ── Kết quả (báo cáo) ──────────────────────────────────────────────────────
+RESULTS_DIR      = ROOT_DIR / "results"
+KMEANS_RESULTS   = RESULTS_DIR / "kmeans"
+FORECAST_RESULTS = RESULTS_DIR / "forecasting"
+
+# Hai nhánh thí nghiệm
+BRANCHES = {
+    "base":   "Không phân lớp",
+    "kmeans": "Có phân lớp K-Means",
+}
+
 # ── Column definitions ──────────────────────────────────────────────────────
 EVENTS = [
     "Economic Data", "logistic", "Politics", "oil", "OPEC",

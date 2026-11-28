@@ -1,0 +1,448 @@
+model,branch,horizon,feature,importance_gain
+xgboost,base,1,f_Gold Price_logret,0.026255324
+xgboost,base,1,f_Silver_logret,0.03533093
+xgboost,base,1,f_Copper_logret,0.030190239
+xgboost,base,1,f_Palladium_logret,0.036093045
+xgboost,base,1,f_Platinum_logret,0.023300204
+xgboost,base,1,f_Iron Price_logret,0.0
+xgboost,base,1,f_U.S dollar index_logret,0.0
+xgboost,base,1,f_DJI_logret,0.030989904
+xgboost,base,1,f_S&P 500_logret,0.027987897
+xgboost,base,1,f_U.S Treasury_logret,0.040397365
+xgboost,base,1,f_CPI Rate_logret,0.0
+xgboost,base,1,f_Oil_diff,0.030045675
+xgboost,base,1,f_Inflation Rate_diff,0.0
+xgboost,base,1,f_Fedral Funds Rate_diff,0.0
+xgboost,base,1,f_gold_lr_lag1,0.020731442
+xgboost,base,1,f_gold_lr_lag2,0.02929585
+xgboost,base,1,f_gold_lr_lag3,0.01944139
+xgboost,base,1,f_gold_lr_lag5,0.017844735
+xgboost,base,1,f_gold_lr_lag10,0.04191366
+xgboost,base,1,f_gold_lr_lag20,0.05134084
+xgboost,base,1,f_gold_lr_mean5,0.013520536
+xgboost,base,1,f_gold_lr_std5,0.034925636
+xgboost,base,1,f_gold_lr_mean10,0.024426777
+xgboost,base,1,f_gold_lr_std10,0.03538811
+xgboost,base,1,f_gold_lr_mean20,0.034452148
+xgboost,base,1,f_gold_lr_std20,0.034041103
+xgboost,base,1,f_gold_lr_mean60,0.03349464
+xgboost,base,1,f_gold_lr_std60,0.031240525
+xgboost,base,1,f_gold_ma50_gap,0.029925425
+xgboost,base,1,f_gold_ma200_gap,0.029752288
+xgboost,base,1,f_Silver_logret_sum5,0.032974992
+xgboost,base,1,f_U.S dollar index_logret_sum5,0.0318636
+xgboost,base,1,f_S&P 500_logret_sum5,0.025097756
+xgboost,base,1,f_U.S Treasury_logret_sum5,0.026417168
+xgboost,base,1,f_evt_Economic Data,0.0
+xgboost,base,1,f_evt_Economic Data_cnt5,0.0
+xgboost,base,1,f_evt_logistic,0.0
+xgboost,base,1,f_evt_logistic_cnt5,0.0
+xgboost,base,1,f_evt_Politics,0.0
+xgboost,base,1,f_evt_Politics_cnt5,0.0
+xgboost,base,1,f_evt_oil,0.0
+xgboost,base,1,f_evt_oil_cnt5,0.0
+xgboost,base,1,f_evt_OPEC,0.03341319
+xgboost,base,1,f_evt_OPEC_cnt5,0.0
+xgboost,base,1,f_evt_Stock (US),0.0
+xgboost,base,1,f_evt_Stock (US)_cnt5,0.0
+xgboost,base,1,f_evt_Stock (Global),0.0
+xgboost,base,1,f_evt_Stock (Global)_cnt5,0.0
+xgboost,base,1,f_evt_currency (Dollar),0.0
+xgboost,base,1,f_evt_currency (Dollar)_cnt5,0.028753994
+xgboost,base,1,f_evt_currency (Russian ruble),0.0
+xgboost,base,1,f_evt_currency (Russian ruble)_cnt5,0.0
+xgboost,base,1,f_evt_currency (Sterling pound),0.0
+xgboost,base,1,f_evt_currency (Sterling pound)_cnt5,0.0
+xgboost,base,1,f_evt_currency (Euro),0.0
+xgboost,base,1,f_evt_currency (Euro)_cnt5,0.0
+xgboost,base,1,f_evt_currency (Yen),0.0
+xgboost,base,1,f_evt_currency (Yen)_cnt5,0.032290723
+xgboost,base,1,f_evt_Inflation,0.0
+xgboost,base,1,f_evt_Inflation_cnt5,0.0
+xgboost,base,1,f_evt_Job report,0.0
+xgboost,base,1,f_evt_Job report_cnt5,0.0
+xgboost,base,1,f_evt_unemployment rate,0.0
+xgboost,base,1,f_evt_unemployment rate_cnt5,0.0
+xgboost,base,1,f_evt_CPI,0.0
+xgboost,base,1,f_evt_CPI_cnt5,0.0
+xgboost,base,1,f_evt_Interest Rate,0.0
+xgboost,base,1,f_evt_Interest Rate_cnt5,0.0
+xgboost,base,1,f_evt_Bonds,0.0
+xgboost,base,1,f_evt_Bonds_cnt5,0.0
+xgboost,base,1,f_cal_dayofweek,0.005622329
+xgboost,base,1,f_cal_month,0.021240583
+xgboost,kmeans,1,f_Gold Price_logret,0.0
+xgboost,kmeans,1,f_Silver_logret,0.060518946
+xgboost,kmeans,1,f_Copper_logret,0.0
+xgboost,kmeans,1,f_Palladium_logret,0.0
+xgboost,kmeans,1,f_Platinum_logret,0.019044265
+xgboost,kmeans,1,f_Iron Price_logret,0.0
+xgboost,kmeans,1,f_U.S dollar index_logret,0.0
+xgboost,kmeans,1,f_DJI_logret,0.0
+xgboost,kmeans,1,f_S&P 500_logret,0.046164073
+xgboost,kmeans,1,f_U.S Treasury_logret,0.073844396
+xgboost,kmeans,1,f_CPI Rate_logret,0.0
+xgboost,kmeans,1,f_Oil_diff,0.08025767
+xgboost,kmeans,1,f_Inflation Rate_diff,0.0
+xgboost,kmeans,1,f_Fedral Funds Rate_diff,0.0
+xgboost,kmeans,1,f_gold_lr_lag1,0.0
+xgboost,kmeans,1,f_gold_lr_lag2,0.0
+xgboost,kmeans,1,f_gold_lr_lag3,0.0
+xgboost,kmeans,1,f_gold_lr_lag5,0.07114399
+xgboost,kmeans,1,f_gold_lr_lag10,0.11733238
+xgboost,kmeans,1,f_gold_lr_lag20,0.08280272
+xgboost,kmeans,1,f_gold_lr_mean5,0.0
+xgboost,kmeans,1,f_gold_lr_std5,0.042631652
+xgboost,kmeans,1,f_gold_lr_mean10,0.06938948
+xgboost,kmeans,1,f_gold_lr_std10,0.0
+xgboost,kmeans,1,f_gold_lr_mean20,0.0
+xgboost,kmeans,1,f_gold_lr_std20,0.0
+xgboost,kmeans,1,f_gold_lr_mean60,0.0
+xgboost,kmeans,1,f_gold_lr_std60,0.0
+xgboost,kmeans,1,f_gold_ma50_gap,0.100297034
+xgboost,kmeans,1,f_gold_ma200_gap,0.0
+xgboost,kmeans,1,f_Silver_logret_sum5,0.0
+xgboost,kmeans,1,f_U.S dollar index_logret_sum5,0.06164092
+xgboost,kmeans,1,f_S&P 500_logret_sum5,0.0
+xgboost,kmeans,1,f_U.S Treasury_logret_sum5,0.06411069
+xgboost,kmeans,1,f_evt_Economic Data,0.0
+xgboost,kmeans,1,f_evt_Economic Data_cnt5,0.0
+xgboost,kmeans,1,f_evt_logistic,0.0
+xgboost,kmeans,1,f_evt_logistic_cnt5,0.0
+xgboost,kmeans,1,f_evt_Politics,0.0
+xgboost,kmeans,1,f_evt_Politics_cnt5,0.0
+xgboost,kmeans,1,f_evt_oil,0.0
+xgboost,kmeans,1,f_evt_oil_cnt5,0.0
+xgboost,kmeans,1,f_evt_OPEC,0.07977012
+xgboost,kmeans,1,f_evt_OPEC_cnt5,0.0
+xgboost,kmeans,1,f_evt_Stock (US),0.0
+xgboost,kmeans,1,f_evt_Stock (US)_cnt5,0.0
+xgboost,kmeans,1,f_evt_Stock (Global),0.0
+xgboost,kmeans,1,f_evt_Stock (Global)_cnt5,0.0
+xgboost,kmeans,1,f_evt_currency (Dollar),0.0
+xgboost,kmeans,1,f_evt_currency (Dollar)_cnt5,0.0
+xgboost,kmeans,1,f_evt_currency (Russian ruble),0.0
+xgboost,kmeans,1,f_evt_currency (Russian ruble)_cnt5,0.0
+xgboost,kmeans,1,f_evt_currency (Sterling pound),0.0
+xgboost,kmeans,1,f_evt_currency (Sterling pound)_cnt5,0.0
+xgboost,kmeans,1,f_evt_currency (Euro),0.0
+xgboost,kmeans,1,f_evt_currency (Euro)_cnt5,0.0
+xgboost,kmeans,1,f_evt_currency (Yen),0.0
+xgboost,kmeans,1,f_evt_currency (Yen)_cnt5,0.0
+xgboost,kmeans,1,f_evt_Inflation,0.0
+xgboost,kmeans,1,f_evt_Inflation_cnt5,0.0
+xgboost,kmeans,1,f_evt_Job report,0.0
+xgboost,kmeans,1,f_evt_Job report_cnt5,0.0
+xgboost,kmeans,1,f_evt_unemployment rate,0.0
+xgboost,kmeans,1,f_evt_unemployment rate_cnt5,0.0
+xgboost,kmeans,1,f_evt_CPI,0.0
+xgboost,kmeans,1,f_evt_CPI_cnt5,0.0
+xgboost,kmeans,1,f_evt_Interest Rate,0.0
+xgboost,kmeans,1,f_evt_Interest Rate_cnt5,0.0
+xgboost,kmeans,1,f_evt_Bonds,0.0
+xgboost,kmeans,1,f_evt_Bonds_cnt5,0.0
+xgboost,kmeans,1,f_cal_dayofweek,0.0
+xgboost,kmeans,1,f_cal_month,0.031051643
+xgboost,kmeans,1,kmeans_Bear,0.0
+xgboost,kmeans,1,kmeans_Bull,0.0
+xgboost,kmeans,1,kmeans_StrongBull,0.0
+xgboost,kmeans,1,kmeans_Volatile,0.0
+xgboost,kmeans,1,regime_id,0.0
+xgboost,base,7,f_Gold Price_logret,0.0
+xgboost,base,7,f_Silver_logret,0.0
+xgboost,base,7,f_Copper_logret,0.0
+xgboost,base,7,f_Palladium_logret,0.0
+xgboost,base,7,f_Platinum_logret,0.0
+xgboost,base,7,f_Iron Price_logret,0.0
+xgboost,base,7,f_U.S dollar index_logret,0.0
+xgboost,base,7,f_DJI_logret,0.0
+xgboost,base,7,f_S&P 500_logret,0.0
+xgboost,base,7,f_U.S Treasury_logret,0.0
+xgboost,base,7,f_CPI Rate_logret,0.0
+xgboost,base,7,f_Oil_diff,0.0
+xgboost,base,7,f_Inflation Rate_diff,0.0
+xgboost,base,7,f_Fedral Funds Rate_diff,0.0
+xgboost,base,7,f_gold_lr_lag1,0.0
+xgboost,base,7,f_gold_lr_lag2,0.0
+xgboost,base,7,f_gold_lr_lag3,0.0
+xgboost,base,7,f_gold_lr_lag5,0.0
+xgboost,base,7,f_gold_lr_lag10,0.0
+xgboost,base,7,f_gold_lr_lag20,0.0
+xgboost,base,7,f_gold_lr_mean5,0.0
+xgboost,base,7,f_gold_lr_std5,0.0
+xgboost,base,7,f_gold_lr_mean10,0.0
+xgboost,base,7,f_gold_lr_std10,0.0
+xgboost,base,7,f_gold_lr_mean20,0.0
+xgboost,base,7,f_gold_lr_std20,0.0
+xgboost,base,7,f_gold_lr_mean60,0.0
+xgboost,base,7,f_gold_lr_std60,0.5854701
+xgboost,base,7,f_gold_ma50_gap,0.4145299
+xgboost,base,7,f_gold_ma200_gap,0.0
+xgboost,base,7,f_Silver_logret_sum5,0.0
+xgboost,base,7,f_U.S dollar index_logret_sum5,0.0
+xgboost,base,7,f_S&P 500_logret_sum5,0.0
+xgboost,base,7,f_U.S Treasury_logret_sum5,0.0
+xgboost,base,7,f_evt_Economic Data,0.0
+xgboost,base,7,f_evt_Economic Data_cnt5,0.0
+xgboost,base,7,f_evt_logistic,0.0
+xgboost,base,7,f_evt_logistic_cnt5,0.0
+xgboost,base,7,f_evt_Politics,0.0
+xgboost,base,7,f_evt_Politics_cnt5,0.0
+xgboost,base,7,f_evt_oil,0.0
+xgboost,base,7,f_evt_oil_cnt5,0.0
+xgboost,base,7,f_evt_OPEC,0.0
+xgboost,base,7,f_evt_OPEC_cnt5,0.0
+xgboost,base,7,f_evt_Stock (US),0.0
+xgboost,base,7,f_evt_Stock (US)_cnt5,0.0
+xgboost,base,7,f_evt_Stock (Global),0.0
+xgboost,base,7,f_evt_Stock (Global)_cnt5,0.0
+xgboost,base,7,f_evt_currency (Dollar),0.0
+xgboost,base,7,f_evt_currency (Dollar)_cnt5,0.0
+xgboost,base,7,f_evt_currency (Russian ruble),0.0
+xgboost,base,7,f_evt_currency (Russian ruble)_cnt5,0.0
+xgboost,base,7,f_evt_currency (Sterling pound),0.0
+xgboost,base,7,f_evt_currency (Sterling pound)_cnt5,0.0
+xgboost,base,7,f_evt_currency (Euro),0.0
+xgboost,base,7,f_evt_currency (Euro)_cnt5,0.0
+xgboost,base,7,f_evt_currency (Yen),0.0
+xgboost,base,7,f_evt_currency (Yen)_cnt5,0.0
+xgboost,base,7,f_evt_Inflation,0.0
+xgboost,base,7,f_evt_Inflation_cnt5,0.0
+xgboost,base,7,f_evt_Job report,0.0
+xgboost,base,7,f_evt_Job report_cnt5,0.0
+xgboost,base,7,f_evt_unemployment rate,0.0
+xgboost,base,7,f_evt_unemployment rate_cnt5,0.0
+xgboost,base,7,f_evt_CPI,0.0
+xgboost,base,7,f_evt_CPI_cnt5,0.0
+xgboost,base,7,f_evt_Interest Rate,0.0
+xgboost,base,7,f_evt_Interest Rate_cnt5,0.0
+xgboost,base,7,f_evt_Bonds,0.0
+xgboost,base,7,f_evt_Bonds_cnt5,0.0
+xgboost,base,7,f_cal_dayofweek,0.0
+xgboost,base,7,f_cal_month,0.0
+xgboost,kmeans,7,f_Gold Price_logret,0.0
+xgboost,kmeans,7,f_Silver_logret,0.0
+xgboost,kmeans,7,f_Copper_logret,0.0
+xgboost,kmeans,7,f_Palladium_logret,0.0
+xgboost,kmeans,7,f_Platinum_logret,0.0
+xgboost,kmeans,7,f_Iron Price_logret,0.0
+xgboost,kmeans,7,f_U.S dollar index_logret,0.0
+xgboost,kmeans,7,f_DJI_logret,0.0
+xgboost,kmeans,7,f_S&P 500_logret,0.0
+xgboost,kmeans,7,f_U.S Treasury_logret,0.0
+xgboost,kmeans,7,f_CPI Rate_logret,0.0
+xgboost,kmeans,7,f_Oil_diff,0.0
+xgboost,kmeans,7,f_Inflation Rate_diff,0.0
+xgboost,kmeans,7,f_Fedral Funds Rate_diff,0.0
+xgboost,kmeans,7,f_gold_lr_lag1,0.0
+xgboost,kmeans,7,f_gold_lr_lag2,0.0
+xgboost,kmeans,7,f_gold_lr_lag3,0.0
+xgboost,kmeans,7,f_gold_lr_lag5,0.0
+xgboost,kmeans,7,f_gold_lr_lag10,0.0
+xgboost,kmeans,7,f_gold_lr_lag20,0.0
+xgboost,kmeans,7,f_gold_lr_mean5,0.0
+xgboost,kmeans,7,f_gold_lr_std5,0.0
+xgboost,kmeans,7,f_gold_lr_mean10,0.0
+xgboost,kmeans,7,f_gold_lr_std10,0.0
+xgboost,kmeans,7,f_gold_lr_mean20,0.13081487
+xgboost,kmeans,7,f_gold_lr_std20,0.13380343
+xgboost,kmeans,7,f_gold_lr_mean60,0.1310799
+xgboost,kmeans,7,f_gold_lr_std60,0.20713112
+xgboost,kmeans,7,f_gold_ma50_gap,0.15988715
+xgboost,kmeans,7,f_gold_ma200_gap,0.0
+xgboost,kmeans,7,f_Silver_logret_sum5,0.0
+xgboost,kmeans,7,f_U.S dollar index_logret_sum5,0.0
+xgboost,kmeans,7,f_S&P 500_logret_sum5,0.0
+xgboost,kmeans,7,f_U.S Treasury_logret_sum5,0.07555559
+xgboost,kmeans,7,f_evt_Economic Data,0.0
+xgboost,kmeans,7,f_evt_Economic Data_cnt5,0.0
+xgboost,kmeans,7,f_evt_logistic,0.0
+xgboost,kmeans,7,f_evt_logistic_cnt5,0.0
+xgboost,kmeans,7,f_evt_Politics,0.0
+xgboost,kmeans,7,f_evt_Politics_cnt5,0.0
+xgboost,kmeans,7,f_evt_oil,0.0
+xgboost,kmeans,7,f_evt_oil_cnt5,0.0
+xgboost,kmeans,7,f_evt_OPEC,0.0
+xgboost,kmeans,7,f_evt_OPEC_cnt5,0.0
+xgboost,kmeans,7,f_evt_Stock (US),0.0
+xgboost,kmeans,7,f_evt_Stock (US)_cnt5,0.0
+xgboost,kmeans,7,f_evt_Stock (Global),0.0
+xgboost,kmeans,7,f_evt_Stock (Global)_cnt5,0.0
+xgboost,kmeans,7,f_evt_currency (Dollar),0.0
+xgboost,kmeans,7,f_evt_currency (Dollar)_cnt5,0.0
+xgboost,kmeans,7,f_evt_currency (Russian ruble),0.0
+xgboost,kmeans,7,f_evt_currency (Russian ruble)_cnt5,0.0
+xgboost,kmeans,7,f_evt_currency (Sterling pound),0.0
+xgboost,kmeans,7,f_evt_currency (Sterling pound)_cnt5,0.0
+xgboost,kmeans,7,f_evt_currency (Euro),0.0
+xgboost,kmeans,7,f_evt_currency (Euro)_cnt5,0.0
+xgboost,kmeans,7,f_evt_currency (Yen),0.0
+xgboost,kmeans,7,f_evt_currency (Yen)_cnt5,0.08975215
+xgboost,kmeans,7,f_evt_Inflation,0.0
+xgboost,kmeans,7,f_evt_Inflation_cnt5,0.0
+xgboost,kmeans,7,f_evt_Job report,0.0
+xgboost,kmeans,7,f_evt_Job report_cnt5,0.0
+xgboost,kmeans,7,f_evt_unemployment rate,0.0
+xgboost,kmeans,7,f_evt_unemployment rate_cnt5,0.0
+xgboost,kmeans,7,f_evt_CPI,0.0
+xgboost,kmeans,7,f_evt_CPI_cnt5,0.0
+xgboost,kmeans,7,f_evt_Interest Rate,0.0
+xgboost,kmeans,7,f_evt_Interest Rate_cnt5,0.0
+xgboost,kmeans,7,f_evt_Bonds,0.0
+xgboost,kmeans,7,f_evt_Bonds_cnt5,0.0
+xgboost,kmeans,7,f_cal_dayofweek,0.0
+xgboost,kmeans,7,f_cal_month,0.07197573
+xgboost,kmeans,7,kmeans_Bear,0.0
+xgboost,kmeans,7,kmeans_Bull,0.0
+xgboost,kmeans,7,kmeans_StrongBull,0.0
+xgboost,kmeans,7,kmeans_Volatile,0.0
+xgboost,kmeans,7,regime_id,0.0
+xgboost,base,30,f_Gold Price_logret,0.0
+xgboost,base,30,f_Silver_logret,0.0
+xgboost,base,30,f_Copper_logret,0.0
+xgboost,base,30,f_Palladium_logret,0.0
+xgboost,base,30,f_Platinum_logret,0.0
+xgboost,base,30,f_Iron Price_logret,0.0
+xgboost,base,30,f_U.S dollar index_logret,0.0
+xgboost,base,30,f_DJI_logret,0.0
+xgboost,base,30,f_S&P 500_logret,0.0
+xgboost,base,30,f_U.S Treasury_logret,0.0
+xgboost,base,30,f_CPI Rate_logret,0.0
+xgboost,base,30,f_Oil_diff,0.0
+xgboost,base,30,f_Inflation Rate_diff,0.0
+xgboost,base,30,f_Fedral Funds Rate_diff,0.0
+xgboost,base,30,f_gold_lr_lag1,0.0
+xgboost,base,30,f_gold_lr_lag2,0.0
+xgboost,base,30,f_gold_lr_lag3,0.0
+xgboost,base,30,f_gold_lr_lag5,0.0
+xgboost,base,30,f_gold_lr_lag10,0.0
+xgboost,base,30,f_gold_lr_lag20,0.0
+xgboost,base,30,f_gold_lr_mean5,0.0
+xgboost,base,30,f_gold_lr_std5,0.0
+xgboost,base,30,f_gold_lr_mean10,0.0
+xgboost,base,30,f_gold_lr_std10,0.0
+xgboost,base,30,f_gold_lr_mean20,0.25119004
+xgboost,base,30,f_gold_lr_std20,0.0
+xgboost,base,30,f_gold_lr_mean60,0.4279459
+xgboost,base,30,f_gold_lr_std60,0.0
+xgboost,base,30,f_gold_ma50_gap,0.0
+xgboost,base,30,f_gold_ma200_gap,0.32086405
+xgboost,base,30,f_Silver_logret_sum5,0.0
+xgboost,base,30,f_U.S dollar index_logret_sum5,0.0
+xgboost,base,30,f_S&P 500_logret_sum5,0.0
+xgboost,base,30,f_U.S Treasury_logret_sum5,0.0
+xgboost,base,30,f_evt_Economic Data,0.0
+xgboost,base,30,f_evt_Economic Data_cnt5,0.0
+xgboost,base,30,f_evt_logistic,0.0
+xgboost,base,30,f_evt_logistic_cnt5,0.0
+xgboost,base,30,f_evt_Politics,0.0
+xgboost,base,30,f_evt_Politics_cnt5,0.0
+xgboost,base,30,f_evt_oil,0.0
+xgboost,base,30,f_evt_oil_cnt5,0.0
+xgboost,base,30,f_evt_OPEC,0.0
+xgboost,base,30,f_evt_OPEC_cnt5,0.0
+xgboost,base,30,f_evt_Stock (US),0.0
+xgboost,base,30,f_evt_Stock (US)_cnt5,0.0
+xgboost,base,30,f_evt_Stock (Global),0.0
+xgboost,base,30,f_evt_Stock (Global)_cnt5,0.0
+xgboost,base,30,f_evt_currency (Dollar),0.0
+xgboost,base,30,f_evt_currency (Dollar)_cnt5,0.0
+xgboost,base,30,f_evt_currency (Russian ruble),0.0
+xgboost,base,30,f_evt_currency (Russian ruble)_cnt5,0.0
+xgboost,base,30,f_evt_currency (Sterling pound),0.0
+xgboost,base,30,f_evt_currency (Sterling pound)_cnt5,0.0
+xgboost,base,30,f_evt_currency (Euro),0.0
+xgboost,base,30,f_evt_currency (Euro)_cnt5,0.0
+xgboost,base,30,f_evt_currency (Yen),0.0
+xgboost,base,30,f_evt_currency (Yen)_cnt5,0.0
+xgboost,base,30,f_evt_Inflation,0.0
+xgboost,base,30,f_evt_Inflation_cnt5,0.0
+xgboost,base,30,f_evt_Job report,0.0
+xgboost,base,30,f_evt_Job report_cnt5,0.0
+xgboost,base,30,f_evt_unemployment rate,0.0
+xgboost,base,30,f_evt_unemployment rate_cnt5,0.0
+xgboost,base,30,f_evt_CPI,0.0
+xgboost,base,30,f_evt_CPI_cnt5,0.0
+xgboost,base,30,f_evt_Interest Rate,0.0
+xgboost,base,30,f_evt_Interest Rate_cnt5,0.0
+xgboost,base,30,f_evt_Bonds,0.0
+xgboost,base,30,f_evt_Bonds_cnt5,0.0
+xgboost,base,30,f_cal_dayofweek,0.0
+xgboost,base,30,f_cal_month,0.0
+xgboost,kmeans,30,f_Gold Price_logret,0.0
+xgboost,kmeans,30,f_Silver_logret,0.0
+xgboost,kmeans,30,f_Copper_logret,0.0
+xgboost,kmeans,30,f_Palladium_logret,0.0
+xgboost,kmeans,30,f_Platinum_logret,0.0
+xgboost,kmeans,30,f_Iron Price_logret,0.0
+xgboost,kmeans,30,f_U.S dollar index_logret,0.0
+xgboost,kmeans,30,f_DJI_logret,0.0
+xgboost,kmeans,30,f_S&P 500_logret,0.0
+xgboost,kmeans,30,f_U.S Treasury_logret,0.0
+xgboost,kmeans,30,f_CPI Rate_logret,0.0
+xgboost,kmeans,30,f_Oil_diff,0.0
+xgboost,kmeans,30,f_Inflation Rate_diff,0.0
+xgboost,kmeans,30,f_Fedral Funds Rate_diff,0.0
+xgboost,kmeans,30,f_gold_lr_lag1,0.0
+xgboost,kmeans,30,f_gold_lr_lag2,0.0
+xgboost,kmeans,30,f_gold_lr_lag3,0.0
+xgboost,kmeans,30,f_gold_lr_lag5,0.0
+xgboost,kmeans,30,f_gold_lr_lag10,0.0
+xgboost,kmeans,30,f_gold_lr_lag20,0.0
+xgboost,kmeans,30,f_gold_lr_mean5,0.0
+xgboost,kmeans,30,f_gold_lr_std5,0.0
+xgboost,kmeans,30,f_gold_lr_mean10,0.0
+xgboost,kmeans,30,f_gold_lr_std10,0.0
+xgboost,kmeans,30,f_gold_lr_mean20,0.3130513
+xgboost,kmeans,30,f_gold_lr_std20,0.0
+xgboost,kmeans,30,f_gold_lr_mean60,0.5109803
+xgboost,kmeans,30,f_gold_lr_std60,0.0
+xgboost,kmeans,30,f_gold_ma50_gap,0.0
+xgboost,kmeans,30,f_gold_ma200_gap,0.17596838
+xgboost,kmeans,30,f_Silver_logret_sum5,0.0
+xgboost,kmeans,30,f_U.S dollar index_logret_sum5,0.0
+xgboost,kmeans,30,f_S&P 500_logret_sum5,0.0
+xgboost,kmeans,30,f_U.S Treasury_logret_sum5,0.0
+xgboost,kmeans,30,f_evt_Economic Data,0.0
+xgboost,kmeans,30,f_evt_Economic Data_cnt5,0.0
+xgboost,kmeans,30,f_evt_logistic,0.0
+xgboost,kmeans,30,f_evt_logistic_cnt5,0.0
+xgboost,kmeans,30,f_evt_Politics,0.0
+xgboost,kmeans,30,f_evt_Politics_cnt5,0.0
+xgboost,kmeans,30,f_evt_oil,0.0
+xgboost,kmeans,30,f_evt_oil_cnt5,0.0
+xgboost,kmeans,30,f_evt_OPEC,0.0
+xgboost,kmeans,30,f_evt_OPEC_cnt5,0.0
+xgboost,kmeans,30,f_evt_Stock (US),0.0
+xgboost,kmeans,30,f_evt_Stock (US)_cnt5,0.0
+xgboost,kmeans,30,f_evt_Stock (Global),0.0
+xgboost,kmeans,30,f_evt_Stock (Global)_cnt5,0.0
+xgboost,kmeans,30,f_evt_currency (Dollar),0.0
+xgboost,kmeans,30,f_evt_currency (Dollar)_cnt5,0.0
+xgboost,kmeans,30,f_evt_currency (Russian ruble),0.0
+xgboost,kmeans,30,f_evt_currency (Russian ruble)_cnt5,0.0
+xgboost,kmeans,30,f_evt_currency (Sterling pound),0.0
+xgboost,kmeans,30,f_evt_currency (Sterling pound)_cnt5,0.0
+xgboost,kmeans,30,f_evt_currency (Euro),0.0
+xgboost,kmeans,30,f_evt_currency (Euro)_cnt5,0.0
+xgboost,kmeans,30,f_evt_currency (Yen),0.0
+xgboost,kmeans,30,f_evt_currency (Yen)_cnt5,0.0
+xgboost,kmeans,30,f_evt_Inflation,0.0
+xgboost,kmeans,30,f_evt_Inflation_cnt5,0.0
+xgboost,kmeans,30,f_evt_Job report,0.0
+xgboost,kmeans,30,f_evt_Job report_cnt5,0.0
+xgboost,kmeans,30,f_evt_unemployment rate,0.0
+xgboost,kmeans,30,f_evt_unemployment rate_cnt5,0.0
+xgboost,kmeans,30,f_evt_CPI,0.0
+xgboost,kmeans,30,f_evt_CPI_cnt5,0.0
+xgboost,kmeans,30,f_evt_Interest Rate,0.0
+xgboost,kmeans,30,f_evt_Interest Rate_cnt5,0.0
+xgboost,kmeans,30,f_evt_Bonds,0.0
+xgboost,kmeans,30,f_evt_Bonds_cnt5,0.0
+xgboost,kmeans,30,f_cal_dayofweek,0.0
+xgboost,kmeans,30,f_cal_month,0.0
+xgboost,kmeans,30,kmeans_Bear,0.0
+xgboost,kmeans,30,kmeans_Bull,0.0
+xgboost,kmeans,30,kmeans_StrongBull,0.0
+xgboost,kmeans,30,kmeans_Volatile,0.0
+xgboost,kmeans,30,regime_id,0.0

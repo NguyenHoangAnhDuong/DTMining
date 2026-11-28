@@ -1,55 +1,43 @@
 
-from pathlib import Path
+from source.preprocessing_v3.config import (
+    BASE_DATASET,
+    BRANCHES,
+    FIGURES_DIR,
+    FORECAST_RESULTS,
+    HORIZONS,
+    KMEANS_RESULTS,
+    OUT_DIR as PROCESSED_DATA_DIR,
+    RAW_DATA,
+    REPORTS_DIR as DATA_REPORTS_DIR,
+    RESULTS_DIR,
+    ROOT_DIR,
+    SPLIT_DIR as SPLIT_DATA_DIR,
+)
 
-# Thư mục gốc của dự án
-ROOT_DIR = Path(__file__).resolve().parents[2]
-
-# Các thư mục chính
+# Mọi đường dẫn lấy từ source/preprocessing_v3/config.py (một nguồn duy nhất)
 DATA_DIR = ROOT_DIR / "dataset"
-RESULTS_DIR = ROOT_DIR / "result"
 ASSETS_DIR = ROOT_DIR / "assets"
-FIGURES_DIR = ROOT_DIR / "figures"
+RAW_DATA_DIR = RAW_DATA.parent
 
-# Các thư mục dữ liệu
-RAW_DATA_DIR = DATA_DIR / "data_root"
-PROCESSED_DATA_DIR = DATA_DIR / "processed"
-DATA_REPORTS_DIR = DATA_DIR / "reports"
-SPLIT_DATA_DIR = PROCESSED_DATA_DIR / "split"
-
-# Các thư mục kết quả
-FORECAST_RESULTS_DIR = RESULTS_DIR / "forecasting"
-CLUSTERING_RESULTS_DIR = RESULTS_DIR / "clustering"
-EDA_RESULTS_DIR = RESULTS_DIR / "eda"
-PREPROCESSING_RESULTS_DIR = RESULTS_DIR / "preprocessing"
+FORECAST_RESULTS_DIR = FORECAST_RESULTS
+CLUSTERING_RESULTS_DIR = KMEANS_RESULTS
 
 APP_NAME = "Gold Intelligence"
 
+# Model đã có kết quả nằm trong results/forecasting/<model>/
 MODELS = [
-    "sarimax",
     "xgboost",
-    "lightgbm",
-    "prophet",
-    "lstm",
 ]
 
 MODEL_NAMES = {
-    "sarimax": "SARIMAX",
     "xgboost": "XGBoost",
-    "lightgbm": "LightGBM",
-    "prophet": "Prophet",
-    "lstm": "LSTM",
 }
 
-TASKS = {
-    "task1": "Có sử dụng kết quả phân cụm",
-    "task2": "Không sử dụng kết quả phân cụm",
-}
-
-HORIZONS = [1, 7, 30]
+# Hai nhánh thí nghiệm: có / không phân lớp K-Means
+TASKS = BRANCHES
 
 CLUSTERING_ALGORITHMS = [
     "kmeans",
-    "gmm",
 ]
 
 METRICS = [
@@ -58,5 +46,5 @@ METRICS = [
     "MAPE",
     "R2",
     "MASE",
-    "Directional_Accuracy",
+    "DA",
 ]

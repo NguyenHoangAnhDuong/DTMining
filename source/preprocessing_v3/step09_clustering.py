@@ -1,19 +1,28 @@
 """
-Step 09 — Market Regime Clustering  (fit ONLY on Train)
+Step 09 — Market Regime Clustering với K-Means  (fit ONLY on Train)
 
-Thuật toán: K-Means (k=3) VÀ GMM (k=3)
-Features clustering: Gold Price_logret, Gold_logret_roll_mean20, Gold_logret_roll_std20
+Phân lớp giai đoạn thị trường theo 2 trục, đều chỉ dùng quá khứ (shift(1)) → không leakage:
+  - Xu hướng  : Gold_logret_roll_mean60  — log-return trung bình 60 phiên trước t
+  - Biến động : Gold_logret_roll_std20   — độ lệch chuẩn log-return 20 phiên trước t
 
-Nhãn chế độ thị trường được sắp xếp theo rolling mean return:
-  Thấp nhất → Bear | Giữa → Sideways | Cao nhất → Bull
+Lý do chọn (xem results/kmeans/result_k_mean.md):
+  - KHÔNG dùng log-return của chính ngày t: làm cụm bị chia theo "hôm nay tăng/giảm" (nhiễu),
+    giai đoạn đổi liên tục (~4.5 ngày/đợt).
+  - Xu hướng dài (60) + biến động ngắn (20) cho Silhouette / Davies-Bouldin tốt nhất,
+    giai đoạn bền hơn (~14 ngày/đợt) và mỗi cụm có ý nghĩa kinh tế rõ ràng.
 
-Output thêm vào mỗi split:
-  - kmeans_Bear, kmeans_Sideways, kmeans_Bull  : one-hot (0/1)
-  - gmm_Bear, gmm_Sideways, gmm_Bull           : one-hot (0/1)
-  - gmm_prob_Bear, gmm_prob_Sideways, gmm_prob_Bull : xác suất mềm từ GMM (0.0–1.0)
-  - market_phase                                : nhãn chuỗi từ K-Means (đọc được)
+Đặt tên cụm (k = 4) theo tâm cụm:
+  - Cụm có biến động cao nhất                       → Volatile   (Biến động mạnh / khủng hoảng)
+  - 3 cụm còn lại sắp theo xu hướng tăng dần        → Bear (Giảm), Bull (Tăng), StrongBull (Tăng mạnh)
 
-Bundle clustering (.joblib) lưu tại: dataset/processed_v3/models/clustering.joblib
+Cột thêm vào dữ liệu:
+  - kmeans_<Regime> : one-hot (0/1) cho từng giai đoạn
+  - regime_id       : chỉ số giai đoạn theo thứ tự REGIMES (NaN nếu thiếu lịch sử)
+  - market_phase    : tên giai đoạn (dễ đọc, dùng cho dashboard)
+
+Model K-Means (.joblib) lưu tại: dataset/processed_v3/models/kmeans.joblib
+Web app dùng `assign_regime()` để gán giai đoạn cho dữ liệu mới trước khi dự đoán
+(cần ít nhất TREND_WINDOW + 1 phiên lịch sử).
 """
 import logging
 
@@ -22,39 +31,49 @@ import numpy as np
 import pandas as pd
 from sklearn.cluster import KMeans
 from sklearn.metrics import davies_bouldin_score, silhouette_score
-from sklearn.mixture import GaussianMixture
 from sklearn.preprocessing import StandardScaler
 
-from .config import MODELS_DIR, REPORTS_DIR
+from .config import KMEANS_MODEL, REPORTS_DIR
 
 logger = logging.getLogger(__name__)
 
-CLUSTER_FEATURES = [
-    "Gold Price_logret",
-    "Gold_logret_roll_mean20",
-    "Gold_logret_roll_std20",
-]
-REGIMES    = ["Bear", "Sideways", "Bull"]
-N_CLUSTERS = 3
+RETURN_COL   = "Gold Price_logret"
+TREND_WINDOW = 60
+VOL_WINDOW   = 20
+TREND_COL    = f"Gold_logret_roll_mean{TREND_WINDOW}"
+VOL_COL      = f"Gold_logret_roll_std{VOL_WINDOW}"
+CLUSTER_FEATURES = [TREND_COL, VOL_COL]
+
+REGIMES = ["Bear", "Bull", "StrongBull", "Volatile"]
+REGIME_LABELS_VI = {
+    "Bear":       "Giảm",
+    "Bull":       "Tăng",
+    "StrongBull": "Tăng mạnh",
+    "Volatile":   "Biến động mạnh",
+}
+N_CLUSTERS = len(REGIMES)
 
 
-def _fit(train: pd.DataFrame, cols: list[str]) -> tuple:
-    valid  = train[cols].dropna()
-    scaler = StandardScaler().fit(valid)
-    X      = scaler.transform(valid)
-    kmeans = KMeans(n_clusters=N_CLUSTERS, n_init=20, random_state=42).fit(X)
-    gmm    = GaussianMixture(n_components=N_CLUSTERS, n_init=3, random_state=42).fit(X)
-    return scaler, X, valid.index, kmeans, gmm
+def add_cluster_features(df: pd.DataFrame) -> pd.DataFrame:
+    """Tạo feature cho clustering. Chỉ dùng quá khứ nên chạy được trên toàn bộ dữ liệu."""
+    df = df.sort_values("Date").reset_index(drop=True).copy()
+    past_lr = df[RETURN_COL].shift(1)
+    df[TREND_COL] = past_lr.rolling(TREND_WINDOW, min_periods=TREND_WINDOW).mean()
+    df[VOL_COL]   = past_lr.rolling(VOL_WINDOW, min_periods=VOL_WINDOW).std()
+    return df
 
 
-def _map_regimes(train: pd.DataFrame, labels: np.ndarray, valid_idx, return_col: str) -> dict:
-    table = pd.DataFrame({"label": labels, "ret": train.loc[valid_idx, return_col].to_numpy()})
-    order = table.groupby("label")["ret"].mean().sort_values().index.tolist()
-    return {int(lbl): regime for lbl, regime in zip(order, REGIMES)}
+def _name_clusters(centers: pd.DataFrame) -> dict:
+    """centers: DataFrame (giá trị gốc) index = cluster id, cột = CLUSTER_FEATURES."""
+    volatile = int(centers[VOL_COL].idxmax())
+    rest = centers.drop(index=volatile).sort_values(TREND_COL).index.tolist()
+    mapping = {int(c): r for c, r in zip(rest, ["Bear", "Bull", "StrongBull"])}
+    mapping[volatile] = "Volatile"
+    return mapping
 
 
 def _evaluate(X: np.ndarray, labels: np.ndarray) -> dict:
-    n = min(1000, len(X))
+    n = min(2000, len(X))
     return {
         "silhouette"    : float(silhouette_score(X, labels, sample_size=n, random_state=42)),
         "davies_bouldin": float(davies_bouldin_score(X, labels)),
@@ -62,78 +81,56 @@ def _evaluate(X: np.ndarray, labels: np.ndarray) -> dict:
 
 
 def fit_on_train(train: pd.DataFrame) -> dict:
-    cols = [c for c in CLUSTER_FEATURES if c in train.columns]
-    if len(cols) < 2:
-        logger.warning("Not enough clustering columns found (%s), skipping.", cols)
-        return {}
+    valid  = train[CLUSTER_FEATURES].dropna()
+    scaler = StandardScaler().fit(valid)
+    X      = scaler.transform(valid)
+    kmeans = KMeans(n_clusters=N_CLUSTERS, n_init=20, random_state=42).fit(X)
 
-    scaler, X, valid_idx, kmeans, gmm = _fit(train, cols)
-    mappings = {}
-    metrics  = []
+    centers = pd.DataFrame(scaler.inverse_transform(kmeans.cluster_centers_), columns=CLUSTER_FEATURES)
+    mapping = _name_clusters(centers)
 
-    for name, model in [("kmeans", kmeans), ("gmm", gmm)]:
-        labels = model.predict(X)
-        mappings[name] = _map_regimes(train, labels, valid_idx, cols[1])
-        m = _evaluate(X, labels)
-        metrics.append({"model": name, **m})
-        logger.info("%s — Silhouette: %.4f  Davies-Bouldin: %.4f",
-                    name.upper(), m["silhouette"], m["davies_bouldin"])
-
+    metrics = {"model": "kmeans", "k": N_CLUSTERS, **_evaluate(X, kmeans.labels_)}
+    logger.info("K-Means — Silhouette: %.4f  Davies-Bouldin: %.4f",
+                metrics["silhouette"], metrics["davies_bouldin"])
     REPORTS_DIR.mkdir(parents=True, exist_ok=True)
-    pd.DataFrame(metrics).to_csv(REPORTS_DIR / "clustering_metrics.csv", index=False)
+    pd.DataFrame([metrics]).to_csv(REPORTS_DIR / "clustering_metrics.csv", index=False)
 
-    bundle = dict(scaler=scaler, kmeans=kmeans, gmm=gmm, mapping=mappings, columns=cols)
-    MODELS_DIR.mkdir(parents=True, exist_ok=True)
-    joblib.dump(bundle, MODELS_DIR / "clustering.joblib")
-    logger.info("Clustering bundle saved → %s", MODELS_DIR / "clustering.joblib")
+    bundle = dict(scaler=scaler, kmeans=kmeans, mapping=mapping, columns=CLUSTER_FEATURES,
+                  trend_window=TREND_WINDOW, vol_window=VOL_WINDOW, regimes=REGIMES)
+    KMEANS_MODEL.parent.mkdir(parents=True, exist_ok=True)
+    joblib.dump(bundle, KMEANS_MODEL)
+    logger.info("K-Means model saved → %s  | mapping: %s", KMEANS_MODEL, mapping)
     return bundle
 
 
 def transform(df: pd.DataFrame, bundle: dict) -> pd.DataFrame:
-    if not bundle:
-        return df
+    """Gán nhãn giai đoạn cho df đã có CLUSTER_FEATURES."""
     df   = df.copy()
     cols = bundle["columns"]
 
-    valid_mask = df[cols].notna().all(axis=1)
-    valid_idx  = df.index[valid_mask]
-    X = bundle["scaler"].transform(df.loc[valid_idx, cols])
+    valid_idx = df.index[df[cols].notna().all(axis=1)]
+    labels    = bundle["kmeans"].predict(bundle["scaler"].transform(df.loc[valid_idx, cols]))
+    regimes   = pd.Series(labels, index=valid_idx).map(bundle["mapping"])
 
-    # K-Means one-hot
-    km_labels = bundle["kmeans"].predict(X)
-    for lbl, regime in bundle["mapping"]["kmeans"].items():
-        col = f"kmeans_{regime}"
-        df[col] = 0
-        df.loc[valid_idx[km_labels == lbl], col] = 1
+    for regime in REGIMES:
+        df[f"kmeans_{regime}"] = (regimes.reindex(df.index) == regime).astype(int)
+    df["market_phase"] = regimes.reindex(df.index)
+    df["regime_id"]    = df["market_phase"].map({r: i for i, r in enumerate(REGIMES)})
 
-    # GMM one-hot
-    gm_labels = bundle["gmm"].predict(X)
-    for lbl, regime in bundle["mapping"]["gmm"].items():
-        col = f"gmm_{regime}"
-        df[col] = 0
-        df.loc[valid_idx[gm_labels == lbl], col] = 1
-
-    # GMM soft probabilities
-    gm_proba = bundle["gmm"].predict_proba(X)
-    for lbl, regime in bundle["mapping"]["gmm"].items():
-        col = f"gmm_prob_{regime}"
-        df[col] = np.nan
-        df.loc[valid_idx, col] = gm_proba[:, lbl]
-
-    # String label từ K-Means (dễ đọc, dùng cho EDA / dashboard)
-    df["market_phase"] = pd.NA
-    for lbl, regime in bundle["mapping"]["kmeans"].items():
-        df.loc[valid_idx[km_labels == lbl], "market_phase"] = regime
-    df["market_phase"] = df["market_phase"].ffill()
-
-    logger.info("Clustering transformed: %d / %d rows assigned", len(valid_idx), len(df))
+    logger.info("K-Means transformed: %d / %d rows assigned", len(valid_idx), len(df))
     return df
 
 
+def assign_regime(history: pd.DataFrame, bundle: dict | None = None) -> pd.DataFrame:
+    """Dùng cho web app: nhận dữ liệu dạng base_dataset (có lịch sử ≥ TREND_WINDOW+1 phiên),
+    trả về dữ liệu đã gán giai đoạn thị trường."""
+    if bundle is None:
+        bundle = joblib.load(KMEANS_MODEL)
+    return transform(add_cluster_features(history), bundle)
+
+
 def run(train: pd.DataFrame, val: pd.DataFrame, test: pd.DataFrame):
-    logger.info("Step 09 — Clustering (K-Means + GMM, fit on train only)")
-    bundle    = fit_on_train(train)
-    train_out = transform(train, bundle)
-    val_out   = transform(val,   bundle)
-    test_out  = transform(test,  bundle)
-    return train_out, val_out, test_out, bundle
+    """train/val/test phải đã có CLUSTER_FEATURES (gọi add_cluster_features trước khi split)."""
+    logger.info("Step 09 — K-Means clustering (fit on train only)")
+    bundle = fit_on_train(train)
+    return transform(train, bundle), transform(val, bundle), transform(test, bundle), bundle

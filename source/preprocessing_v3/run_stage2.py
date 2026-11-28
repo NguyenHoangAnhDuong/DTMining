@@ -1,23 +1,28 @@
 """
-Runner — Stage 2: Feature Engineering → Model-Ready Splits
+Runner — Stage 2: Tách 2 nhánh dữ liệu (KHÔNG phân lớp / CÓ phân lớp K-Means)
 
 Yêu cầu: Stage 1 đã chạy xong (base_dataset.csv tồn tại).
 
 Chạy từ thư mục gốc dự án (DTMining/):
     python -m source.preprocessing_v3.run_stage2
 
-Thứ tự thực hiện (tránh data leakage hoàn toàn):
-  07 → Temporal split (TRƯỚC khi fit bất cứ thứ gì)
-  08 → Feature engineering trên toàn bộ data (lag/rolling an toàn vì chỉ dùng quá khứ)
-       → Re-split theo mốc ngày
-  09 → Clustering: fit K-Means + GMM CHỈ trên Train, transform cả 3 tập
-  10 → Feature selection: tính MI + corr filter CHỈ trên Train
-  11 → Normalization: fit StandardScaler CHỈ trên Train
+Các bước:
+  07 → Temporal split base_dataset (cùng mốc ngày cho cả 2 nhánh)
+       → Nhánh A (không phân lớp): train_base / val_base / test_base
+  09 → Thêm feature clustering (rolling 20 phiên, chỉ dùng quá khứ) trên toàn bộ data,
+       split theo cùng mốc ngày, fit K-Means CHỈ trên Train, gán nhãn cho cả 3 tập
+       → Nhánh B (có phân lớp): train_kmeans / val_kmeans / test_kmeans + kmeans.joblib
 
-Output (dataset/processed_v3/split/):
-  train.csv / val.csv / test.csv           — đã có feature, chưa scale
-  train_scaled.csv / val_scaled.csv / test_scaled.csv — đã scale
-  walk_forward_splits.json                 — fold info cho CV
+KHÔNG làm ở stage này: feature engineering cho dự đoán nằm ở source/model/dataset.py,
+áp dụng giống hệt nhau cho cả 2 nhánh.
+
+Output:
+  dataset/processed_v3/split/
+    train_base.csv,   val_base.csv,   test_base.csv     — nhánh A
+    train_kmeans.csv, val_kmeans.csv, test_kmeans.csv   — nhánh B
+    walk_forward_splits.json                            — fold info cho CV
+  dataset/processed_v3/models/kmeans.joblib             — model K-Means cho web app
+  dataset/processed_v3/reports/clustering_metrics.csv   — Silhouette, Davies-Bouldin
 """
 import logging
 import sys
@@ -27,12 +32,9 @@ import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
-from source.preprocessing_v3.config import BASE_DATASET, SPLIT_DIR
-import source.preprocessing_v3.step07_split              as s07
-import source.preprocessing_v3.step08_feature_engineering as s08
-import source.preprocessing_v3.step09_clustering          as s09
-import source.preprocessing_v3.step10_feature_selection   as s10
-import source.preprocessing_v3.step11_normalization       as s11
+from source.preprocessing_v3.config import BASE_DATASET, KMEANS_SPLIT_SUFFIX, SPLIT_DIR
+import source.preprocessing_v3.step07_split      as s07
+import source.preprocessing_v3.step09_clustering as s09
 
 
 def run():
@@ -44,7 +46,7 @@ def run():
     logger = logging.getLogger(__name__)
 
     logger.info("=" * 60)
-    logger.info("STAGE 2 — Feature Engineering → Model-Ready Splits")
+    logger.info("STAGE 2 — Split 2 nhánh: không phân lớp / K-Means")
     logger.info("Input: %s", BASE_DATASET)
     logger.info("=" * 60)
 
@@ -57,50 +59,33 @@ def run():
     df = pd.read_csv(BASE_DATASET, parse_dates=["Date"])
     logger.info("Loaded base dataset: %d rows × %d cols", *df.shape)
 
-    # 07 — split trước khi fit bất cứ thứ gì
-    train_base, val_base, test_base, wf_folds = s07.run(df)
+    # ── Nhánh A: không phân lớp ────────────────────────────────────────────
+    train_a, val_a, test_a, _wf = s07.run(df)   # lưu *_base.csv + walk_forward_splits.json
 
-    # 08 — feature engineering trên toàn bộ data, sau đó re-split theo Date
-    # (lag/rolling cần lịch sử xuyên suốt → không tách trước)
-    df_fe = s08.run(df, drop_warmup=True)
+    # ── Nhánh B: có phân lớp K-Means ───────────────────────────────────────
+    # Rolling chỉ dùng quá khứ → tính trên toàn bộ data rồi mới split (giữ lịch sử qua ranh giới)
+    df_cl = s09.add_cluster_features(df)
+    train_cl, val_cl, test_cl = s07.temporal_split(df_cl)
+    train_b, val_b, test_b, _bundle = s09.run(train_cl, val_cl, test_cl)
 
-    t_end = train_base["Date"].max()
-    v_start, v_end = val_base["Date"].min(), val_base["Date"].max()
-    x_start = test_base["Date"].min()
-
-    train_fe = df_fe[df_fe["Date"] <= t_end].reset_index(drop=True)
-    val_fe   = df_fe[(df_fe["Date"] >= v_start) & (df_fe["Date"] <= v_end)].reset_index(drop=True)
-    test_fe  = df_fe[df_fe["Date"] >= x_start].reset_index(drop=True)
-
-    logger.info("After FE re-split — Train: %d  Val: %d  Test: %d",
-                len(train_fe), len(val_fe), len(test_fe))
-
-    # 09 — clustering fit on train
-    train_cl, val_cl, test_cl, _bundle = s09.run(train_fe, val_fe, test_fe)
-
-    # 10 — feature selection fit on train
-    train_fs, val_fs, test_fs, sel_config = s10.run(train_cl, val_cl, test_cl)
-
-    # 11 — normalization fit on train
-    train_sc, val_sc, test_sc, _scaler = s11.run(train_fs, val_fs, test_fs, sel_config)
-
-    # Save
     SPLIT_DIR.mkdir(parents=True, exist_ok=True)
-    train_fs.to_csv(SPLIT_DIR / "train.csv",        index=False)
-    val_fs.to_csv(SPLIT_DIR   / "val.csv",          index=False)
-    test_fs.to_csv(SPLIT_DIR  / "test.csv",         index=False)
-    train_sc.to_csv(SPLIT_DIR / "train_scaled.csv", index=False)
-    val_sc.to_csv(SPLIT_DIR   / "val_scaled.csv",   index=False)
-    test_sc.to_csv(SPLIT_DIR  / "test_scaled.csv",  index=False)
+    for name, part in [("train", train_b), ("val", val_b), ("test", test_b)]:
+        part.to_csv(SPLIT_DIR / f"{name}_{KMEANS_SPLIT_SUFFIX}.csv", index=False)
+
+    for name, part in [("Train", train_b), ("Val", val_b), ("Test", test_b)]:
+        dist = part["market_phase"].value_counts().to_dict()
+        logger.info("  %-5s regime distribution: %s", name, dist)
 
     logger.info("=" * 60)
     logger.info("STAGE 2 COMPLETE")
-    logger.info("Train: %d rows  Val: %d rows  Test: %d rows", len(train_sc), len(val_sc), len(test_sc))
-    logger.info("Cols: %d (unscaled) | %d (scaled)", train_fs.shape[1], train_sc.shape[1])
+    logger.info("Nhánh A (base)  : Train %d | Val %d | Test %d | %d cols",
+                len(train_a), len(val_a), len(test_a), train_a.shape[1])
+    logger.info("Nhánh B (kmeans): Train %d | Val %d | Test %d | %d cols",
+                len(train_b), len(val_b), len(test_b), train_b.shape[1])
     logger.info("Output → %s", SPLIT_DIR)
     logger.info("=" * 60)
 
-    return train_sc, val_sc, test_sc
+    return (train_a, val_a, test_a), (train_b, val_b, test_b)
 
 
 if __name__ == "__main__":
